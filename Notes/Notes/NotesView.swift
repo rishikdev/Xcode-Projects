@@ -32,16 +32,18 @@ struct NotesView: View
     {
         NavigationView
         {
-            List
+            List()
             {
-                ForEach(searchResults)
+                ForEach(searchResults.sorted(by: { (first, second) -> Bool in
+                    first.timeSaved ?? Date() > second.timeSaved ?? Date()
+                }))
                 {
                     entity in
                     NotesCell(notesViewModel: notesViewModel, entity: entity)
                 }
                 .onDelete(perform: notesViewModel.deleteNote)
             }
-            .listStyle(.automatic)
+            .listStyle(.insetGrouped)
             .navigationTitle("My Notes")
             .searchable(text: $searchQuery)
             .toolbar()
@@ -87,8 +89,15 @@ struct NotesCell: View
                         Text(entity.body ?? "No Content")
                             .lineLimit(1)
                             
-                        Text(entity.timeSaved ?? "No Time")
-                            .font(.caption2)
+//                        Text(entity.timeSaved ?? "No Time")
+//                            .font(.caption2)
+                        HStack
+                        {
+                            Text(entity.timeSaved ?? Date(), style: .date)
+                                .font(.caption2)
+                            Text(entity.timeSaved ?? Date(), style: .time)
+                                .font(.caption2)
+                        }
                     }
                 }
             }
@@ -100,6 +109,11 @@ struct ContentView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        NotesView()
+        Group
+        {
+            NotesView()
+            NotesView()
+                .previewDevice("iPhone SE (2nd generation)")
+        }
     }
 }

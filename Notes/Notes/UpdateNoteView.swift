@@ -21,10 +21,10 @@ struct UpdateNoteView: View
         {
             HStack
             {
-                Text(Date(), style: .date)
-                Text(Date(), style: .time)
+                //Text(notesEntity.timeSaved ?? "")
+                Text(notesEntity.timeSaved ?? Date(), style: .date)
+                Text(notesEntity.timeSaved ?? Date(), style: .time)
             }
-            .padding(.bottom)
             .foregroundColor(Color.gray)
             .font(.caption2)
             
@@ -50,7 +50,8 @@ struct UpdateNoteView: View
             dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
             
             notesEntity.body = textBody
-            notesEntity.timeSaved = dateTimeFormatter.string(from: Date())
+//            notesEntity.timeSaved = dateTimeFormatter.string(from: Date())
+            notesEntity.timeSaved = Date()
             notesViewModel.updateNote()
             presentationMode.wrappedValue.dismiss()
         }
@@ -70,14 +71,14 @@ struct UpdateNoteView: View
     }
 }
 
-struct UpdateNoteView_Previews: PreviewProvider
-{
-    static var previews: some View
-    {
-        NavigationView
-        {
-            UpdateNoteView(notesViewModel: NotesViewModel(), notesEntity: NotesEntity(), textBody: "")
-        }
-        .padding()
-    }
-}
+//struct UpdateNoteView_Previews: PreviewProvider
+//{
+//    static var previews: some View
+//    {
+//        NavigationView
+//        {
+//            UpdateNoteView(notesViewModel: NotesViewModel(), notesEntity: NotesEntity(), textBody: "")
+//        }
+//        .padding()
+//    }
+//}

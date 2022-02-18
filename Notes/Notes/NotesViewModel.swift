@@ -60,14 +60,13 @@ class NotesViewModel: ObservableObject
     
     func addNote(body: String, date: Date)
     {
-        dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
+        //dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
         
         let newNote = NotesEntity(context: notesContainer.viewContext)
         newNote.body = body
-        newNote.timeSaved = dateTimeFormatter.string(from: date)
-        
-        print("time: ", dateTimeFormatter.string(from: date))
-                
+        //newNote.timeSaved = dateTimeFormatter.string(from: date)
+        newNote.timeSaved = date
+                        
         saveNote()
     }
     

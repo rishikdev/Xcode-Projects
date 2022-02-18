@@ -25,7 +25,7 @@ struct NewNoteView: View
             }
             .padding(.bottom)
             .foregroundColor(Color.gray)
-            .font(.caption2)
+            .font(.callout)
             
             TextEditor(text: $textBody)
         }
