@@ -1,8 +1,8 @@
 //
 //  NewNoteView.swift
-//  Notes
+//  My Notes
 //
-//  Created by Rishik Dev on 06/02/22.
+//  Created by Rishik Dev on 18/02/22.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import SwiftUI
 struct NewNoteView: View
 {
     @Environment(\.presentationMode) var presentationMode
-    @StateObject var notesViewModel: NotesViewModel
+    @StateObject var myNotesViewModel: MyNotesViewModel
     
     @State var textBody: String = ""
         
@@ -47,7 +47,7 @@ struct NewNoteView: View
     {
         if isTextAppropriate()
         {
-            notesViewModel.addNote(body: textBody, date: Date())
+            myNotesViewModel.addNote(noteText: textBody, dateTime: Date())
             presentationMode.wrappedValue.dismiss()
         }
     }
@@ -74,7 +74,7 @@ struct NewNoteView_Previews: PreviewProvider
         {
             VStack
             {
-                NewNoteView(notesViewModel: NotesViewModel())
+                NewNoteView(myNotesViewModel: MyNotesViewModel())
             }
         }
     }

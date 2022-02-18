@@ -1,8 +1,8 @@
 //
 //  UpdateNoteView.swift
-//  Notes
+//  My Notes
 //
-//  Created by Rishik Dev on 06/02/22.
+//  Created by Rishik Dev on 18/02/22.
 //
 
 import SwiftUI
@@ -10,8 +10,8 @@ import SwiftUI
 struct UpdateNoteView: View
 {
     @Environment(\.presentationMode) var presentationMode
-    @StateObject var notesViewModel: NotesViewModel
-    @State var notesEntity: NotesEntity
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    @State var myNotesEntity: MyNotesEntity
     @State var textBody: String
     let dateTimeFormatter = DateFormatter()
     
@@ -22,8 +22,8 @@ struct UpdateNoteView: View
             HStack
             {
                 //Text(notesEntity.timeSaved ?? "")
-                Text(notesEntity.timeSaved ?? Date(), style: .date)
-                Text(notesEntity.timeSaved ?? Date(), style: .time)
+                Text(myNotesEntity.saveDateTime ?? Date(), style: .date)
+                Text(myNotesEntity.saveDateTime ?? Date(), style: .time)
             }
             .foregroundColor(Color.gray)
             .font(.caption2)
@@ -49,10 +49,10 @@ struct UpdateNoteView: View
         {
             dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
             
-            notesEntity.body = textBody
+            myNotesEntity.noteText = textBody
 //            notesEntity.timeSaved = dateTimeFormatter.string(from: Date())
-            notesEntity.timeSaved = Date()
-            notesViewModel.updateNote()
+            myNotesEntity.saveDateTime = Date()
+            myNotesViewModel.updateNote()
             presentationMode.wrappedValue.dismiss()
         }
     }
@@ -77,7 +77,7 @@ struct UpdateNoteView: View
 //    {
 //        NavigationView
 //        {
-//            UpdateNoteView(notesViewModel: NotesViewModel(), notesEntity: NotesEntity(), textBody: "")
+//            UpdateNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), textBody: "")
 //        }
 //        .padding()
 //    }

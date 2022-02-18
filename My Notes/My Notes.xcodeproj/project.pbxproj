@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B8A988E27B077100085D059 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A988D27B077100085D059 /* NotesApp.swift */; };
-		1B8A989027B077100085D059 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A988F27B077100085D059 /* NotesView.swift */; };
-		1B8A989227B077100085D059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A989127B077100085D059 /* Assets.xcassets */; };
-		1B8A989527B077100085D059 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A989427B077100085D059 /* Preview Assets.xcassets */; };
-		1B8A989D27B0774A0085D059 /* NotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A989B27B0774A0085D059 /* NotesContainer.xcdatamodeld */; };
-		1B8A989F27B0778E0085D059 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A989E27B0778E0085D059 /* NotesViewModel.swift */; };
-		1B8A98A127B07B740085D059 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A98A027B07B740085D059 /* NewNoteView.swift */; };
-		1B8A98A327B082890085D059 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A98A227B082890085D059 /* UpdateNoteView.swift */; };
-		1B8A98A527B0B1510085D059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8A98A427B0B1510085D059 /* LaunchScreen.storyboard */; };
+		1B55D73727C02E40009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */; };
+		1B8ABEC727C0273200BE2DD0 /* My_NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABEC627C0273200BE2DD0 /* My_NotesApp.swift */; };
+		1B8ABEC927C0273200BE2DD0 /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABEC827C0273200BE2DD0 /* MyNotesView.swift */; };
+		1B8ABECB27C0273300BE2DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ABECA27C0273300BE2DD0 /* Assets.xcassets */; };
+		1B8ABECE27C0273300BE2DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8ABECD27C0273300BE2DD0 /* Preview Assets.xcassets */; };
+		1B8ABED627C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABED427C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld */; };
+		1B8ABED827C0284F00BE2DD0 /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */; };
+		1B8ABEDA27C0290F00BE2DD0 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */; };
+		1B8ABEDC27C029B700BE2DD0 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B8A988A27B077100085D059 /* My Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B8A988D27B077100085D059 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
-		1B8A988F27B077100085D059 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
-		1B8A989127B077100085D059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1B8A989427B077100085D059 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1B8A989C27B0774A0085D059 /* NotesContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesContainer.xcdatamodel; sourceTree = "<group>"; };
-		1B8A989E27B0778E0085D059 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
-		1B8A98A027B07B740085D059 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
-		1B8A98A227B082890085D059 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
-		1B8A98A427B0B1510085D059 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B8ABEC327C0273200BE2DD0 /* My Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B8ABEC627C0273200BE2DD0 /* My_NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_NotesApp.swift; sourceTree = "<group>"; };
+		1B8ABEC827C0273200BE2DD0 /* MyNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesView.swift; sourceTree = "<group>"; };
+		1B8ABECA27C0273300BE2DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B8ABECD27C0273300BE2DD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B8ABED527C027B800BE2DD0 /* MyNotesContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNotesContainer.xcdatamodel; sourceTree = "<group>"; };
+		1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesViewModel.swift; sourceTree = "<group>"; };
+		1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B8A988727B077100085D059 /* Frameworks */ = {
+		1B8ABEC027C0273200BE2DD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,42 +42,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B8A988127B077100085D059 = {
+		1B8ABEBA27C0273200BE2DD0 = {
 			isa = PBXGroup;
 			children = (
-				1B8A988C27B077100085D059 /* Notes */,
-				1B8A988B27B077100085D059 /* Products */,
+				1B8ABEC527C0273200BE2DD0 /* My Notes */,
+				1B8ABEC427C0273200BE2DD0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1B8A988B27B077100085D059 /* Products */ = {
+		1B8ABEC427C0273200BE2DD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B8A988A27B077100085D059 /* My Notes.app */,
+				1B8ABEC327C0273200BE2DD0 /* My Notes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B8A988C27B077100085D059 /* Notes */ = {
+		1B8ABEC527C0273200BE2DD0 /* My Notes */ = {
 			isa = PBXGroup;
 			children = (
-				1B8A989B27B0774A0085D059 /* NotesContainer.xcdatamodeld */,
-				1B8A989E27B0778E0085D059 /* NotesViewModel.swift */,
-				1B8A988D27B077100085D059 /* NotesApp.swift */,
-				1B8A988F27B077100085D059 /* NotesView.swift */,
-				1B8A98A027B07B740085D059 /* NewNoteView.swift */,
-				1B8A98A227B082890085D059 /* UpdateNoteView.swift */,
-				1B8A989127B077100085D059 /* Assets.xcassets */,
-				1B8A98A427B0B1510085D059 /* LaunchScreen.storyboard */,
-				1B8A989327B077100085D059 /* Preview Content */,
+				1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */,
+				1B8ABEC627C0273200BE2DD0 /* My_NotesApp.swift */,
+				1B8ABEC827C0273200BE2DD0 /* MyNotesView.swift */,
+				1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */,
+				1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */,
+				1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */,
+				1B8ABED427C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld */,
+				1B8ABECA27C0273300BE2DD0 /* Assets.xcassets */,
+				1B8ABECC27C0273300BE2DD0 /* Preview Content */,
 			);
-			path = Notes;
+			path = "My Notes";
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
-		1B8A989327B077100085D059 /* Preview Content */ = {
+		1B8ABECC27C0273300BE2DD0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1B8A989427B077100085D059 /* Preview Assets.xcassets */,
+				1B8ABECD27C0273300BE2DD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -85,39 +86,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B8A988927B077100085D059 /* Notes */ = {
+		1B8ABEC227C0273200BE2DD0 /* My Notes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B8A989827B077100085D059 /* Build configuration list for PBXNativeTarget "Notes" */;
+			buildConfigurationList = 1B8ABED127C0273300BE2DD0 /* Build configuration list for PBXNativeTarget "My Notes" */;
 			buildPhases = (
-				1B8A988627B077100085D059 /* Sources */,
-				1B8A988727B077100085D059 /* Frameworks */,
-				1B8A988827B077100085D059 /* Resources */,
+				1B8ABEBF27C0273200BE2DD0 /* Sources */,
+				1B8ABEC027C0273200BE2DD0 /* Frameworks */,
+				1B8ABEC127C0273200BE2DD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Notes;
-			productName = Notes;
-			productReference = 1B8A988A27B077100085D059 /* My Notes.app */;
+			name = "My Notes";
+			productName = "My Notes";
+			productReference = 1B8ABEC327C0273200BE2DD0 /* My Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1B8A988227B077100085D059 /* Project object */ = {
+		1B8ABEBB27C0273200BE2DD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					1B8A988927B077100085D059 = {
+					1B8ABEC227C0273200BE2DD0 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 1B8A988527B077100085D059 /* Build configuration list for PBXProject "Notes" */;
+			buildConfigurationList = 1B8ABEBE27C0273200BE2DD0 /* Build configuration list for PBXProject "My Notes" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,47 +126,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 1B8A988127B077100085D059;
-			productRefGroup = 1B8A988B27B077100085D059 /* Products */;
+			mainGroup = 1B8ABEBA27C0273200BE2DD0;
+			productRefGroup = 1B8ABEC427C0273200BE2DD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B8A988927B077100085D059 /* Notes */,
+				1B8ABEC227C0273200BE2DD0 /* My Notes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B8A988827B077100085D059 /* Resources */ = {
+		1B8ABEC127C0273200BE2DD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B8A98A527B0B1510085D059 /* LaunchScreen.storyboard in Resources */,
-				1B8A989527B077100085D059 /* Preview Assets.xcassets in Resources */,
-				1B8A989227B077100085D059 /* Assets.xcassets in Resources */,
+				1B55D73727C02E40009C9F7D /* LaunchScreen.storyboard in Resources */,
+				1B8ABECE27C0273300BE2DD0 /* Preview Assets.xcassets in Resources */,
+				1B8ABECB27C0273300BE2DD0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B8A988627B077100085D059 /* Sources */ = {
+		1B8ABEBF27C0273200BE2DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B8A989F27B0778E0085D059 /* NotesViewModel.swift in Sources */,
-				1B8A989D27B0774A0085D059 /* NotesContainer.xcdatamodeld in Sources */,
-				1B8A989027B077100085D059 /* NotesView.swift in Sources */,
-				1B8A98A327B082890085D059 /* UpdateNoteView.swift in Sources */,
-				1B8A98A127B07B740085D059 /* NewNoteView.swift in Sources */,
-				1B8A988E27B077100085D059 /* NotesApp.swift in Sources */,
+				1B8ABED827C0284F00BE2DD0 /* MyNotesViewModel.swift in Sources */,
+				1B8ABEC927C0273200BE2DD0 /* MyNotesView.swift in Sources */,
+				1B8ABEC727C0273200BE2DD0 /* My_NotesApp.swift in Sources */,
+				1B8ABEDC27C029B700BE2DD0 /* UpdateNoteView.swift in Sources */,
+				1B8ABEDA27C0290F00BE2DD0 /* NewNoteView.swift in Sources */,
+				1B8ABED627C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1B8A989627B077100085D059 /* Debug */ = {
+		1B8ABECF27C0273300BE2DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -226,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		1B8A989727B077100085D059 /* Release */ = {
+		1B8ABED027C0273300BE2DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -281,14 +282,14 @@
 			};
 			name = Release;
 		};
-		1B8A989927B077100085D059 /* Debug */ = {
+		1B8ABED227C0273300BE2DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"My Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,22 +305,22 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.Notes;
-				PRODUCT_NAME = "My Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1B8A989A27B077100085D059 /* Release */ = {
+		1B8ABED327C0273300BE2DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Notes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"My Notes/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,31 +336,31 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.Notes;
-				PRODUCT_NAME = "My Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B8A988527B077100085D059 /* Build configuration list for PBXProject "Notes" */ = {
+		1B8ABEBE27C0273200BE2DD0 /* Build configuration list for PBXProject "My Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B8A989627B077100085D059 /* Debug */,
-				1B8A989727B077100085D059 /* Release */,
+				1B8ABECF27C0273300BE2DD0 /* Debug */,
+				1B8ABED027C0273300BE2DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B8A989827B077100085D059 /* Build configuration list for PBXNativeTarget "Notes" */ = {
+		1B8ABED127C0273300BE2DD0 /* Build configuration list for PBXNativeTarget "My Notes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B8A989927B077100085D059 /* Debug */,
-				1B8A989A27B077100085D059 /* Release */,
+				1B8ABED227C0273300BE2DD0 /* Debug */,
+				1B8ABED327C0273300BE2DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -367,17 +368,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1B8A989B27B0774A0085D059 /* NotesContainer.xcdatamodeld */ = {
+		1B8ABED427C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1B8A989C27B0774A0085D059 /* NotesContainer.xcdatamodel */,
+				1B8ABED527C027B800BE2DD0 /* MyNotesContainer.xcdatamodel */,
 			);
-			currentVersion = 1B8A989C27B0774A0085D059 /* NotesContainer.xcdatamodel */;
-			path = NotesContainer.xcdatamodeld;
+			currentVersion = 1B8ABED527C027B800BE2DD0 /* MyNotesContainer.xcdatamodel */;
+			path = MyNotesContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1B8A988227B077100085D059 /* Project object */;
+	rootObject = 1B8ABEBB27C0273200BE2DD0 /* Project object */;
 }

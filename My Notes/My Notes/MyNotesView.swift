@@ -1,29 +1,29 @@
 //
 //  ContentView.swift
-//  Notes
+//  My Notes
 //
-//  Created by Rishik Dev on 06/02/22.
+//  Created by Rishik Dev on 18/02/22.
 //
 
 import SwiftUI
 
-struct NotesView: View
+struct MyNotesView: View
 {
-    @StateObject var notesViewModel = NotesViewModel()
+    @StateObject var myNotesViewModel = MyNotesViewModel()
     @State private var searchQuery: String = ""
     
-    var searchResults: [NotesEntity]
+    var searchResults: [MyNotesEntity]
     {
         if searchQuery == ""
         {
-            return notesViewModel.entities
+            return myNotesViewModel.entities
         }
         
         else
         {
-            return notesViewModel.entities.filter
+            return myNotesViewModel.entities.filter
             {
-                $0.body!.lowercased().contains(searchQuery.lowercased())
+                $0.noteText!.lowercased().contains(searchQuery.lowercased())
             }
         }
     }
@@ -35,13 +35,13 @@ struct NotesView: View
             List()
             {
                 ForEach(searchResults.sorted(by: { (first, second) -> Bool in
-                    first.timeSaved ?? Date() > second.timeSaved ?? Date()
+                    first.saveDateTime ?? Date() > second.saveDateTime ?? Date()
                 }))
                 {
                     entity in
-                    NotesCell(notesViewModel: notesViewModel, entity: entity)
+                    NotesCell(myNotesViewModel: myNotesViewModel, entity: entity)
                 }
-                .onDelete(perform: notesViewModel.deleteNote)
+                .onDelete(perform: myNotesViewModel.deleteNote)
             }
             .listStyle(.insetGrouped)
             .navigationTitle("My Notes")
@@ -55,7 +55,7 @@ struct NotesView: View
                 
                 ToolbarItem(placement: .navigationBarTrailing)
                 {
-                    NavigationLink(destination: NewNoteView(notesViewModel: notesViewModel))
+                    NavigationLink(destination: NewNoteView(myNotesViewModel: myNotesViewModel))
                     {
                         Image(systemName: "square.and.pencil")
                     }
@@ -67,35 +67,35 @@ struct NotesView: View
 
 struct NotesCell: View
 {
-    @StateObject var notesViewModel: NotesViewModel
-    @State var entity: NotesEntity
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    @State var entity: MyNotesEntity
     
     var body: some View
     {
         ZStack(alignment: .leading)
         {
-            NavigationLink(destination: UpdateNoteView(notesViewModel: notesViewModel, notesEntity: entity, textBody: entity.body ?? ""))
+            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: entity, textBody: entity.noteText ?? ""))
             {
                 EmptyView()
             }
             .opacity(0)
             
-            if entity.body != nil
+            if entity.noteText != nil
             {
-                if !entity.body!.isEmpty
+                if !entity.noteText!.isEmpty
                 {
                     VStack(alignment: .leading)
                     {
-                        Text(entity.body ?? "No Content")
+                        Text(entity.noteText ?? "No Content")
                             .lineLimit(1)
                             
 //                        Text(entity.timeSaved ?? "No Time")
 //                            .font(.caption2)
                         HStack
                         {
-                            Text(entity.timeSaved ?? Date(), style: .date)
+                            Text(entity.saveDateTime ?? Date(), style: .date)
                                 .font(.caption2)
-                            Text(entity.timeSaved ?? Date(), style: .time)
+                            Text(entity.saveDateTime ?? Date(), style: .time)
                                 .font(.caption2)
                         }
                     }
@@ -105,15 +105,11 @@ struct NotesCell: View
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        Group
-        {
-            NotesView()
-            NotesView()
-                .previewDevice("iPhone SE (2nd generation)")
-        }
+        MyNotesView()
     }
 }

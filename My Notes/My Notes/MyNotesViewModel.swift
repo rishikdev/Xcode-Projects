@@ -1,22 +1,22 @@
 //
-//  NotesViewModel.swift
-//  Notes
+//  MyNotesViewModel.swift
+//  My Notes
 //
-//  Created by Rishik Dev on 06/02/22.
+//  Created by Rishik Dev on 18/02/22.
 //
 
 import Foundation
 import CoreData
 
-class NotesViewModel: ObservableObject
+class MyNotesViewModel: ObservableObject
 {
-    @Published var entities: [NotesEntity] = []
+    @Published var entities: [MyNotesEntity] = []
     let notesContainer: NSPersistentContainer
     let dateTimeFormatter = DateFormatter()
     
     init()
     {
-        notesContainer = NSPersistentContainer(name: "NotesContainer")
+        notesContainer = NSPersistentContainer(name: "MyNotesContainer")
         notesContainer.loadPersistentStores
         {
             (description, error) in
@@ -31,7 +31,7 @@ class NotesViewModel: ObservableObject
     
     func fetchNotes()
     {
-        let request = NSFetchRequest<NotesEntity>(entityName: "NotesEntity")
+        let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
         
         do
         {
@@ -58,14 +58,14 @@ class NotesViewModel: ObservableObject
         }
     }
     
-    func addNote(body: String, date: Date)
+    func addNote(noteText: String, dateTime: Date)
     {
         //dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
         
-        let newNote = NotesEntity(context: notesContainer.viewContext)
-        newNote.body = body
+        let newNote = MyNotesEntity(context: notesContainer.viewContext)
+        newNote.noteText = noteText
         //newNote.timeSaved = dateTimeFormatter.string(from: date)
-        newNote.timeSaved = date
+        newNote.saveDateTime = dateTime
                         
         saveNote()
     }
@@ -94,3 +94,4 @@ class NotesViewModel: ObservableObject
         saveNote()
     }
 }
+
