@@ -9,7 +9,7 @@ I have also implemented the slide to edit feature along with the ***Edit*** butt
 This applications also supports both ***light*** as well as ***dark*** mode across all devices natively. Currently I have limited the compatibility to just the iPhones (iOS 15 and later) as I do not have an iPad to test this application on. However, support for iPads can be enabled without changing much of the program.
 
 # Screenshots (iPhone 11 Pro Light Mode)
-<p>
+<p align = "center">
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20note%20light.png" width = 45%/>
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/List%20note%20light.png" width = 45%/>
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20light.png" width = 45%/>
