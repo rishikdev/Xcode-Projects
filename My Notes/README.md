@@ -10,14 +10,14 @@ This applications also supports both ***light*** as well as ***dark*** mode acro
 
 # Screenshots (iPhone 11 Pro Light Mode)
 <p align = "center">
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20note%20light.png" width = 45%/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/List%20note%20light.png" width = 45%/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20light.png" width = 45%/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Delete%20note%20light.png" width = 45%/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20note%20light.png" width = 245/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/List%20note%20light.png" width = 245/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20light.png" width = 245/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Delete%20note%20light.png" width = 245/>
 </p>
 
 # Screenshots (iPhone 11 Pro Dark Mode)
-<p>
+<p align = "center">
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20note%20dark.png" width = 245/>
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/List%20note%20dark.png" width = 245/>
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20dark.png" width = 245/>
