@@ -1,6 +1,6 @@
 # About My Notes
 
-I have developed this application because I wanted to learn iOS development. While doing so, I learned about the ***MVVM Architecture*** in which the **UI component (view)** of the application is completely isolated from the **logic** of the application.
+I have developed this application because I wanted to learn iOS development. While doing so, I learned about the ***MVVM Architecture*** in which the **UI component (view)** of the application is completely isolated from the **logic** of the application. I also learned how to save user data locally using ***Core Data***.
 
 There are some modifiers that I have used in this application which are only supported in iOS versions 15 and above. Therefore, this application is only compatible with devices that run ***iOS 15 or later***. One such modifier is the <code>.searchable</code> modifier which makes it quite easy to implement the search functionality.
 
