@@ -1,5 +1,6 @@
 # Xcode-Projects
-This repository contains all the Xcode projects I have developed.
+I am a budding iOS developer. This repository contains all the Xcode projects I have developed.
+
 Current projects:
-  1. My Kitchen
-  2. My Notes
+- [My Kitchen](/My%20Kitchen)
+- [My Notes](/My%Notes)
