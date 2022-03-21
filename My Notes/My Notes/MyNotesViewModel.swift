@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 class MyNotesViewModel: ObservableObject
 {
@@ -32,6 +33,8 @@ class MyNotesViewModel: ObservableObject
     func fetchNotes()
     {
         let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
+        let sort = NSSortDescriptor(key: "saveDateTime", ascending: false)
+        request.sortDescriptors = [sort]
         
         do
         {
@@ -58,15 +61,16 @@ class MyNotesViewModel: ObservableObject
         }
     }
     
-    func addNote(noteText: String, dateTime: Date)
+    func addNote(noteText: String, dateTime: Date, tag: String)
     {
-        //dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
-        
         let newNote = MyNotesEntity(context: notesContainer.viewContext)
+        let id = UUID()
+        
+        newNote.id = id;
         newNote.noteText = noteText
-        //newNote.timeSaved = dateTimeFormatter.string(from: date)
         newNote.saveDateTime = dateTime
-                        
+        newNote.tag = tag
+                
         saveNote()
     }
     
@@ -87,10 +91,24 @@ class MyNotesViewModel: ObservableObject
     func deleteNote(thisIndex: IndexSet)
     {
         guard let index = thisIndex.first else { return }
-        
         let entity = entities[index]
         notesContainer.viewContext.delete(entity)
         
+        saveNote()
+    }
+    
+    func deleteNoteById(id: UUID) -> Void
+    {
+        entities.forEach
+        {
+            entity in
+            
+            if entity.id == id
+            {
+                notesContainer.viewContext.delete(entity)
+            }
+        }
+                
         saveNote()
     }
 }
