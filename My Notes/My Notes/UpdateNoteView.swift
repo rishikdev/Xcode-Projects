@@ -111,7 +111,7 @@ struct UpdateNoteView: View
             
         })
         {
-            Text("Save")
+            Text("Done")
         }
         .buttonStyle(.plain)
         .foregroundColor(.accentColor)
