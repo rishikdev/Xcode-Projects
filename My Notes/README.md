@@ -14,22 +14,20 @@ This applications also supports both ***light*** as well as ***dark*** mode acro
 
 # Screenshots (iPhone 11 Pro Light Mode)
 <p align = "center">
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Adding%20New%20Note%20Light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Homescreen%20Light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Context%20Menu%20Light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filter%20Modal%20Light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filtered%20Result%20Light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Delete%20note%20light.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20light.png" width = 245/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20Note%20Light.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Homescreen%20Light.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Context%20Menu%20Light.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filter%20Modal%20Light.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filtered%20Result%20Light.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20Light.png" width = 250/>
 </p>
 
 # Screenshots (iPhone 11 Pro Dark Mode)
 <p align = "center">
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Adding%20New%20Note%20Dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Homescreen%20Dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Context%20Menu%20Dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filter%20Modal%20Dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filtered%20Result%20Dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Delete%20note%20dark.png" width = 245/>
-  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20note%20dark.png" width = 245/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/New%20Note%20Dark.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Homescreen%20Dark.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Context%20Menu%20Dark.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filter%20Modal%20Dark.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Filtered%20Result%20Dark.png" width = 250/>
+  <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Screenshots/iPhone%2011%20Pro/Search%20Dark.png" width = 250/>
 </p>
