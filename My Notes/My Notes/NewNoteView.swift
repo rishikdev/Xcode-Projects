@@ -7,29 +7,66 @@
 
 import SwiftUI
 
+// MARK: - NewNoteView
+
 struct NewNoteView: View
 {
     @Environment(\.presentationMode) var presentationMode
-    @StateObject var myNotesViewModel: MyNotesViewModel
-    @State var myNotesEntity: MyNotesEntity?
     
-    @State var noteId: UUID
-    @State var textBody: String = ""
-    @State var selectedTag: String = "⚪️"
+    // This variable keeps track of when the application is dismissed
+    @Environment(\.scenePhase) var scenePhase
+    
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    
+    @State var myNotesEntity: MyNotesEntity?
+    @State var noteID: UUID
+    @State var noteText: String = ""
+    @State var noteTag: String = "⚪️"
     
     @State var showTags: Bool = false
     @State var animateButton: Bool = false
     @State var firstSave: Bool = true
     @State var manualSaveButtonPress: Bool = false
+    @State var isDeleted: Bool = false
 
     @FocusState private var textBodyIsFocused: Bool
-        
+      
+    // MARK: - NewNoteView boody
+    
     var body: some View
     {
         VStack
         {
-            TextEditor(text: $textBody)
+            TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
+        }
+        .onChange(of: scenePhase)
+        {
+            newPhase in
+            
+            if(newPhase == .active && isDeleted)
+            {
+                noteID = UUID()
+                myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                isDeleted = false
+            }
+            
+            if(newPhase == .inactive)
+            {
+                if(isTextAppropriate())
+                {
+                    withAnimation
+                    {
+                        saveButtonPressed()
+                    }
+                }
+                
+                else
+                {
+                    isDeleted = true
+                    myNotesViewModel.deleteNoteByID(noteID: noteID)
+                }
+            }
         }
         .onAppear
         {
@@ -37,14 +74,14 @@ struct NewNoteView: View
             {
                 if(firstSave)
                 {
-                    myNotesEntity = myNotesViewModel.addNote(id: noteId, noteText: textBody, dateTime: Date(), tag: selectedTag)
+                    myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteText: noteText, noteDate: Date(), noteTag: noteTag)
                     firstSave = false
                 }
             }
         }
         .onDisappear
         {
-            if(!textBody.isEmpty)
+            if(isTextAppropriate())
             {
                 withAnimation
                 {
@@ -56,7 +93,7 @@ struct NewNoteView: View
             {
                 withAnimation
                 {
-                    myNotesViewModel.deleteNoteById(id: noteId)
+                    myNotesViewModel.deleteNoteByID(noteID: noteID)
                 }
             }
         }
@@ -85,6 +122,8 @@ struct NewNoteView: View
         }
     }
     
+    // MARK: - saveButton
+    
     var saveButton: some View
     {
         Button(action: {
@@ -100,6 +139,8 @@ struct NewNoteView: View
         .disabled(isTextAppropriate() ? false : true)
     }
     
+    // MARK: - saveTime
+    
     var saveTime: some View
     {
         VStack
@@ -109,6 +150,8 @@ struct NewNoteView: View
         .foregroundColor(Color.gray)
         .font(.caption)
     }
+    
+    // MARK: - filterButtonKeyboard
     
     var filterButtonKeyboard: some View
     {
@@ -126,12 +169,12 @@ struct NewNoteView: View
                 {
                     tag in
                     
-                    if tag != selectedTag
+                    if tag != noteTag
                     {
                         Button(action: {
                             withAnimation(.spring())
                             {
-                                selectedTag = tag
+                                noteTag = tag
 
                                 showTags.toggle()
                                 animateButton.toggle()
@@ -150,6 +193,8 @@ struct NewNoteView: View
         }
     }
     
+    // MARK: - dismissKeyboardButton
+    
     var dismissKeyboardButton: some View
     {
         Button(action: { textBodyIsFocused = false })
@@ -160,13 +205,15 @@ struct NewNoteView: View
         .foregroundColor(.accentColor)
     }
     
+    // MARK: - saveButtonPressed()
+    
     func saveButtonPressed()
     {
         if isTextAppropriate()
         {
-            myNotesEntity!.noteText = textBody
-            myNotesEntity!.tag = selectedTag
-            myNotesEntity!.saveDateTime = Date()
+            myNotesEntity!.noteText = noteText
+            myNotesEntity!.noteTag = noteTag
+            myNotesEntity!.noteDate = Date()
             
             myNotesViewModel.updateNote()
             
@@ -181,9 +228,11 @@ struct NewNoteView: View
         }
     }
     
+    // MARK: - isTextAppropriate()
+    
     func isTextAppropriate() -> Bool
     {
-        if textBody.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
         {
             return false
         }
@@ -193,6 +242,8 @@ struct NewNoteView: View
             return true
         }
     }
+    
+    // MARK: - tagButton()
     
     @ViewBuilder
     func tagButton() -> some View
@@ -208,7 +259,7 @@ struct NewNoteView: View
         
         label:
         {
-            Text(selectedTag)
+            Text(noteTag)
                 .font(.largeTitle)
                 .scaleEffect(animateButton ? 1.1 : 1)
         }
@@ -225,7 +276,7 @@ struct NewNoteView_Previews: PreviewProvider
         {
             VStack
             {
-                NewNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), noteId: UUID())
+                NewNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), noteID: UUID())
             }
         }
     }

@@ -9,6 +9,8 @@ import Foundation
 import CoreData
 import SwiftUI
 
+// MARK: - MyNotesViewModel class
+
 class MyNotesViewModel: ObservableObject
 {
     @Published var notesEntities: [MyNotesEntity] = []
@@ -16,6 +18,8 @@ class MyNotesViewModel: ObservableObject
     let myNotesContainer: NSPersistentContainer
     
     let dateTimeFormatter = DateFormatter()
+    
+    // MARK: - init()
     
     init()
     {
@@ -33,10 +37,12 @@ class MyNotesViewModel: ObservableObject
         fetchNotes()
     }
     
+    // MARK: - fetchNotes()
+    
     func fetchNotes()
     {
         let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
-        let sort = NSSortDescriptor(key: "saveDateTime", ascending: false)
+        let sort = NSSortDescriptor(key: "noteDate", ascending: false)
         request.sortDescriptors = [sort]
         
         do
@@ -49,6 +55,8 @@ class MyNotesViewModel: ObservableObject
             print("ERROR FETCHING DATA: \(error)")
         }
     }
+    
+    // MARK: - saveNote
     
     func saveNote()
     {
@@ -64,20 +72,23 @@ class MyNotesViewModel: ObservableObject
         }
     }
     
-    func addNote(id: UUID, noteText: String, dateTime: Date, tag: String) -> MyNotesEntity
+    // MARK: - addNote()
+    
+    func addNote(noteID: UUID, noteText: String, noteDate: Date, noteTag: String) -> MyNotesEntity
     {
         let newNote = MyNotesEntity(context: myNotesContainer.viewContext)
         
-        newNote.id = id;
+        newNote.noteID = noteID;
         newNote.noteText = noteText
-        newNote.saveDateTime = dateTime
-        newNote.tag = tag
-        newNote.folderID = UUID()
+        newNote.noteDate = noteDate
+        newNote.noteTag = noteTag
         
         saveNote()
         
         return newNote
     }
+    
+    // MARK: - updateNote()
     
     func updateNote()
     {
@@ -93,6 +104,8 @@ class MyNotesViewModel: ObservableObject
         }
     }
     
+    // MARK: - deleteNote()
+    
     func deleteNote(thisIndex: IndexSet)
     {
         guard let index = thisIndex.first else { return }
@@ -102,14 +115,17 @@ class MyNotesViewModel: ObservableObject
         saveNote()
     }
     
-    func deleteNoteById(id: UUID) -> Void
+    // MARK: - deleteNoteByID()
+    
+    func deleteNoteByID(noteID: UUID) -> Void
     {
         notesEntities.forEach
         {
             entity in
             
-            if entity.id == id
+            if entity.noteID == noteID
             {
+                print("---- deleted \(noteID) ----")
                 myNotesContainer.viewContext.delete(entity)
             }
         }

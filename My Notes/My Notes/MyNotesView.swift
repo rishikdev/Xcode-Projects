@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: - MyNotesView
+
 struct MyNotesView: View
 {
     @StateObject var myNotesViewModel = MyNotesViewModel()
@@ -21,7 +23,7 @@ struct MyNotesView: View
         {
             return myNotesViewModel.notesEntities.filter
             {
-                filter.currentFilter.contains($0.tag!)
+                filter.currentFilter.contains($0.noteTag!)
             }
         }
         
@@ -29,10 +31,12 @@ struct MyNotesView: View
         {
             return myNotesViewModel.notesEntities.filter
             {
-                $0.noteText!.lowercased().contains(searchQuery.lowercased()) && filter.currentFilter.contains($0.tag!)
+                $0.noteText!.lowercased().contains(searchQuery.lowercased()) && filter.currentFilter.contains($0.noteTag!)
             }
         }
     }
+    
+    // MARK: - MyNotesView body
     
     var body: some View
     {
@@ -73,9 +77,11 @@ struct MyNotesView: View
                 {
                     notesCount_NewNoteButton
                 }
-        }
+            }
         }
     }
+    
+    // MARK: - editButton
     
     var editButton: some View
     {
@@ -83,6 +89,8 @@ struct MyNotesView: View
             .buttonStyle(.plain)
             .foregroundColor(.accentColor)
     }
+    
+    //MARK: - filterButton
     
     var filterButton: some View
     {
@@ -101,6 +109,8 @@ struct MyNotesView: View
         .foregroundColor(.accentColor)
     }
     
+    // MARK: - notesCount_NewNoteButton
+    
     var notesCount_NewNoteButton: some View
     {
         Group
@@ -117,7 +127,7 @@ struct MyNotesView: View
             
             HStack
             {
-                NavigationLink(destination: NewNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: MyNotesEntity(), noteId: UUID()))
+                NavigationLink(destination: NewNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: MyNotesEntity(), noteID: UUID()))
                 {
                     Image(systemName: "square.and.pencil")
                 }
@@ -128,6 +138,8 @@ struct MyNotesView: View
     }
 }
 
+// MARK: - NotesCell
+
 struct NotesCell: View
 {
     @StateObject var myNotesViewModel: MyNotesViewModel
@@ -137,7 +149,7 @@ struct NotesCell: View
     {        
         ZStack(alignment: .leading)
         {
-            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, textBody: noteEntity.noteText ?? "", selectedTag: noteEntity.tag ?? "⚪️"))
+            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"))
             {
                 EmptyView()
             }
@@ -151,23 +163,21 @@ struct NotesCell: View
                     {
                         VStack(alignment: .leading)
                         {
-                            Text(noteEntity.noteText ?? "No Content")
+                            Text(noteEntity.noteText?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Content")
                                 .lineLimit(1)
                                 
-    //                        Text(entity.timeSaved ?? "No Time")
-    //                            .font(.caption2)
                             HStack
                             {
-                                Text(noteEntity.saveDateTime ?? Date(), style: .date)
+                                Text(noteEntity.noteDate ?? Date(), style: .date)
                                     .font(.caption2)
-                                Text(noteEntity.saveDateTime ?? Date(), style: .time)
+                                Text(noteEntity.noteDate ?? Date(), style: .time)
                                     .font(.caption2)
                             }
                         }
                         
                         Spacer()
                         
-                        Text(noteEntity.tag!)
+                        Text(noteEntity.noteTag!)
                     }
                 }
             }
@@ -175,10 +185,14 @@ struct NotesCell: View
     }
 }
 
+// MARK: - ContextMenuItems
+
 struct ContextMenuItems: View
 {
     @StateObject var myNotesVViewModel: MyNotesViewModel
     @State var myNotesEntity: MyNotesEntity
+    
+    // MARK: - ContextMenuItems body
     
     var body: some View
     {
@@ -203,10 +217,12 @@ struct ContextMenuItems: View
         }
     }
     
+    // MARK: - assignTag()
+    
     func assignTag(tag: String)
     {
-        myNotesEntity.tag = tag
-        myNotesEntity.saveDateTime = Date()
+        myNotesEntity.noteTag = tag
+        myNotesEntity.noteDate = Date()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7)
         {
@@ -214,6 +230,8 @@ struct ContextMenuItems: View
         }
     }
 }
+
+// MARK: - FilterButtonDot
 
 struct FilterButtonDot: View
 {

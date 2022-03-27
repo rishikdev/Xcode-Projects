@@ -7,15 +7,22 @@
 
 import SwiftUI
 
+// MARK: - UpdateNoteView
+
 struct UpdateNoteView: View
 {
     @Environment(\.presentationMode) var presentationMode
     
+    // This variable keeps track of when the application is dismissed
+    @Environment(\.scenePhase) var scenePhase
+    
     @StateObject var myNotesViewModel: MyNotesViewModel
     
     @State var myNotesEntity: MyNotesEntity
-    @State var textBody: String
-    @State var selectedTag: String
+    @State var noteText: String
+    @State var originalNoteText: String
+    @State var noteTag: String
+    @State var originalNoteTag: String
     @State var showTags: Bool = false
     @State var animateButton: Bool = false
     @State private var showConfirmationDialog = false
@@ -25,17 +32,45 @@ struct UpdateNoteView: View
     
     let dateTimeFormatter = DateFormatter()
     
+    // MARK: - UpdateNoteView body
+    
     var body: some View
     {
         VStack
         {
-            TextEditor(text: $textBody)
+            TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
         }
         .padding(.horizontal)
+        .onChange(of: scenePhase)
+        {
+            newPhase in
+            
+            if(newPhase == .inactive)
+            {
+                if(originalNoteText != noteText || originalNoteTag != noteTag)
+                {
+                    updateButtonPressed()
+                }
+            }
+        }
         .onDisappear
         {
-            updateButtonPressed()
+            if(originalNoteText != noteText || originalNoteTag != noteTag)
+            {
+                if(noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0)
+                {
+                    withAnimation
+                    {
+                        myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                    }
+                }
+                
+                else
+                {
+                    updateButtonPressed()
+                }
+            }
         }
         .toolbar()
         {
@@ -66,6 +101,8 @@ struct UpdateNoteView: View
         }
     }
     
+    // MARK: - updateButton
+    
     var updateButon: some View
     {
         Button(action: {
@@ -81,23 +118,27 @@ struct UpdateNoteView: View
         .disabled(isTextAppropriate() ? false : true)
     }
     
+    // MARK: - updateTime
+    
     var updateTime: some View
     {
         VStack
         {
-            Text(myNotesEntity.saveDateTime ?? Date(), style: .date)
-            Text(myNotesEntity.saveDateTime ?? Date(), style: .time)
+            Text(myNotesEntity.noteDate ?? Date(), style: .date)
+            Text(myNotesEntity.noteDate ?? Date(), style: .time)
         }
         .foregroundColor(Color.gray)
         .font(.caption)
     }
+    
+    // MARK: - deleteButton
     
     var deleteButton: some View
     {
         HStack
         {
             Button(action: {
-                myNotesViewModel.deleteNoteById(id: myNotesEntity.id!)
+                myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
             })
             {
                 Image(systemName: "trash")
@@ -108,6 +149,8 @@ struct UpdateNoteView: View
             Spacer()
         }
     }
+    
+    // MARK: - filterButtonKeyboard
     
     var filterButtonKeyboard: some View
     {
@@ -125,12 +168,12 @@ struct UpdateNoteView: View
                 {
                     tag in
                     
-                    if tag != selectedTag
+                    if tag != noteTag
                     {
                         Button(action: {
                             withAnimation(.spring())
                             {
-                                selectedTag = tag
+                                noteTag = tag
 
                                 showTags.toggle()
                                 animateButton.toggle()
@@ -149,6 +192,8 @@ struct UpdateNoteView: View
         }
     }
     
+    // MARK: - dismissKeyboardButton
+    
     var dismissKeyboardButton: some View
     {
         Button(action: { textBodyIsFocused = false })
@@ -159,15 +204,17 @@ struct UpdateNoteView: View
         .foregroundColor(.accentColor)
     }
     
+    // MARK: - updateButtonPressed()
+    
     func updateButtonPressed()
     {
         if isTextAppropriate()
         {
             dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
             
-            myNotesEntity.noteText = textBody
-            myNotesEntity.tag = selectedTag
-            myNotesEntity.saveDateTime = Date()
+            myNotesEntity.noteText = noteText
+            myNotesEntity.noteTag = noteTag
+            myNotesEntity.noteDate = Date()
             
             myNotesViewModel.updateNote()
             
@@ -182,9 +229,11 @@ struct UpdateNoteView: View
         }
     }
     
+    // MARK: - isTextAppropriate()
+    
     func isTextAppropriate() -> Bool
     {
-        if textBody.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
         {
             return false
         }
@@ -194,6 +243,8 @@ struct UpdateNoteView: View
             return true
         }
     }
+    
+    // MARK: - tagButton()
     
     @ViewBuilder
     func tagButton() -> some View
@@ -209,7 +260,7 @@ struct UpdateNoteView: View
         
         label:
         {
-            Text(selectedTag)
+            Text(noteTag)
                 .font(.largeTitle)
                 .scaleEffect(animateButton ? 1.1 : 1)
         }
