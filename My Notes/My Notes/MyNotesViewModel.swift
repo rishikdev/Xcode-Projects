@@ -5,18 +5,21 @@
 //  Created by Rishik Dev on 18/02/22.
 //
 
+import LocalAuthentication
 import Foundation
 import CoreData
 import SwiftUI
 
 // MARK: - MyNotesViewModel class
 
-class MyNotesViewModel: ObservableObject
+@MainActor class MyNotesViewModel: ObservableObject
 {
     @Published var notesEntities: [MyNotesEntity] = []
+    @StateObject var quickSettings = QuickSettingsClass()
+    
+    @Published var isAuthenticated: Bool = false
     
     let myNotesContainer: NSPersistentContainer
-    
     let dateTimeFormatter = DateFormatter()
     
     // MARK: - init()
@@ -131,6 +134,46 @@ class MyNotesViewModel: ObservableObject
         }
                 
         saveNote()
+    }
+    
+    // MARK: - authenticate()
+    
+    func authenticate()
+    {
+        let context = LAContext()
+        var error: NSError?
+        
+        if(context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error))
+        {
+            let touchIDReason = "Touch ID is required to unlock your data"
+            
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: touchIDReason)
+            {
+                success, authenticationError in
+                
+                // Biometric authentication successful
+                if(success)
+                {
+                    Task
+                    {
+                        @MainActor in
+                        self.isAuthenticated = true
+                    }
+                }
+                
+                // Biometric authentication failed
+                else
+                {
+                    // Do some error handling here
+                }
+            }
+        }
+        
+        // No biometric system found
+        else
+        {
+            // Do some error handling here
+        }
     }
 }
 

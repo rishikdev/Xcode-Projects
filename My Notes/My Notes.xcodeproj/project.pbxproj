@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B289C0927F5F7DF0007C026 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B289C0827F5F7DF0007C026 /* SettingsSheet.swift */; };
 		1B55D73727C02E40009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */; };
 		1B691CD427E5A66E00BAC6BD /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B691CD327E5A66E00BAC6BD /* FilterSheet.swift */; };
 		1B8ABEC727C0273200BE2DD0 /* My_NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABEC627C0273200BE2DD0 /* My_NotesApp.swift */; };
@@ -17,10 +18,11 @@
 		1B8ABED827C0284F00BE2DD0 /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */; };
 		1B8ABEDA27C0290F00BE2DD0 /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */; };
 		1B8ABEDC27C029B700BE2DD0 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */; };
-		1BBEEBE427E69482000F46E1 /* FilterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBEEBE327E69482000F46E1 /* FilterClass.swift */; };
+		1BBEEBE427E69482000F46E1 /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBEEBE327E69482000F46E1 /* QuickSettingsClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B289C0827F5F7DF0007C026 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
 		1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B691CD327E5A66E00BAC6BD /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
 		1B8ABEC327C0273200BE2DD0 /* My Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +34,7 @@
 		1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesViewModel.swift; sourceTree = "<group>"; };
 		1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
-		1BBEEBE327E69482000F46E1 /* FilterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterClass.swift; sourceTree = "<group>"; };
+		1BBEEBE327E69482000F46E1 /* QuickSettingsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSettingsClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,11 @@
 				1B55D73627C02E40009C9F7D /* LaunchScreen.storyboard */,
 				1B8ABEC627C0273200BE2DD0 /* My_NotesApp.swift */,
 				1B8ABEC827C0273200BE2DD0 /* MyNotesView.swift */,
+				1B289C0827F5F7DF0007C026 /* SettingsSheet.swift */,
 				1B8ABED927C0290F00BE2DD0 /* NewNoteView.swift */,
 				1B8ABEDB27C029B700BE2DD0 /* UpdateNoteView.swift */,
 				1B8ABED727C0284F00BE2DD0 /* MyNotesViewModel.swift */,
-				1BBEEBE327E69482000F46E1 /* FilterClass.swift */,
+				1BBEEBE327E69482000F46E1 /* QuickSettingsClass.swift */,
 				1B691CD327E5A66E00BAC6BD /* FilterSheet.swift */,
 				1B8ABED427C027B800BE2DD0 /* MyNotesContainer.xcdatamodeld */,
 				1B8ABECA27C0273300BE2DD0 /* Assets.xcassets */,
@@ -160,9 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BBEEBE427E69482000F46E1 /* FilterClass.swift in Sources */,
+				1BBEEBE427E69482000F46E1 /* QuickSettingsClass.swift in Sources */,
 				1B8ABED827C0284F00BE2DD0 /* MyNotesViewModel.swift in Sources */,
 				1B8ABEC927C0273200BE2DD0 /* MyNotesView.swift in Sources */,
+				1B289C0927F5F7DF0007C026 /* SettingsSheet.swift in Sources */,
 				1B691CD427E5A66E00BAC6BD /* FilterSheet.swift in Sources */,
 				1B8ABEC727C0273200BE2DD0 /* My_NotesApp.swift in Sources */,
 				1B8ABEDC27C029B700BE2DD0 /* UpdateNoteView.swift in Sources */,
@@ -178,6 +182,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -239,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -301,6 +307,7 @@
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,11 +320,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes-Organised-Simple";
+				PRODUCT_NAME = "My Notes";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,6 +339,7 @@
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,11 +352,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SRRSS.My-Notes-Organised-Simple";
+				PRODUCT_NAME = "My Notes";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

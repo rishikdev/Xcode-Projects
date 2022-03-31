@@ -5,36 +5,19 @@
 //  Created by Rishik Dev on 18/02/22.
 //
 
+import LocalAuthentication
 import SwiftUI
 
 // MARK: - MyNotesView
 
 struct MyNotesView: View
 {
-    @StateObject var myNotesViewModel = MyNotesViewModel()
-    @StateObject var filter = FilterClass()
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    @StateObject var quickSettings: QuickSettingsClass
     
     @State private var searchQuery: String = ""
     @State private var showFilters: Bool = false
-    
-    var searchResults: [MyNotesEntity]
-    {
-        if searchQuery == ""
-        {
-            return myNotesViewModel.notesEntities.filter
-            {
-                filter.currentFilter.contains($0.noteTag!)
-            }
-        }
-        
-        else
-        {
-            return myNotesViewModel.notesEntities.filter
-            {
-                $0.noteText!.lowercased().contains(searchQuery.lowercased()) && filter.currentFilter.contains($0.noteTag!)
-            }
-        }
-    }
+    @State private var showSettings: Bool = false
     
     // MARK: - MyNotesView body
     
@@ -68,6 +51,7 @@ struct MyNotesView: View
                     editButton
                 }
                 
+                
                 ToolbarItemGroup(placement: .navigationBarTrailing)
                 {
                     filterButton
@@ -75,8 +59,29 @@ struct MyNotesView: View
                 
                 ToolbarItemGroup(placement: .bottomBar)
                 {
-                    notesCount_NewNoteButton
+                    settingsButton_notesCount_NewNoteButton
                 }
+            }
+        }
+    }
+    
+    // MARK: - searchResults
+    
+    var searchResults: [MyNotesEntity]
+    {
+        if searchQuery == ""
+        {
+            return myNotesViewModel.notesEntities.filter
+            {
+                quickSettings.currentFilter.contains($0.noteTag!)
+            }
+        }
+        
+        else
+        {
+            return myNotesViewModel.notesEntities.filter
+            {
+                $0.noteText!.lowercased().contains(searchQuery.lowercased()) && quickSettings.currentFilter.contains($0.noteTag!)
             }
         }
     }
@@ -99,23 +104,34 @@ struct MyNotesView: View
         })
         {
             Image(systemName: "line.3.horizontal.decrease.circle")
-                .overlay(FilterButtonDot(filter: filter))
+                .overlay(FilterButtonDot(filter: quickSettings))
         }
         .sheet(isPresented: $showFilters)
         {
-            FilterSheet(filter: filter)
+            FilterSheet(quickSettings: quickSettings)
         }
         .buttonStyle(.plain)
         .foregroundColor(.accentColor)
     }
     
-    // MARK: - notesCount_NewNoteButton
+    // MARK: - settings_Button_notesCount_NewNoteButton
     
-    var notesCount_NewNoteButton: some View
+    var settingsButton_notesCount_NewNoteButton: some View
     {
         Group
         {
-            Text("")
+            Button(action: {
+                showSettings.toggle()
+            })
+            {
+                Image(systemName: "gear")
+            }
+            .sheet(isPresented: $showSettings)
+            {
+                SettingsSheet()
+            }
+            .buttonStyle(.plain)
+            .foregroundColor(.accentColor)
             
             Spacer()
             
@@ -235,7 +251,7 @@ struct ContextMenuItems: View
 
 struct FilterButtonDot: View
 {
-    @StateObject var filter: FilterClass
+    @StateObject var filter: QuickSettingsClass
     
     var body: some View
     {
@@ -250,6 +266,6 @@ struct ContentView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        MyNotesView(myNotesViewModel: MyNotesViewModel())
+        MyNotesView(myNotesViewModel: MyNotesViewModel(), quickSettings: QuickSettingsClass())
     }
 }

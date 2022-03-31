@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-class FilterClass: ObservableObject
+class QuickSettingsClass: ObservableObject
 {
     @AppStorage("currentFilter") var currentFilter = "🔴🟢🔵🟡⚪️"
+    @AppStorage("isUsingBiometric") var isUsingBiometric: Bool = false
 }

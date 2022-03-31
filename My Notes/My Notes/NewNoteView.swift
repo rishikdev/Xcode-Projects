@@ -268,16 +268,16 @@ struct NewNoteView: View
     }
 }
 
-struct NewNoteView_Previews: PreviewProvider
-{
-    static var previews: some View
-    {
-        NavigationView
-        {
-            VStack
-            {
-                NewNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), noteID: UUID())
-            }
-        }
-    }
-}
+//struct NewNoteView_Previews: PreviewProvider
+//{
+//    static var previews: some View
+//    {
+//        NavigationView
+//        {
+//            VStack
+//            {
+//                NewNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), noteID: UUID())
+//            }
+//        }
+//    }
+//}

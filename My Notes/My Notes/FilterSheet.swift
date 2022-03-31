@@ -11,7 +11,7 @@ struct FilterSheet: View
 {
     @Environment(\.colorScheme) var colourScheme
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var filter: FilterClass
+    @ObservedObject var quickSettings: QuickSettingsClass
     
     var body: some View
     {
@@ -37,7 +37,7 @@ struct FilterSheet: View
                     buttonText in
                     
                     Button(action: {
-                        filter.currentFilter = String(buttonText.split(separator: " ")[0])
+                        quickSettings.currentFilter = String(buttonText.split(separator: " ")[0])
                         dismiss()
                     })
                     {
@@ -46,7 +46,7 @@ struct FilterSheet: View
                             Text(buttonText)
                             Spacer()
                             
-                            if(filter.currentFilter == String(buttonText.split(separator: " ")[0]))
+                            if(quickSettings.currentFilter == String(buttonText.split(separator: " ")[0]))
                             {
                                 Image(systemName: "checkmark")
                             }
@@ -55,7 +55,7 @@ struct FilterSheet: View
                 }
                               
                 Button(action: {
-                    filter.currentFilter = "🔴🟢🔵🟡⚪️"
+                    quickSettings.currentFilter = "🔴🟢🔵🟡⚪️"
                     dismiss()
                 })
                 {
@@ -65,7 +65,7 @@ struct FilterSheet: View
                         
                         Spacer()
                         
-                        if(filter.currentFilter == "🔴🟢🔵🟡⚪️")
+                        if(quickSettings.currentFilter == "🔴🟢🔵🟡⚪️")
                         {
                             Image(systemName: "checkmark")
                         }
@@ -78,10 +78,10 @@ struct FilterSheet: View
     }
 }
 
-struct FilterModal_Previews: PreviewProvider
+struct FilterSheet_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        FilterSheet(filter: FilterClass())
+        FilterSheet(quickSettings: QuickSettingsClass())
     }
 }
