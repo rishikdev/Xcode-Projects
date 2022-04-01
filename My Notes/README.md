@@ -10,6 +10,10 @@ Users can also add ***coloured tags*** to their notes. These tags can be used to
 
 I have also added ***context menu*** using the <code>.contextMenu</code> modifier to this application using which the users can change the tags associated with any note without going into the edit view.
 
+In the latest update, I have added ***biometric authentication*** using <code>.deviceOwnerAuthentication</code>. The users can opt-in to use this feature from the newly added ***Settings*** sheet found on the bottom left of the application's home screen. This makes the data stored in this application more secured. On devices that do not have Touch ID or Face ID, the users can use their Passcode to unlock the application.
+
+In addition to biometric authentication, I have also provided links to the [application's website](https://rishikdev.github.io/MyNotes), [privacy policies](https://rishikdev.github.io/MyNotes/PrivacyPolicy), and [support website](https://rishikdev.github.io/MyNotes/ContactUs) should the users have any trouble using the application.
+
 This applications also supports both ***light*** as well as ***dark*** mode across all devices natively. Currently I have limited the compatibility to just the iPhones (iOS 15 and later) as I do not have an iPad to test this application on. However, support for iPads can be enabled without changing much of the program.
 
 # Screenshots (iPhone 11 Pro Light Mode)
