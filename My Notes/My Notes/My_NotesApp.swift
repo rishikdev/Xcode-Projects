@@ -91,10 +91,12 @@ struct My_NotesApp: App
                         {
                             Image(systemName: "info.circle")
                         }
-                        .alert("If you are unable to unlock My Notes, please make sure that you have enabled Touch ID or Face ID in your device's Settings app.", isPresented: $showAlert)
+                        .alert("If you are unable to unlock My Notes, please make sure that Touch ID or Face ID is enabled in your device's Settings app.", isPresented: $showAlert)
                         {
                             Button("OK", role: .cancel, action: { })
                         }
+                        .padding()
+                        
                     }
                     .font(.title2)
                     .buttonStyle(.plain)

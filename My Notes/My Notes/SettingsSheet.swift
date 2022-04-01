@@ -21,7 +21,7 @@ struct SettingsSheet: View
         {
             Form
             {
-                Section(header: Text("Authentication"),footer: Text("To use biometric authentication (Touch ID or Face ID), please enable them in your device's Settings app."))
+                Section(header: Text("Authentication"),footer: Text("To use biometric authentication (Touch ID or Face ID), please make sure that Touch ID or Face ID is enabled in your device's Settings app."))
                 {
                     Toggle("Use Biometric Authentication", isOn: $quickSettings.isUsingBiometric)
                 }
