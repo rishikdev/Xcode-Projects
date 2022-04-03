@@ -1,4 +1,4 @@
-# About My Notes
+# About [My Notes](https://apps.apple.com/us/app/my-notes-secure-organised/id1616417517?ign-itscg=30200&ign-itsct=apps_box_badge)
 
 I have developed this application because I wanted to learn iOS development. While doing so, I learned about the ***MVVM Architecture*** in which the **UI component (view)** of the application is completely isolated from the **logic** of the application. I also learned how to save user data locally using ***Core Data***.
 
@@ -15,6 +15,8 @@ In the latest update, I have added ***biometric authentication*** using <code>.d
 In addition to biometric authentication, I have also provided links to the [application's website](https://rishikdev.github.io/MyNotes), [privacy policies](https://rishikdev.github.io/MyNotes/PrivacyPolicy), and [support website](https://rishikdev.github.io/MyNotes/ContactUs) should the users have any trouble using the application.
 
 This applications also supports both ***light*** as well as ***dark*** mode across all devices natively. Currently I have limited the compatibility to just the iPhones (iOS 15 and later) as I do not have an iPad to test this application on. However, support for iPads can be enabled without changing much of the program.
+
+You can [download](https://apps.apple.com/us/app/my-notes-secure-organised/id1616417517?ign-itscg=30200&ign-itsct=apps_box_badge) the application from the App Store!
 
 # Screenshots (iPhone 11 Pro Light Mode)
 <p align = "center">
