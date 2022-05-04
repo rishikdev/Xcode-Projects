@@ -31,7 +31,7 @@ You get **one point for each correct emoticon** you identify or recall. However,
   <img src="https://user-images.githubusercontent.com/82426895/166585346-f3f728b6-61e5-4506-b3c5-24e916e48022.png" width=225/>
   <img src="https://user-images.githubusercontent.com/82426895/166585349-e7e036e0-aa1b-407a-bc2c-c00824081bee.png" width=225/>
   <img src="https://user-images.githubusercontent.com/82426895/166585352-6e057b33-4e78-4730-9b6f-982a50fa545c.png" width=225/>
-  <img src="https://user-images.githubusercontent.com/82426895/166602887-a9ba6e2d-84fa-43fe-bf3e-13c57f8657bf.mp4" width=225/>
+  <img src="https://github.com/rishikdev/Images/blob/main/Remember%20Me%3F/Score%20Light.gif" width=225/>
 </p>
 
 #### Dark Mode
@@ -39,7 +39,7 @@ You get **one point for each correct emoticon** you identify or recall. However,
   <img src="https://user-images.githubusercontent.com/82426895/166585442-eeaa539c-4a8b-40ce-9d26-b3812d3462d2.png" width=225/>
   <img src="https://user-images.githubusercontent.com/82426895/166585446-52024c88-532d-4db6-bf52-28e9a373db40.png" width=225/>
   <img src="https://user-images.githubusercontent.com/82426895/166585450-541d36a9-c5ea-4559-9a9c-87bfb6f21f7b.png" width=225/>
-  <img src="https://user-images.githubusercontent.com/82426895/166602953-1f0da9d7-db8d-4bf8-9ecd-9ea45ce509b8.mp4" width=225/>
+  <img src="https://github.com/rishikdev/Images/blob/main/Remember%20Me%3F/Score%20Dark.gif" width=225/>
 </p>
 
 ## Where to find Remember Me?
