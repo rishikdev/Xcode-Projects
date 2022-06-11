@@ -63,6 +63,7 @@ struct MyNotesView: View
                 }
             }
         }
+        .navigationViewStyle(.stack)
     }
     
     // MARK: - searchResults
@@ -81,7 +82,7 @@ struct MyNotesView: View
         {
             return myNotesViewModel.notesEntities.filter
             {
-                $0.noteText!.lowercased().contains(searchQuery.lowercased()) && quickSettings.currentFilter.contains($0.noteTag!)
+                ($0.noteTitle!.lowercased().contains(searchQuery.lowercased()) || $0.noteText!.lowercased().contains(searchQuery.lowercased())) && quickSettings.currentFilter.contains($0.noteTag!)
             }
         }
     }
@@ -165,34 +166,38 @@ struct NotesCell: View
     {        
         ZStack(alignment: .leading)
         {
-            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"))
+            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, noteTitle: noteEntity.noteTitle ?? "", originalNoteTitle: noteEntity.noteTitle ?? "", noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"))
             {
                 EmptyView()
             }
             .opacity(0)
             
-            if noteEntity.noteText != nil
+            if noteEntity.noteText != nil && noteEntity.noteTitle != nil
             {
-                if !noteEntity.noteText!.isEmpty
+                if !noteEntity.noteText!.isEmpty || !noteEntity.noteTitle!.isEmpty
                 {
                     HStack
                     {
                         VStack(alignment: .leading)
                         {
-                            Text(noteEntity.noteText?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Content")
+                            Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Title")
                                 .lineLimit(1)
-                                
+                                .font(.body.bold())
+                                                        
                             HStack
                             {
                                 Text(noteEntity.noteDate ?? Date(), style: .date)
-                                    .font(.caption2)
-                                Text(noteEntity.noteDate ?? Date(), style: .time)
-                                    .font(.caption2)
+//                                Text(noteEntity.noteDate ?? Date(), style: .time)
+                                
+                                Text(noteEntity.noteText?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Content")
+                                    .lineLimit(1)
                             }
+                            .font(.callout)
+                            .foregroundColor(Color(UIColor.systemGray))
                         }
                         
                         Spacer()
-                        
+                                                
                         Text(noteEntity.noteTag!)
                     }
                 }

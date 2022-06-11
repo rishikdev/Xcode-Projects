@@ -19,6 +19,8 @@ struct UpdateNoteView: View
     @StateObject var myNotesViewModel: MyNotesViewModel
     
     @State var myNotesEntity: MyNotesEntity
+    @State var noteTitle: String
+    @State var originalNoteTitle: String
     @State var noteText: String
     @State var originalNoteText: String
     @State var noteTag: String
@@ -38,6 +40,12 @@ struct UpdateNoteView: View
     {
         VStack
         {
+            TextField("Title", text: $noteTitle)
+                .font(.largeTitle.bold())
+                .focused($textBodyIsFocused)
+            
+            Divider()
+            
             TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
         }
@@ -48,7 +56,7 @@ struct UpdateNoteView: View
             
             if(newPhase == .inactive)
             {
-                if(originalNoteText != noteText || originalNoteTag != noteTag)
+                if(originalNoteTitle != noteTitle || originalNoteText != noteText || originalNoteTag != noteTag)
                 {
                     updateButtonPressed()
                 }
@@ -56,7 +64,7 @@ struct UpdateNoteView: View
         }
         .onDisappear
         {
-            if(originalNoteText != noteText || originalNoteTag != noteTag)
+            if(originalNoteTitle != noteTitle || originalNoteText != noteText || originalNoteTag != noteTag)
             {
                 if(noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0)
                 {
@@ -212,6 +220,7 @@ struct UpdateNoteView: View
         {
             dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
             
+            myNotesEntity.noteTitle = noteTitle
             myNotesEntity.noteText = noteText
             myNotesEntity.noteTag = noteTag
             myNotesEntity.noteDate = Date()
@@ -233,7 +242,7 @@ struct UpdateNoteView: View
     
     func isTextAppropriate() -> Bool
     {
-        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 && noteTitle.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
         {
             return false
         }

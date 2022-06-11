@@ -20,6 +20,7 @@ struct NewNoteView: View
     
     @State var myNotesEntity: MyNotesEntity?
     @State var noteID: UUID
+    @State var noteTitle: String = ""
     @State var noteText: String = ""
     @State var noteTag: String = "⚪️"
     
@@ -37,6 +38,12 @@ struct NewNoteView: View
     {
         VStack
         {
+            TextField("Title", text: $noteTitle)
+                .font(.largeTitle.bold())
+                .focused($textBodyIsFocused)
+            
+            Divider()
+            
             TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
         }
@@ -47,7 +54,7 @@ struct NewNoteView: View
             if(newPhase == .active && isDeleted)
             {
                 noteID = UUID()
-                myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
                 isDeleted = false
             }
             
@@ -74,7 +81,7 @@ struct NewNoteView: View
             {
                 if(firstSave)
                 {
-                    myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                    myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
                     firstSave = false
                 }
             }
@@ -211,6 +218,7 @@ struct NewNoteView: View
     {
         if isTextAppropriate()
         {
+            myNotesEntity!.noteTitle = noteTitle
             myNotesEntity!.noteText = noteText
             myNotesEntity!.noteTag = noteTag
             myNotesEntity!.noteDate = Date()
@@ -232,7 +240,7 @@ struct NewNoteView: View
     
     func isTextAppropriate() -> Bool
     {
-        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
+        if noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 && noteTitle.trimmingCharacters(in: .whitespacesAndNewlines).count == 0
         {
             return false
         }

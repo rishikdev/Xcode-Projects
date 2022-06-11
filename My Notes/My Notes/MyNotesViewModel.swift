@@ -16,7 +16,7 @@ import SwiftUI
 {
     @Published var notesEntities: [MyNotesEntity] = []
     @StateObject var quickSettings = QuickSettingsClass()
-    
+    @AppStorage("firstLaunch") var firstLaunch: Bool = true
     @Published var isAuthenticated: Bool = false
     
     let myNotesContainer: NSPersistentContainer
@@ -77,11 +77,12 @@ import SwiftUI
     
     // MARK: - addNote()
     
-    func addNote(noteID: UUID, noteText: String, noteDate: Date, noteTag: String) -> MyNotesEntity
+    func addNote(noteID: UUID, noteTitle: String, noteText: String, noteDate: Date, noteTag: String) -> MyNotesEntity
     {
         let newNote = MyNotesEntity(context: myNotesContainer.viewContext)
         
-        newNote.noteID = noteID;
+        newNote.noteID = noteID
+        newNote.noteTitle = noteTitle
         newNote.noteText = noteText
         newNote.noteDate = noteDate
         newNote.noteTag = noteTag
@@ -128,7 +129,6 @@ import SwiftUI
             
             if entity.noteID == noteID
             {
-                print("---- deleted \(noteID) ----")
                 myNotesContainer.viewContext.delete(entity)
             }
         }

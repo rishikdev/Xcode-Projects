@@ -24,89 +24,98 @@ struct My_NotesApp: App
     {
         WindowGroup
         {
-            // If the user has toggled Biometric authentication on, then check for authentication, otherwise skip the authentication part.
-            if(quickSettings.isUsingBiometric)
+            if(myNotesViewModel.firstLaunch)
             {
-                if(myNotesViewModel.isAuthenticated)
+                FirstLaunchView(myNotesViewModel: myNotesViewModel)
+            }
+            
+            else
+            {
+                // If the user has toggled Biometric authentication on, then check for authentication, otherwise skip the authentication part.
+                if(quickSettings.isUsingBiometric)
                 {
-                    ZStack
+                    if(myNotesViewModel.isAuthenticated)
                     {
-                        MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
-                            .overlay
-                            {
-                                Rectangle()
-                                    .opacity(opacity)
-                                    .ignoresSafeArea()
-                                    .animation(.easeInOut, value: opacity)
-                                    .transition(.scale)
-                            }
-                            .onChange(of: scenePhase)
-                            {
-                                newPhase in
-                                
-                                if(newPhase == .active)
-                                {
-                                    opacity = 0
-                                }
-                                
-                                else if(newPhase == .inactive)
-                                {
-                                    opacity = 1
-                                }
-                                
-                                else if(newPhase == .background)
-                                {
-                                    opacity = 1
-                                    myNotesViewModel.isAuthenticated = false
-                                }
-                            }
-                        
-                        if(opacity > 0)
+                        ZStack
                         {
-                            withAnimation
+                            MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
+                                .overlay
+                                {
+                                    Rectangle()
+                                        .opacity(opacity)
+                                        .ignoresSafeArea()
+                                        .animation(.easeInOut, value: opacity)
+                                        .transition(.scale)
+                                }
+                                .onChange(of: scenePhase)
+                                {
+                                    newPhase in
+                                    
+                                    if(newPhase == .active)
+                                    {
+                                        opacity = 0
+                                    }
+                                    
+                                    else if(newPhase == .inactive)
+                                    {
+                                        opacity = 1
+                                    }
+                                    
+                                    else if(newPhase == .background)
+                                    {
+                                        opacity = 1
+                                        myNotesViewModel.isAuthenticated = false
+                                    }
+                                }
+                            
+                            if(opacity > 0)
                             {
-                                Image(systemName: "lock.shield.fill")
-                                    .font(.largeTitle)
-                                    .animation(.easeInOut, value: opacity)
-                                    .foregroundColor(.gray)
+                                withAnimation
+                                {
+                                    Image(systemName: "lock.shield.fill")
+                                        .font(.largeTitle)
+                                        .animation(.easeInOut, value: opacity)
+                                        .foregroundColor(.gray)
+                                }
                             }
                         }
+                    }
+                    
+                    else
+                    {
+                        VStack
+                        {
+                            Spacer()
+                            
+                            Button("Unlock My Notes")
+                            {
+                                myNotesViewModel.authenticate()
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: { showAlert = true })
+                            {
+                                Image(systemName: "info.circle")
+                            }
+                            .alert("If you are unable to unlock My Notes, please make sure that Touch ID or Face ID is enabled in your device's Settings app.", isPresented: $showAlert)
+                            {
+                                Button("OK", role: .cancel, action: { })
+                            }
+                            .padding()
+                            
+                        }
+                        .font(.title2)
+                        .buttonStyle(.plain)
+                        .foregroundColor(.accentColor)
                     }
                 }
                 
                 else
                 {
-                    VStack
-                    {
-                        Spacer()
-                        
-                        Button("Unlock My Notes")
-                        {
-                            myNotesViewModel.authenticate()
-                        }
-                        
-                        Spacer()
-                        
-                        Button(action: { showAlert = true })
-                        {
-                            Image(systemName: "info.circle")
-                        }
-                        .alert("If you are unable to unlock My Notes, please make sure that Touch ID or Face ID is enabled in your device's Settings app.", isPresented: $showAlert)
-                        {
-                            Button("OK", role: .cancel, action: { })
-                        }
-                        .padding()
-                        
-                    }
-                    .font(.title2)
-                    .buttonStyle(.plain)
-                    .foregroundColor(.accentColor)
+                    MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
+                        .transition(.scale)
                 }
-            }
-            
-            else
-            {
-                MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
             }
         }
     }
