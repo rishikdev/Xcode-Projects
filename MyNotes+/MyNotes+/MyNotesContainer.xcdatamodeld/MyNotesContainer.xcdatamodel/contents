@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MyNotesEntity" representedClassName="MyNotesEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="noteDate" attributeType="Date" defaultDateTimeInterval="669872820" usesScalarValueType="NO"/>
+        <attribute name="noteID" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="noteTag" optional="YES" attributeType="String"/>
+        <attribute name="noteText" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="MyNotesEntity" positionX="-63" positionY="27" width="128" height="89"/>
+    </elements>
+</model>
