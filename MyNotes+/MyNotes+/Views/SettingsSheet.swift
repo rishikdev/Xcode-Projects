@@ -14,6 +14,7 @@ struct SettingsSheet: View
     @Environment(\.openURL) var openURL
     
     @StateObject var quickSettings = QuickSettingsClass()
+    @StateObject var myNotesViewMode = MyNotesViewModel()
     
     var body: some View
     {
@@ -24,6 +25,37 @@ struct SettingsSheet: View
                 Section(header: Text("Authentication"),footer: Text("To use biometric authentication (Touch ID or Face ID), please make sure that Touch ID or Face ID is enabled in your device's Settings app."))
                 {
                     Toggle("Use Biometric Authentication", isOn: $quickSettings.isUsingBiometric)
+                }
+                .foregroundColor(colourScheme == .light ? .black : .white)
+                
+                Section(header: Text("View Style"))
+                {
+                    VStack
+                    {
+                        Picker("View Style", selection: quickSettings.$viewStylePreference)
+                        {
+                            ForEach(ViewStyleEnum.allCases, id: \.self)
+                            {
+                                Image(systemName: $0.imageName)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                        
+                        HStack
+                        {
+                            Spacer()
+                            
+                            Text("List")
+                            
+                            Spacer()
+                            Spacer()
+                            
+                            Text("Grid")
+                            
+                            Spacer()
+                        }
+                        .font(.callout)
+                    }
                 }
                 .foregroundColor(colourScheme == .light ? .black : .white)
                 
@@ -48,12 +80,34 @@ struct SettingsSheet: View
                     }
                 }
                 
-                Section(header: Text("iCloud Synchronisation"), footer: Text("Make sure you are signed in to your iCloud account on all devices, and Background App Refresh is turned on under Settings -> My Notes Plus."))
+                Section(header: Text("iCloud Synchronisation"), footer: Text("Make sure you are signed in to your iCloud account on all devices, and Background App Refresh is turned on. You can find this option in Settings -> My Notes Plus."))
                 {
                     
                 }
                 .foregroundColor(colourScheme == .light ? .black : .white)
             }
+            .onChange(of: quickSettings.isUsingBiometric)
+            {
+                isNoteLocked in
+//                myNotesViewMode.isAppLocked = isNoteLocked
+            }
+        }
+    }
+}
+
+enum ViewStyleEnum: String, CaseIterable
+{
+    case list = "List"
+    case grid = "Grid"
+    
+    var imageName: String
+    {
+        switch self
+        {
+            case .list:
+                return "list.dash"
+            case .grid:
+                return "square.grid.2x2"
         }
     }
 }
@@ -63,6 +117,5 @@ struct SettingsView_Previews: PreviewProvider
     static var previews: some View
     {
         SettingsSheet()
-            
     }
 }

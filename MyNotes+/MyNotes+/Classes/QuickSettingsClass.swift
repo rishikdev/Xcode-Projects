@@ -12,4 +12,5 @@ class QuickSettingsClass: ObservableObject
 {
     @AppStorage("currentFilter") var currentFilter = "🔴🟢🔵🟡⚪️"
     @AppStorage("isUsingBiometric") var isUsingBiometric: Bool = false
+    @AppStorage("viewStylePreference") var viewStylePreference: ViewStyleEnum = .list
 }

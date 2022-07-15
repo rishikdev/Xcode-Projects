@@ -2,8 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>INIntentsSupported</key>
+	<array>
+		<string>ConfigurationIntent</string>
+		<string>MediumWidgetConfigurationIntent</string>
+		<string>LargeWidgetConfigurationIntent</string>
+	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>ConfigurationIntent</string>
+		<string>LargeWidgetConfigurationIntent</string>
+		<string>MediumWidgetConfigurationIntent</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>fetch</string>
+		<string>processing</string>
 		<string>remote-notification</string>
 	</array>
 </dict>

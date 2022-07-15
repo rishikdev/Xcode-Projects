@@ -29,7 +29,7 @@ struct NewNoteView: View
     @State var firstSave: Bool = true
     @State var manualSaveButtonPress: Bool = false
     @State var isDeleted: Bool = false
-
+    
     @FocusState private var textBodyIsFocused: Bool
       
     // MARK: - NewNoteView boody
@@ -54,7 +54,9 @@ struct NewNoteView: View
             if(newPhase == .active && isDeleted)
             {
                 noteID = UUID()
+                
                 myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                
                 isDeleted = false
             }
             
@@ -82,6 +84,7 @@ struct NewNoteView: View
                 if(firstSave)
                 {
                     myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                    
                     firstSave = false
                 }
             }
@@ -155,7 +158,7 @@ struct NewNoteView: View
             Text(Date(), style: .time)
         }
         .foregroundColor(Color.gray)
-        .font(.caption)
+        .font(.caption2)
     }
     
     // MARK: - filterButtonKeyboard
@@ -222,6 +225,7 @@ struct NewNoteView: View
             myNotesEntity!.noteText = noteText
             myNotesEntity!.noteTag = noteTag
             myNotesEntity!.noteDate = Date()
+            myNotesEntity!.noteCardColour = "NoteCardYellowColour"
             
             myNotesViewModel.updateNote()
             

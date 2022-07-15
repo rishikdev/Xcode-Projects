@@ -25,12 +25,16 @@ struct UpdateNoteView: View
     @State var originalNoteText: String
     @State var noteTag: String
     @State var originalNoteTag: String
+    
     @State var showTags: Bool = false
     @State var animateButton: Bool = false
     @State private var showConfirmationDialog = false
     @State var manualUpdateButtonPress: Bool = false
     
     @FocusState private var textBodyIsFocused: Bool
+    
+    @State private var isShareSheetPresented: Bool = false
+    @State private var isConfirmDeletePresented: Bool = false
     
     let dateTimeFormatter = DateFormatter()
     
@@ -48,6 +52,7 @@ struct UpdateNoteView: View
             
             TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
+                .padding(.bottom)
         }
         .padding(.horizontal)
         .onChange(of: scenePhase)
@@ -66,7 +71,7 @@ struct UpdateNoteView: View
         {
             if(originalNoteTitle != noteTitle || originalNoteText != noteText || originalNoteTag != noteTag)
             {
-                if(noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0)
+                if(!isTextAppropriate())
                 {
                     withAnimation
                     {
@@ -79,6 +84,10 @@ struct UpdateNoteView: View
                     updateButtonPressed()
                 }
             }
+        }
+        .sheet(isPresented: $isShareSheetPresented)
+        {
+            ShareSheetView(activityItems: [noteTitle + "\n" + "\n" + noteText])
         }
         .toolbar()
         {
@@ -94,7 +103,7 @@ struct UpdateNoteView: View
             
             ToolbarItem(placement: .bottomBar)
             {
-                deleteButton
+                deleteButton_shareButton
             }
             
             ToolbarItemGroup(placement: .keyboard)
@@ -136,25 +145,40 @@ struct UpdateNoteView: View
             Text(myNotesEntity.noteDate ?? Date(), style: .time)
         }
         .foregroundColor(Color.gray)
-        .font(.caption)
+        .font(.caption2)
     }
     
-    // MARK: - deleteButton
+    // MARK: - deleteButton_shareButton
     
-    var deleteButton: some View
+    var deleteButton_shareButton: some View
     {
         HStack
         {
-            Button(action: {
-                myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+            Button(role: .destructive, action: {
+                self.isConfirmDeletePresented = true
             })
             {
                 Image(systemName: "trash")
+            }
+            .confirmationDialog("Are you sure?", isPresented: $isConfirmDeletePresented, titleVisibility: .visible)
+            {
+                Button("Delete", role: .destructive, action: {
+                    myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                })
             }
             .buttonStyle(.plain)
             .foregroundColor(.accentColor)
             
             Spacer()
+            
+            Button(action: {
+                self.isShareSheetPresented.toggle()
+            })
+            {
+                Image(systemName: "square.and.arrow.up")
+            }
+            .buttonStyle(.plain)
+            .foregroundColor(.accentColor)
         }
     }
     
@@ -225,7 +249,10 @@ struct UpdateNoteView: View
             myNotesEntity.noteTag = noteTag
             myNotesEntity.noteDate = Date()
             
-            myNotesViewModel.updateNote()
+            withAnimation
+            {
+                myNotesViewModel.updateNote()
+            }
             
             textBodyIsFocused = !manualUpdateButtonPress
             
@@ -275,6 +302,33 @@ struct UpdateNoteView: View
         }
         .buttonStyle(.plain)
         .scaleEffect(animateButton ? 1.1 : 1)
+    }
+}
+
+// MARK: - ShareSheetView
+
+private struct ShareSheetView: UIViewControllerRepresentable
+{
+    typealias Callback = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
+    
+    let activityItems: [Any]
+    let applicationActivities: [UIActivity]? = nil
+    let excludedActivityTypes: [UIActivity.ActivityType]? = nil
+    let callback: Callback? = nil
+        
+    func makeUIViewController(context: Context) -> UIActivityViewController
+    {
+        let controller = UIActivityViewController( activityItems: activityItems, applicationActivities: applicationActivities)
+        
+        controller.excludedActivityTypes = excludedActivityTypes
+        controller.completionWithItemsHandler = callback
+        
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context)
+    {
+            // nothing to do here
     }
 }
 

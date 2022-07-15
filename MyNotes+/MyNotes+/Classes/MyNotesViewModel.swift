@@ -9,17 +9,22 @@ import LocalAuthentication
 import Foundation
 import CoreData
 import SwiftUI
+import WidgetKit
 
 // MARK: - MyNotesViewModel class
 
 @MainActor class MyNotesViewModel: ObservableObject
 {
-    @Published var notesEntities: [MyNotesEntity] = []
-    @StateObject var quickSettings = QuickSettingsClass()
-    @AppStorage("firstLaunch") var firstLaunch: Bool = true
-    @Published var isAuthenticated: Bool = false
+    @Published var noteEntities: [MyNotesEntity] = []
+    @Published var sharedDataArray: [SharedData] = []
     
-    let myNotesContainer: NSPersistentContainer
+    @AppStorage("firstLaunch") var firstLaunch: Bool = true
+//    @AppStorage("isAppLocked") var isAppLocked: Bool = true
+    
+    @Published var isAuthenticated: Bool = false
+    @Published var quickSettings = QuickSettingsClass()
+    
+    let myNotesContainer: NSPersistentCloudKitContainer
     let dateTimeFormatter = DateFormatter()
     
     // MARK: - init()
@@ -27,6 +32,13 @@ import SwiftUI
     init()
     {
         myNotesContainer = NSPersistentCloudKitContainer(name: "MyNotesContainer")
+        
+        // This is creating a new database. check widget's provider
+        let storeURL = URL.storeURL(for: "group.SRRSS.MyNotesPlus", databaseName: "MyNotesContainer")
+        let storeDescription = NSPersistentStoreDescription(url: storeURL)
+        storeDescription.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(containerIdentifier: "iCloud.SRRSS.MyNotesPlus")
+        myNotesContainer.persistentStoreDescriptions = [storeDescription]
+        
         myNotesContainer.loadPersistentStores
         {
             (description, error) in
@@ -43,7 +55,7 @@ import SwiftUI
     }
     
     // MARK: - fetchNotes()
-    
+
     func fetchNotes()
     {
         let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
@@ -52,7 +64,25 @@ import SwiftUI
         
         do
         {
-            notesEntities = try myNotesContainer.viewContext.fetch(request)
+            noteEntities = try myNotesContainer.viewContext.fetch(request)
+            sharedDataArray.removeAll()
+            
+            for entity in noteEntities
+            {
+                let noteID = entity.noteID!
+                let noteTitle = entity.noteTitle!
+                let noteText = entity.noteText!
+                let noteTag = entity.noteTag!
+                let noteDate = entity.noteDate!
+                let noteCardColour = entity.noteCardColour!
+                let isNoteLocked = quickSettings.isUsingBiometric
+                
+                let sharedData = SharedData(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteTag: noteTag, noteCardColour: noteCardColour, noteDate: noteDate, isNoteLocked: isNoteLocked)
+                
+                sharedDataArray.append(sharedData)
+            }
+            
+            WidgetCenter.shared.reloadAllTimelines()
         }
         
         catch let error
@@ -61,7 +91,7 @@ import SwiftUI
         }
     }
     
-    // MARK: - saveNote
+    // MARK: - saveNote()
     
     func saveNote()
     {
@@ -88,6 +118,7 @@ import SwiftUI
         newNote.noteText = noteText
         newNote.noteDate = noteDate
         newNote.noteTag = noteTag
+        newNote.noteCardColour = "NoteCardYellowColour"
         
         saveNote()
         
@@ -115,7 +146,7 @@ import SwiftUI
     func deleteNote(thisIndex: IndexSet)
     {
         guard let index = thisIndex.first else { return }
-        let entity = notesEntities[index]
+        let entity = noteEntities[index]
         myNotesContainer.viewContext.delete(entity)
         
         saveNote()
@@ -125,7 +156,7 @@ import SwiftUI
     
     func deleteNoteByID(noteID: UUID) -> Void
     {
-        notesEntities.forEach
+        noteEntities.forEach
         {
             entity in
             
@@ -147,7 +178,7 @@ import SwiftUI
         
         if(context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error))
         {
-            let touchIDReason = "Touch ID is required to unlock your data"
+            let touchIDReason = "Touch ID is required to unlock your data!"
             
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: touchIDReason)
             {
@@ -167,6 +198,7 @@ import SwiftUI
                 else
                 {
                     // Do some error handling here
+                    print("BIOMETRIC AUTH FAILED")
                 }
             }
         }
@@ -175,7 +207,23 @@ import SwiftUI
         else
         {
             // Do some error handling here
+            print("BIOMETRIC NOT FOUND")
+            isAuthenticated = true
         }
     }
 }
 
+// MARK: - URL extension for sharing data between main app and its extension
+
+public extension URL
+{
+    static func storeURL(for appGroup: String, databaseName: String) -> URL
+    {
+        guard let fileContainer = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: appGroup) else
+        {
+            fatalError("Shared file container could not be created.")
+        }
+        
+        return fileContainer.appendingPathComponent("\(databaseName).sqlite")
+    }
+}

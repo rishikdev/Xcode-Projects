@@ -38,7 +38,7 @@ struct MyNotesApp: App
                     {
                         ZStack
                         {
-                            MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
+                            MyNotesView(myNotesViewModel: myNotesViewModel, quickSettings: quickSettings)
                                 .overlay
                                 {
                                     Rectangle()
@@ -113,7 +113,7 @@ struct MyNotesApp: App
                 
                 else
                 {
-                    MyNotesView(myNotesViewModel: myNotesViewModel,quickSettings: quickSettings)
+                    MyNotesView(myNotesViewModel: myNotesViewModel, quickSettings: quickSettings)
                         .transition(.scale)
                 }
             }
