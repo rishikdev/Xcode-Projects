@@ -31,6 +31,7 @@
 		5C3CB287288057FE007E6E7A /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
 		5C3CB28828805826007E6E7A /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5C415A612877359400FD75ED /* MotionManagerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C415A602877359400FD75ED /* MotionManagerClass.swift */; };
+		5C4A55562884C2F400A3D7CE /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A55542884C2F400A3D7CE /* NewNoteView.swift */; };
 		5C65DDF62855495500FDB05C /* MyNotes_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF52855495500FDB05C /* MyNotes_App.swift */; };
 		5C65DDF82855495500FDB05C /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF72855495500FDB05C /* MyNotesView.swift */; };
 		5C65DDFA2855495600FDB05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
@@ -62,6 +63,30 @@
 		5C6CA79C2878DCC90049D625 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79B2878DCC90049D625 /* MediumWidgetView.swift */; };
 		5C6CA79E2878DCD00049D625 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */; };
 		5C6CA7A02878E03A0049D625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
+		5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */; };
+		5CAC04DD2885C58A00C8B4B2 /* NotesCellGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */; };
+		5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */; };
+		5CAC04E12885DA6500C8B4B2 /* MyNotesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */; };
+		5CC5D89C288219EF00808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D89B288219EF00808D53 /* Assets.xcassets */; };
+		5CC5D8A2288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CC5D8A1288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CC5D8A9288219EF00808D53 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8A8288219EF00808D53 /* NoteView.swift */; };
+		5CC5D8AB288219EF00808D53 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8AA288219EF00808D53 /* NotificationController.swift */; };
+		5CC5D8AD288219EF00808D53 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8AC288219EF00808D53 /* NotificationView.swift */; };
+		5CC5D8AF288219EF00808D53 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8AE288219EF00808D53 /* ComplicationController.swift */; };
+		5CC5D8B1288219EF00808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D8B0288219EF00808D53 /* Assets.xcassets */; };
+		5CC5D8B4288219EF00808D53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D8B3288219EF00808D53 /* Preview Assets.xcassets */; };
+		5CC5D8B9288219EF00808D53 /* My Notes Plus.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CC5D899288219EE00808D53 /* My Notes Plus.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */; };
+		5CC5D8C228821BC100808D53 /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */; };
+		5CC5D8C428821BC100808D53 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
+		5CC5D8C528821BC100808D53 /* MyNotes_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF52855495500FDB05C /* MyNotes_App.swift */; };
+		5CC5D8C628821BC100808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
+		5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
+		5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8C828821C3E00808D53 /* MyNotesView.swift */; };
+		5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
+		5CC5D8CD28821EAB00808D53 /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */; };
+		5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */; };
+		5CC5D8D42882530900808D53 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5D8D32882530900808D53 /* CloudKit.framework */; };
 		5CD6C8272880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
 		5CD6C8282880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
 		5CD6C82C2880B945001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
@@ -103,6 +128,20 @@
 			remoteGlobalIDString = 5C65DDF12855495500FDB05C;
 			remoteInfo = "MyNotes+";
 		};
+		5CC5D8A3288219EF00808D53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C65DDEA2855495500FDB05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CC5D8A0288219EF00808D53;
+			remoteInfo = "MyNotesPlusAppleWatchApp WatchKit Extension";
+		};
+		5CC5D8B7288219EF00808D53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C65DDEA2855495500FDB05C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CC5D898288219EE00808D53;
+			remoteInfo = MyNotesPlusAppleWatchApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,6 +153,28 @@
 			files = (
 				5C3CB27C287F86A5007E6E7A /* MyNotesPlusIntents.appex in Embed App Extensions */,
 				5C2B21072878938D007E041F /* MyNotesPlusWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC5D8962882195E00808D53 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5CC5D8B9288219EF00808D53 /* My Notes Plus.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC5D8BD288219EF00808D53 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CC5D8A2288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +200,7 @@
 		5C415A602877359400FD75ED /* MotionManagerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerClass.swift; sourceTree = "<group>"; };
 		5C415A692877828000FD75ED /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		5C415A6B2877828000FD75ED /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5C4A55542884C2F400A3D7CE /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		5C65DDF22855495500FDB05C /* My Notes +.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes +.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65DDF52855495500FDB05C /* MyNotes_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotes_App.swift; sourceTree = "<group>"; };
 		5C65DDF72855495500FDB05C /* MyNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesView.swift; sourceTree = "<group>"; };
@@ -171,6 +233,25 @@
 		5C6CA79B2878DCC90049D625 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		5C6F9DAA2875CE7F0023CDF7 /* MyNotesContainer V3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyNotesContainer V3.xcdatamodel"; sourceTree = "<group>"; };
+		5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellListView.swift; sourceTree = "<group>"; };
+		5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellGridView.swift; sourceTree = "<group>"; };
+		5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuItems.swift; sourceTree = "<group>"; };
+		5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesSectionView.swift; sourceTree = "<group>"; };
+		5CC5D899288219EE00808D53 /* My Notes Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC5D89B288219EF00808D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CC5D8A1288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyNotesPlusAppleWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC5D8A8288219EF00808D53 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		5CC5D8AA288219EF00808D53 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5CC5D8AC288219EF00808D53 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		5CC5D8AE288219EF00808D53 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5CC5D8B0288219EF00808D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CC5D8B3288219EF00808D53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CC5D8B5288219EF00808D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC5D8B6288219EF00808D53 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5CC5D8C828821C3E00808D53 /* MyNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesView.swift; sourceTree = "<group>"; };
+		5CC5D8D12882527E00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MyNotesPlusAppleWatchApp WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		5CC5D8D22882529400808D53 /* MyNotesPlusAppleWatchApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNotesPlusAppleWatchApp.entitlements; sourceTree = "<group>"; };
+		5CC5D8D32882530900808D53 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = MediumWidgetIntents.intentdefinition; sourceTree = "<group>"; };
 		5CD6C82F2880C816001722B3 /* LargeWidgetIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LargeWidgetIntent.intentdefinition; sourceTree = "<group>"; };
 		5CD6C8332880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetIntentTimelineProvider.swift; sourceTree = "<group>"; };
@@ -215,6 +296,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC5D89E288219EF00808D53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC5D8D42882530900808D53 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +397,9 @@
 		5C415A622877814400FD75ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5CAC04DB2885C55B00C8B4B2 /* MainInterface */,
 				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
 				5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */,
-				5C65DDF72855495500FDB05C /* MyNotesView.swift */,
 				5C65DE2428554A7B00FDB05C /* NewNoteView.swift */,
 				5C65DE2028554A7B00FDB05C /* UpdateNoteView.swift */,
 				5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */,
@@ -338,6 +427,8 @@
 				5C65DE0F2855495600FDB05C /* MyNotes+UITests */,
 				5C2B20FC2878938C007E041F /* MyNotesPlusWidget */,
 				5C3CB276287F86A5007E6E7A /* MyNotesPlusIntents */,
+				5CC5D89A288219EE00808D53 /* MyNotesPlusAppleWatchApp */,
+				5CC5D8A5288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension */,
 				5C65DDF32855495500FDB05C /* Products */,
 				5C65DE3728554E9000FDB05C /* Frameworks */,
 			);
@@ -351,6 +442,8 @@
 				5C65DE0C2855495600FDB05C /* MyNotes+UITests.xctest */,
 				5C2B20F92878938C007E041F /* MyNotesPlusWidgetExtension.appex */,
 				5C3CB273287F86A5007E6E7A /* MyNotesPlusIntents.appex */,
+				5CC5D899288219EE00808D53 /* My Notes Plus.app */,
+				5CC5D8A1288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,6 +492,7 @@
 		5C65DE3728554E9000FDB05C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CC5D8D32882530900808D53 /* CloudKit.framework */,
 				5C65DE3828554E9000FDB05C /* CloudKit.framework */,
 				5C415A692877828000FD75ED /* WidgetKit.framework */,
 				5C415A6B2877828000FD75ED /* SwiftUI.framework */,
@@ -413,6 +507,53 @@
 				5C6CA78F2878CA1E0049D625 /* MyNotesPlusWidgetView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5CAC04DB2885C55B00C8B4B2 /* MainInterface */ = {
+			isa = PBXGroup;
+			children = (
+				5C65DDF72855495500FDB05C /* MyNotesView.swift */,
+				5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */,
+				5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */,
+				5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */,
+				5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */,
+			);
+			path = MainInterface;
+			sourceTree = "<group>";
+		};
+		5CC5D89A288219EE00808D53 /* MyNotesPlusAppleWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5D8D22882529400808D53 /* MyNotesPlusAppleWatchApp.entitlements */,
+				5CC5D89B288219EF00808D53 /* Assets.xcassets */,
+			);
+			path = MyNotesPlusAppleWatchApp;
+			sourceTree = "<group>";
+		};
+		5CC5D8A5288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5D8D12882527E00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.entitlements */,
+				5CC5D8C828821C3E00808D53 /* MyNotesView.swift */,
+				5C4A55542884C2F400A3D7CE /* NewNoteView.swift */,
+				5CC5D8A8288219EF00808D53 /* NoteView.swift */,
+				5CC5D8AA288219EF00808D53 /* NotificationController.swift */,
+				5CC5D8AC288219EF00808D53 /* NotificationView.swift */,
+				5CC5D8AE288219EF00808D53 /* ComplicationController.swift */,
+				5CC5D8B0288219EF00808D53 /* Assets.xcassets */,
+				5CC5D8B5288219EF00808D53 /* Info.plist */,
+				5CC5D8B6288219EF00808D53 /* PushNotificationPayload.apns */,
+				5CC5D8B2288219EF00808D53 /* Preview Content */,
+			);
+			path = "MyNotesPlusAppleWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5CC5D8B2288219EF00808D53 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CC5D8B3288219EF00808D53 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,12 +601,14 @@
 				5C65DDEF2855495500FDB05C /* Frameworks */,
 				5C65DDF02855495500FDB05C /* Resources */,
 				5C415A7C2877828100FD75ED /* Embed App Extensions */,
+				5CC5D8962882195E00808D53 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5C2B21062878938D007E041F /* PBXTargetDependency */,
 				5C3CB27B287F86A5007E6E7A /* PBXTargetDependency */,
+				5CC5D8B8288219EF00808D53 /* PBXTargetDependency */,
 			);
 			name = "MyNotes+";
 			packageProductDependencies = (
@@ -510,6 +653,40 @@
 			productReference = 5C65DE0C2855495600FDB05C /* MyNotes+UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5CC5D898288219EE00808D53 /* MyNotesPlusAppleWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC5D8BE288219EF00808D53 /* Build configuration list for PBXNativeTarget "MyNotesPlusAppleWatchApp" */;
+			buildPhases = (
+				5CC5D897288219EE00808D53 /* Resources */,
+				5CC5D8BD288219EF00808D53 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CC5D8A4288219EF00808D53 /* PBXTargetDependency */,
+			);
+			name = MyNotesPlusAppleWatchApp;
+			productName = MyNotesPlusAppleWatchApp;
+			productReference = 5CC5D899288219EE00808D53 /* My Notes Plus.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5CC5D8A0288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC5D8BA288219EF00808D53 /* Build configuration list for PBXNativeTarget "MyNotesPlusAppleWatchApp WatchKit Extension" */;
+			buildPhases = (
+				5CC5D89D288219EF00808D53 /* Sources */,
+				5CC5D89E288219EF00808D53 /* Frameworks */,
+				5CC5D89F288219EF00808D53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyNotesPlusAppleWatchApp WatchKit Extension";
+			productName = "MyNotesPlusAppleWatchApp WatchKit Extension";
+			productReference = 5CC5D8A1288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -537,6 +714,12 @@
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 5C65DDF12855495500FDB05C;
 					};
+					5CC5D898288219EE00808D53 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					5CC5D8A0288219EF00808D53 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 				};
 			};
 			buildConfigurationList = 5C65DDED2855495500FDB05C /* Build configuration list for PBXProject "MyNotes+" */;
@@ -559,6 +742,8 @@
 				5C65DE0B2855495600FDB05C /* MyNotes+UITests */,
 				5C2B20F82878938C007E041F /* MyNotesPlusWidgetExtension */,
 				5C3CB272287F86A5007E6E7A /* MyNotesPlusIntents */,
+				5CC5D898288219EE00808D53 /* MyNotesPlusAppleWatchApp */,
+				5CC5D8A0288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -601,6 +786,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC5D897288219EE00808D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC5D89C288219EF00808D53 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC5D89F288219EF00808D53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC5D8B4288219EF00808D53 /* Preview Assets.xcassets in Resources */,
+				5CC5D8C628821BC100808D53 /* Assets.xcassets in Resources */,
+				5CC5D8B1288219EF00808D53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,12 +861,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAC04DD2885C58A00C8B4B2 /* NotesCellGridView.swift in Sources */,
+				5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */,
+				5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */,
 				5C65DE2F28554A7B00FDB05C /* FirstLaunchView.swift in Sources */,
 				5C65DDF82855495500FDB05C /* MyNotesView.swift in Sources */,
 				5CD6C8272880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */,
 				5CD6C82D2880BE0D001722B3 /* SimpleEntry.swift in Sources */,
 				5C2B21042878938D007E041F /* MyNotesPlusWidget.intentdefinition in Sources */,
 				5C65DDF62855495500FDB05C /* MyNotes_App.swift in Sources */,
+				5CAC04E12885DA6500C8B4B2 /* MyNotesSectionView.swift in Sources */,
 				5C65DE3228554A7B00FDB05C /* MyNotesViewModel.swift in Sources */,
 				5C65DE3028554A7B00FDB05C /* NewNoteView.swift in Sources */,
 				5C65DE2C28554A7B00FDB05C /* UpdateNoteView.swift in Sources */,
@@ -695,6 +902,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CC5D89D288219EF00808D53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC5D8C528821BC100808D53 /* MyNotes_App.swift in Sources */,
+				5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */,
+				5CC5D8C428821BC100808D53 /* SettingsSheet.swift in Sources */,
+				5C4A55562884C2F400A3D7CE /* NewNoteView.swift in Sources */,
+				5CC5D8AB288219EF00808D53 /* NotificationController.swift in Sources */,
+				5CC5D8A9288219EF00808D53 /* NoteView.swift in Sources */,
+				5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */,
+				5CC5D8AF288219EF00808D53 /* ComplicationController.swift in Sources */,
+				5CC5D8CD28821EAB00808D53 /* FirstLaunchView.swift in Sources */,
+				5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */,
+				5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */,
+				5CC5D8AD288219EF00808D53 /* NotificationView.swift in Sources */,
+				5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */,
+				5CC5D8C228821BC100808D53 /* QuickSettingsClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -717,6 +945,16 @@
 			isa = PBXTargetDependency;
 			target = 5C65DDF12855495500FDB05C /* MyNotes+ */;
 			targetProxy = 5C65DE0D2855495600FDB05C /* PBXContainerItemProxy */;
+		};
+		5CC5D8A4288219EF00808D53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CC5D8A0288219EF00808D53 /* MyNotesPlusAppleWatchApp WatchKit Extension */;
+			targetProxy = 5CC5D8A3288219EF00808D53 /* PBXContainerItemProxy */;
+		};
+		5CC5D8B8288219EF00808D53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CC5D898288219EE00808D53 /* MyNotesPlusAppleWatchApp */;
+			targetProxy = 5CC5D8B7288219EF00808D53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1095,6 +1333,126 @@
 			};
 			name = Release;
 		};
+		5CC5D8BB288219EF00808D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MyNotesPlusAppleWatchApp WatchKit Extension/MyNotesPlusAppleWatchApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlusAppleWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyNotesPlusAppleWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MyNotesPlusAppleWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = MyNotesPlusAppleWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		5CC5D8BC288219EF00808D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "MyNotesPlusAppleWatchApp WatchKit Extension/MyNotesPlusAppleWatchApp WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlusAppleWatchApp WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyNotesPlusAppleWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "MyNotesPlusAppleWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = MyNotesPlusAppleWatchApp_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		5CC5D8BF288219EF00808D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyNotesPlusAppleWatchApp/MyNotesPlusAppleWatchApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MyNotesPlusAppleWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SRRSS.MyNotesPlus;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp;
+				PRODUCT_NAME = "My Notes Plus";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		5CC5D8C0288219EF00808D53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyNotesPlusAppleWatchApp/MyNotesPlusAppleWatchApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = MyNotesPlusAppleWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SRRSS.MyNotesPlus;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp;
+				PRODUCT_NAME = "My Notes Plus";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1148,6 +1506,24 @@
 			buildConfigurations = (
 				5C65DE1D2855495600FDB05C /* Debug */,
 				5C65DE1E2855495600FDB05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC5D8BA288219EF00808D53 /* Build configuration list for PBXNativeTarget "MyNotesPlusAppleWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC5D8BB288219EF00808D53 /* Debug */,
+				5CC5D8BC288219EF00808D53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC5D8BE288219EF00808D53 /* Build configuration list for PBXNativeTarget "MyNotesPlusAppleWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC5D8BF288219EF00808D53 /* Debug */,
+				5CC5D8C0288219EF00808D53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

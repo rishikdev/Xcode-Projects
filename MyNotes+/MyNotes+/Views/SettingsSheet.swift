@@ -39,7 +39,9 @@ struct SettingsSheet: View
                                 Image(systemName: $0.imageName)
                             }
                         }
+                        #if !os(watchOS)
                         .pickerStyle(.segmented)
+                        #endif
                         
                         HStack
                         {

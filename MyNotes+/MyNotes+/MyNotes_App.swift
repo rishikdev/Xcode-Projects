@@ -5,7 +5,9 @@
 //  Created by Rishik Dev on 11/06/22.
 //
 
+#if !os(watchOS)
 import LocalAuthentication
+#endif
 import SwiftUI
 
 @main
@@ -26,7 +28,13 @@ struct MyNotesApp: App
         {
             if(myNotesViewModel.firstLaunch)
             {
+                #if !os(watchOS)
                 FirstLaunchView(myNotesViewModel: myNotesViewModel)
+                
+                #else
+                MyNotesView(myNotesViewModel: myNotesViewModel, quickSettings: quickSettings)
+                
+                #endif
             }
             
             else
@@ -89,7 +97,9 @@ struct MyNotesApp: App
                             
                             Button("Unlock My Notes")
                             {
+                                #if !os(watchOS)
                                 myNotesViewModel.authenticate()
+                                #endif
                             }
                             
                             Spacer()

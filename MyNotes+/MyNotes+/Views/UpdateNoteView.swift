@@ -108,7 +108,7 @@ struct UpdateNoteView: View
             
             ToolbarItemGroup(placement: .keyboard)
             {
-                filterButtonKeyboard
+                tagButtonKeyboard
             }
             
             ToolbarItemGroup(placement: .keyboard)
@@ -182,9 +182,9 @@ struct UpdateNoteView: View
         }
     }
     
-    // MARK: - filterButtonKeyboard
+    // MARK: - tagButtonKeyboard
     
-    var filterButtonKeyboard: some View
+    var tagButtonKeyboard: some View
     {
         HStack
         {

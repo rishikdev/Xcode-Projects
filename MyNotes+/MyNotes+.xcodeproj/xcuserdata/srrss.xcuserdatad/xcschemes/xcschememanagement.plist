@@ -11,6 +11,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MyNotesPlusAppleWatchApp (Complication).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>MyNotesPlusAppleWatchApp (Notification).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>MyNotesPlusAppleWatchApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>MyNotesPlusIntents.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -50,6 +65,11 @@
 			<true/>
 		</dict>
 		<key>5C65DE0B2855495600FDB05C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CC5D86D2882195D00808D53</key>
 		<dict>
 			<key>primary</key>
 			<true/>

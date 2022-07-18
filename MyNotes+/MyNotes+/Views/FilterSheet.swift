@@ -17,6 +17,7 @@ struct FilterSheet: View
     {
         VStack
         {
+            #if !os(watchOS)
             HStack
             {
                 Button(action: { dismiss() })
@@ -29,6 +30,7 @@ struct FilterSheet: View
                 
                 Spacer()
             }
+            #endif
             
             Form
             {

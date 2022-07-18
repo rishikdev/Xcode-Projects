@@ -5,11 +5,13 @@
 //  Created by Rishik Dev on 18/02/22.
 //
 
+#if !os(watchOS)
 import LocalAuthentication
+import WidgetKit
+#endif
 import Foundation
 import CoreData
 import SwiftUI
-import WidgetKit
 
 // MARK: - MyNotesViewModel class
 
@@ -82,7 +84,9 @@ import WidgetKit
                 sharedDataArray.append(sharedData)
             }
             
+            #if !os(watchOS)
             WidgetCenter.shared.reloadAllTimelines()
+            #endif
         }
         
         catch let error
@@ -170,7 +174,7 @@ import WidgetKit
     }
     
     // MARK: - authenticate()
-    
+    #if !os(watchOS)
     func authenticate()
     {
         let context = LAContext()
@@ -210,6 +214,22 @@ import WidgetKit
             print("BIOMETRIC NOT FOUND")
             isAuthenticated = true
         }
+    }
+    #endif
+    
+    // MARK: - isAnyNotePinned
+    
+    func isAnyNotePinned() -> Bool
+    {
+        for entity in noteEntities
+        {
+            if(entity.isPinned)
+            {
+                return true
+            }
+        }
+        
+        return false
     }
 }
 
