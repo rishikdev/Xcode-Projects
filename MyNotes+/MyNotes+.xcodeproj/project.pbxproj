@@ -19,18 +19,19 @@
 		5C2B21012878938D007E041F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2B21002878938D007E041F /* Assets.xcassets */; };
 		5C2B21032878938D007E041F /* MyNotesPlusWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B20FF2878938C007E041F /* MyNotesPlusWidget.intentdefinition */; };
 		5C2B21042878938D007E041F /* MyNotesPlusWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B20FF2878938C007E041F /* MyNotesPlusWidget.intentdefinition */; };
-		5C2B21072878938D007E041F /* MyNotesPlusWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C2B20F92878938C007E041F /* MyNotesPlusWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C2B21072878938D007E041F /* MyNotesPlusWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C2B20F92878938C007E041F /* MyNotesPlusWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C3CB275287F86A5007E6E7A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3CB274287F86A5007E6E7A /* Intents.framework */; };
 		5C3CB278287F86A5007E6E7A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB277287F86A5007E6E7A /* IntentHandler.swift */; };
-		5C3CB27C287F86A5007E6E7A /* MyNotesPlusIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C3CB273287F86A5007E6E7A /* MyNotesPlusIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C3CB27C287F86A5007E6E7A /* MyNotesPlusIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C3CB273287F86A5007E6E7A /* MyNotesPlusIntents.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C3CB280287F86BF007E6E7A /* MyNotesPlusWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B20FF2878938C007E041F /* MyNotesPlusWidget.intentdefinition */; };
 		5C3CB281287F87EC007E6E7A /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
 		5C3CB283287F8969007E6E7A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB277287F86A5007E6E7A /* IntentHandler.swift */; };
 		5C3CB2852880579C007E6E7A /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */; };
 		5C3CB286288057F4007E6E7A /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */; };
 		5C3CB287288057FE007E6E7A /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
-		5C3CB28828805826007E6E7A /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5C415A612877359400FD75ED /* MotionManagerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C415A602877359400FD75ED /* MotionManagerClass.swift */; };
+		5C4173742886F87D001D7FE2 /* MyNotesNonSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4173732886F87D001D7FE2 /* MyNotesNonSectionView.swift */; };
+		5C41737628874031001D7FE2 /* SelectNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C41737528874031001D7FE2 /* SelectNoteView.swift */; };
 		5C4A55562884C2F400A3D7CE /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A55542884C2F400A3D7CE /* NewNoteView.swift */; };
 		5C65DDF62855495500FDB05C /* MyNotes_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF52855495500FDB05C /* MyNotes_App.swift */; };
 		5C65DDF82855495500FDB05C /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF72855495500FDB05C /* MyNotesView.swift */; };
@@ -57,14 +58,13 @@
 		5C6CA7912878CA6A0049D625 /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */; };
 		5C6CA7932878CAC20049D625 /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
 		5C6CA7942878CAD70049D625 /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */; };
-		5C6CA7952878CAF90049D625 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5C6CA7982878D7020049D625 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65DE3828554E9000FDB05C /* CloudKit.framework */; };
 		5C6CA79A2878DCC00049D625 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA7992878DCC00049D625 /* SmallWidgetView.swift */; };
 		5C6CA79C2878DCC90049D625 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79B2878DCC90049D625 /* MediumWidgetView.swift */; };
 		5C6CA79E2878DCD00049D625 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */; };
 		5C6CA7A02878E03A0049D625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
 		5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */; };
-		5CAC04DD2885C58A00C8B4B2 /* NotesCellGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */; };
+		5CAC04DD2885C58A00C8B4B2 /* NotesCellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DC2885C58A00C8B4B2 /* NotesCellCardView.swift */; };
 		5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */; };
 		5CAC04E12885DA6500C8B4B2 /* MyNotesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */; };
 		5CC5D89C288219EF00808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D89B288219EF00808D53 /* Assets.xcassets */; };
@@ -75,10 +75,9 @@
 		5CC5D8AF288219EF00808D53 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8AE288219EF00808D53 /* ComplicationController.swift */; };
 		5CC5D8B1288219EF00808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D8B0288219EF00808D53 /* Assets.xcassets */; };
 		5CC5D8B4288219EF00808D53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CC5D8B3288219EF00808D53 /* Preview Assets.xcassets */; };
-		5CC5D8B9288219EF00808D53 /* My Notes Plus.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CC5D899288219EE00808D53 /* My Notes Plus.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CC5D8B9288219EF00808D53 /* My Notes Plus.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CC5D899288219EE00808D53 /* My Notes Plus.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */; };
 		5CC5D8C228821BC100808D53 /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */; };
-		5CC5D8C428821BC100808D53 /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5CC5D8C528821BC100808D53 /* MyNotes_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DDF52855495500FDB05C /* MyNotes_App.swift */; };
 		5CC5D8C628821BC100808D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
 		5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
@@ -97,6 +96,9 @@
 		5CD6C8322880C824001722B3 /* LargeWidgetIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C82F2880C816001722B3 /* LargeWidgetIntent.intentdefinition */; };
 		5CD6C8342880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8332880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift */; };
 		5CD6C8362880C8CA001722B3 /* LargeWidgetSimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8352880C8CA001722B3 /* LargeWidgetSimpleEntry.swift */; };
+		5CFD4DC92889B39200C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
+		5CFD4DCA2889B39400C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
+		5CFD4DCB2889B39500C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +202,8 @@
 		5C415A602877359400FD75ED /* MotionManagerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManagerClass.swift; sourceTree = "<group>"; };
 		5C415A692877828000FD75ED /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		5C415A6B2877828000FD75ED /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5C4173732886F87D001D7FE2 /* MyNotesNonSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesNonSectionView.swift; sourceTree = "<group>"; };
+		5C41737528874031001D7FE2 /* SelectNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNoteView.swift; sourceTree = "<group>"; };
 		5C4A55542884C2F400A3D7CE /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		5C65DDF22855495500FDB05C /* My Notes +.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes +.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C65DDF52855495500FDB05C /* MyNotes_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotes_App.swift; sourceTree = "<group>"; };
@@ -234,7 +238,7 @@
 		5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		5C6F9DAA2875CE7F0023CDF7 /* MyNotesContainer V3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyNotesContainer V3.xcdatamodel"; sourceTree = "<group>"; };
 		5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellListView.swift; sourceTree = "<group>"; };
-		5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellGridView.swift; sourceTree = "<group>"; };
+		5CAC04DC2885C58A00C8B4B2 /* NotesCellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellCardView.swift; sourceTree = "<group>"; };
 		5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuItems.swift; sourceTree = "<group>"; };
 		5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesSectionView.swift; sourceTree = "<group>"; };
 		5CC5D899288219EE00808D53 /* My Notes Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Notes Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,11 +402,12 @@
 			isa = PBXGroup;
 			children = (
 				5CAC04DB2885C55B00C8B4B2 /* MainInterface */,
-				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
+				5C41737528874031001D7FE2 /* SelectNoteView.swift */,
 				5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */,
 				5C65DE2428554A7B00FDB05C /* NewNoteView.swift */,
 				5C65DE2028554A7B00FDB05C /* UpdateNoteView.swift */,
 				5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */,
+				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -513,9 +518,10 @@
 			isa = PBXGroup;
 			children = (
 				5C65DDF72855495500FDB05C /* MyNotesView.swift */,
+				5C4173732886F87D001D7FE2 /* MyNotesNonSectionView.swift */,
 				5CAC04E02885DA6500C8B4B2 /* MyNotesSectionView.swift */,
 				5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */,
-				5CAC04DC2885C58A00C8B4B2 /* NotesCellGridView.swift */,
+				5CAC04DC2885C58A00C8B4B2 /* NotesCellCardView.swift */,
 				5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */,
 			);
 			path = MainInterface;
@@ -827,7 +833,6 @@
 				5C09CBFF2880B0A000316B17 /* MediumWidgetSimpleEntry.swift in Sources */,
 				5C2B21032878938D007E041F /* MyNotesPlusWidget.intentdefinition in Sources */,
 				5C2B20FE2878938C007E041F /* MyNotesPlusSmallWidget.swift in Sources */,
-				5C6CA7952878CAF90049D625 /* SettingsSheet.swift in Sources */,
 				5C09CBE32880A5AA00316B17 /* MyNotesPlusLargeWidget.swift in Sources */,
 				5C6CA7902878CA1E0049D625 /* MyNotesPlusWidgetView.swift in Sources */,
 				5C6CA79C2878DCC90049D625 /* MediumWidgetView.swift in Sources */,
@@ -836,6 +841,7 @@
 				5C6CA79E2878DCD00049D625 /* LargeWidgetView.swift in Sources */,
 				5CD6C8342880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift in Sources */,
 				5C6CA7942878CAD70049D625 /* QuickSettingsClass.swift in Sources */,
+				5CFD4DC92889B39200C0030D /* SettingsSheet.swift in Sources */,
 				5C665FEB287E236C00E4BF25 /* SharedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -848,9 +854,9 @@
 				5C3CB2852880579C007E6E7A /* MyNotesViewModel.swift in Sources */,
 				5C3CB286288057F4007E6E7A /* QuickSettingsClass.swift in Sources */,
 				5C3CB281287F87EC007E6E7A /* SharedData.swift in Sources */,
+				5CFD4DCA2889B39400C0030D /* SettingsSheet.swift in Sources */,
 				5C3CB280287F86BF007E6E7A /* MyNotesPlusWidget.intentdefinition in Sources */,
 				5C3CB278287F86A5007E6E7A /* IntentHandler.swift in Sources */,
-				5C3CB28828805826007E6E7A /* SettingsSheet.swift in Sources */,
 				5C3CB287288057FE007E6E7A /* MyNotesContainer.xcdatamodeld in Sources */,
 				5CD6C8322880C824001722B3 /* LargeWidgetIntent.intentdefinition in Sources */,
 				5CD6C82C2880B945001722B3 /* MediumWidgetIntents.intentdefinition in Sources */,
@@ -861,7 +867,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CAC04DD2885C58A00C8B4B2 /* NotesCellGridView.swift in Sources */,
+				5C4173742886F87D001D7FE2 /* MyNotesNonSectionView.swift in Sources */,
+				5CAC04DD2885C58A00C8B4B2 /* NotesCellCardView.swift in Sources */,
 				5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */,
 				5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */,
 				5C65DE2F28554A7B00FDB05C /* FirstLaunchView.swift in Sources */,
@@ -876,6 +883,7 @@
 				5C65DE2C28554A7B00FDB05C /* UpdateNoteView.swift in Sources */,
 				5C65DE2E28554A7B00FDB05C /* SettingsSheet.swift in Sources */,
 				5C65DE3128554A7B00FDB05C /* QuickSettingsClass.swift in Sources */,
+				5C41737628874031001D7FE2 /* SelectNoteView.swift in Sources */,
 				5C415A612877359400FD75ED /* MotionManagerClass.swift in Sources */,
 				5CD6C8302880C816001722B3 /* LargeWidgetIntent.intentdefinition in Sources */,
 				5C65DE3328554A7B00FDB05C /* MyNotesContainer.xcdatamodeld in Sources */,
@@ -908,7 +916,6 @@
 			files = (
 				5CC5D8C528821BC100808D53 /* MyNotes_App.swift in Sources */,
 				5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */,
-				5CC5D8C428821BC100808D53 /* SettingsSheet.swift in Sources */,
 				5C4A55562884C2F400A3D7CE /* NewNoteView.swift in Sources */,
 				5CC5D8AB288219EF00808D53 /* NotificationController.swift in Sources */,
 				5CC5D8A9288219EF00808D53 /* NoteView.swift in Sources */,
@@ -919,6 +926,7 @@
 				5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */,
 				5CC5D8AD288219EF00808D53 /* NotificationView.swift in Sources */,
 				5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */,
+				5CFD4DCB2889B39500C0030D /* SettingsSheet.swift in Sources */,
 				5CC5D8C228821BC100808D53 /* QuickSettingsClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,11 +936,13 @@
 /* Begin PBXTargetDependency section */
 		5C2B21062878938D007E041F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 5C2B20F82878938C007E041F /* MyNotesPlusWidgetExtension */;
 			targetProxy = 5C2B21052878938D007E041F /* PBXContainerItemProxy */;
 		};
 		5C3CB27B287F86A5007E6E7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 5C3CB272287F86A5007E6E7A /* MyNotesPlusIntents */;
 			targetProxy = 5C3CB27A287F86A5007E6E7A /* PBXContainerItemProxy */;
 		};
@@ -953,6 +963,7 @@
 		};
 		5CC5D8B8288219EF00808D53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 5CC5D898288219EE00808D53 /* MyNotesPlusAppleWatchApp */;
 			targetProxy = 5CC5D8B7288219EF00808D53 /* PBXContainerItemProxy */;
 		};
@@ -972,7 +983,7 @@
 				INFOPLIST_FILE = MyNotesPlusWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyNotesPlusWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -982,6 +993,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1001,7 +1013,7 @@
 				INFOPLIST_FILE = MyNotesPlusWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyNotesPlusWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1011,6 +1023,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1028,7 +1041,7 @@
 				INFOPLIST_FILE = MyNotesPlusIntents/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyNotesPlusIntents;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1038,6 +1051,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1055,7 +1069,7 @@
 				INFOPLIST_FILE = MyNotesPlusIntents/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyNotesPlusIntents;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1065,6 +1079,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1121,7 +1136,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1175,7 +1190,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1205,9 +1220,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1215,6 +1232,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus;
 				PRODUCT_NAME = "My Notes +";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1241,9 +1259,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1251,6 +1271,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus;
 				PRODUCT_NAME = "My Notes +";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

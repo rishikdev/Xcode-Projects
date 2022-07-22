@@ -9,115 +9,58 @@ import SwiftUI
 
 struct MyNotesSectionView: View
 {
+    @State var editMode: EditMode = .inactive
+    
     @StateObject var myNotesViewModel: MyNotesViewModel
     @StateObject var quickSettings: QuickSettingsClass
     
     @State private var searchQuery: String = ""
+    @State private var showFilters: Bool = false
+    @State private var showSettings: Bool = false
+    
+    @State private var currentDevice = UIDevice.current.userInterfaceIdiom
+    @State private var activateNewNoteView: Bool = false
     
     var body: some View
     {
-        Section(header: Text("Pinned Notes"))
+        List
         {
-            // This for loop displays the pinned notes
-            ForEach(searchResults)
+            Section(header: Text("Pinned Notes"))
             {
-                noteEntity in
-                
-                if(noteEntity.isPinned)
+                // MARK: - This for loop displays the pinned notes
+                ForEach(searchResults, id: \.self.noteID)
                 {
-                    NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
-                        .transition(.scale)
-                        .swipeActions(edge: .leading, allowsFullSwipe: true)
-                        {
-                            Button(action: {
-                                withAnimation
-                                {
-                                    noteEntity.isPinned.toggle()
-                                    myNotesViewModel.updateNote()
-                                }
-                            })
-                            {
-                                Image(systemName: noteEntity.isPinned ? "pin.slash" : "pin")
-                            }
-                            .tint(.blue)
-                        }
-                        .swipeActions(edge: .trailing, allowsFullSwipe: true)
-                        {
-                            Button(role: .destructive, action: {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5)
-                                {
-                                    withAnimation
-                                    {
-                                        myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
-                                    }
-                                }
-                            })
-                            {
-                                Image(systemName: "trash")
-                            }
-                        }
-                        .contextMenu
-                        {
-                            withAnimation
-                            {
-                                ContextMenuItems(myNotesVViewModel: myNotesViewModel, myNotesEntity: noteEntity, isGridView: false)
-                                    .transition(.scale)
-                            }
-                        }
+                    noteEntity in
+                    
+                    if(noteEntity.isPinned)
+                    {
+                        NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
+                            .modifier(ListViewModifierCollection(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity))
+                    }
                 }
             }
-        }
-        
-        Section(header: Text("Unpinned Notes"))
-        {
-            ForEach(searchResults)
+            
+            Section(header: Text("Unpinned Notes"))
             {
-                noteEntity in
-                
-                if(!noteEntity.isPinned)
+                // MARK: - This for loop displays the unpinned notes
+                ForEach(searchResults, id: \.self.noteID)
                 {
-                    NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
-                        .transition(.scale)
-                        .swipeActions(edge: .leading, allowsFullSwipe: true)
-                        {
-                            Button(action: {
-                                withAnimation
-                                {
-                                    noteEntity.isPinned.toggle()
-                                    myNotesViewModel.updateNote()
-                                }
-                            })
-                            {
-                                Image(systemName: noteEntity.isPinned ? "pin.slash" : "pin")
-                            }
-                            .tint(.blue)
-                        }
-                        .swipeActions(edge: .trailing, allowsFullSwipe: true)
-                        {
-                            Button(role: .destructive, action: {
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5)
-                                {
-                                    withAnimation
-                                    {
-                                        myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
-                                    }
-                                }
-                            })
-                            {
-                                Image(systemName: "trash")
-                            }
-                        }
-                        .contextMenu
-                        {
-                            withAnimation
-                            {
-                                ContextMenuItems(myNotesVViewModel: myNotesViewModel, myNotesEntity: noteEntity, isGridView: false)
-                                    .transition(.scale)
-                            }
-                        }
+                    noteEntity in
+                    
+                    if(!noteEntity.isPinned)
+                    {
+                        NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
+                            .modifier(ListViewModifierCollection(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity))
+                    }
                 }
             }
+            .opacity(myNotesViewModel.noteEntities.count == myNotesViewModel.getTotalPinnedNotesCount() ? 0 : 1)
         }
+        .refreshable
+        {
+            myNotesViewModel.fetchNotes()
+        }
+        .searchable(text: $searchQuery)
     }
     
     // MARK: - searchResults

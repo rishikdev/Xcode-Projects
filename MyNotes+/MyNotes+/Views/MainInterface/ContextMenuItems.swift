@@ -13,7 +13,7 @@ struct ContextMenuItems: View
 {
     @StateObject var myNotesVViewModel: MyNotesViewModel
     @State var myNotesEntity: MyNotesEntity
-    @State var isGridView: Bool
+    @State var isCardView: Bool
     
     // MARK: - ContextMenuItems body
     
@@ -21,7 +21,7 @@ struct ContextMenuItems: View
     {
         Group
         {
-            if(isGridView)
+            if(isCardView)
             {
                 Menu("Change card")
                 {
@@ -79,6 +79,7 @@ struct ContextMenuItems: View
                     withAnimation
                     {
                         myNotesVViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                        myNotesVViewModel.didUserDeleteNote.toggle()
                     }
                 }
             })

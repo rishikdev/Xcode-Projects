@@ -11,9 +11,9 @@
 	<key>INIntentDefinitionSystemVersion</key>
 	<string>21E258</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>13F17a</string>
+	<string>13F100</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>13.4</string>
+	<string>13.4.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -109,7 +109,7 @@
 			<key>INTypeDisplayNameID</key>
 			<string>LKddir</string>
 			<key>INTypeLastPropertyTag</key>
-			<integer>103</integer>
+			<integer>109</integer>
 			<key>INTypeName</key>
 			<string>CustomNote</string>
 			<key>INTypeProperties</key>

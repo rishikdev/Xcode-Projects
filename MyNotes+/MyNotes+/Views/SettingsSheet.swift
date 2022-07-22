@@ -9,17 +9,33 @@ import SwiftUI
 
 struct SettingsSheet: View
 {
-//    @Environment(\.dismiss) var dismiss
     @Environment(\.colorScheme) var colourScheme
     @Environment(\.openURL) var openURL
+    @Environment(\.dismiss) var dismiss
     
-    @StateObject var quickSettings = QuickSettingsClass()
-    @StateObject var myNotesViewMode = MyNotesViewModel()
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    @StateObject var quickSettings: QuickSettingsClass
     
     var body: some View
     {
         VStack
         {
+            #if !os(watchOS)
+            HStack
+            {
+                Button(action: {
+                    dismiss()
+                })
+                {
+                    Text("Dismiss")
+                }
+                .padding(.leading, 10)
+                .padding(.top, 10)
+                
+                Spacer()
+            }
+            #endif
+            
             Form
             {
                 Section(header: Text("Authentication"),footer: Text("To use biometric authentication (Touch ID or Face ID), please make sure that Touch ID or Face ID is enabled in your device's Settings app."))
@@ -42,6 +58,11 @@ struct SettingsSheet: View
                         #if !os(watchOS)
                         .pickerStyle(.segmented)
                         #endif
+                        .onChange(of: quickSettings.viewStylePreference)
+                        {
+                            _ in
+                            dismiss()
+                        }
                         
                         HStack
                         {
@@ -52,7 +73,7 @@ struct SettingsSheet: View
                             Spacer()
                             Spacer()
                             
-                            Text("Grid")
+                            Text("Card")
                             
                             Spacer()
                         }
@@ -90,8 +111,17 @@ struct SettingsSheet: View
             }
             .onChange(of: quickSettings.isUsingBiometric)
             {
-                isNoteLocked in
-//                myNotesViewMode.isAppLocked = isNoteLocked
+                isAppLocked in
+                
+                /// Changing the card colour (or any other existing property) of the note was the only way I was able to force the widget to update.
+                /// Adding a new property (isNoteLocked) to the existing entity did not work for some reason.
+                
+                for entity in myNotesViewModel.noteEntities
+                {
+                    entity.noteCardColour = isAppLocked ? entity.noteCardColour! + "-LOCKED" : String(entity.noteCardColour!.split(separator: "-")[0])
+                    
+                    myNotesViewModel.updateNote()
+                }
             }
         }
     }
@@ -114,10 +144,11 @@ enum ViewStyleEnum: String, CaseIterable
     }
 }
 
+
 struct SettingsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        SettingsSheet()
+        SettingsSheet(myNotesViewModel: MyNotesViewModel(), quickSettings: QuickSettingsClass())
     }
 }

@@ -11,6 +11,38 @@ import SwiftUI
 
 struct NewNoteView: View
 {
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    
+    @State var noteEntity: MyNotesEntity?
+    @State var noteID: UUID = UUID()
+    @State var noteTitle: String = ""
+    @State var noteText: String = ""
+    @State var noteTag: String = "⚪️"
+              
+    var body: some View
+    {
+        VStack
+        {
+            if(!myNotesViewModel.didUserDeleteNote)
+            {
+                CreateNoteView(myNotesViewModel: myNotesViewModel,
+                               noteEntity: noteEntity,
+                               noteID: UUID(),
+                               noteTitle: noteTitle,
+                               noteText: noteText,
+                               noteTag: noteTag)
+            }
+            
+            else
+            {
+                SelectNoteView(myNotesViewModel: myNotesViewModel)
+            }
+        }
+    }
+}
+
+private struct CreateNoteView: View
+{
     @Environment(\.presentationMode) var presentationMode
     
     // This variable keeps track of when the application is dismissed
@@ -18,7 +50,7 @@ struct NewNoteView: View
     
     @StateObject var myNotesViewModel: MyNotesViewModel
     
-    @State var myNotesEntity: MyNotesEntity?
+    @State var noteEntity: MyNotesEntity?
     @State var noteID: UUID
     @State var noteTitle: String = ""
     @State var noteText: String = ""
@@ -31,6 +63,8 @@ struct NewNoteView: View
     @State var isDeleted: Bool = false
     
     @FocusState private var textBodyIsFocused: Bool
+    
+    @State private var currentDevice = UIDevice.current.userInterfaceIdiom
       
     // MARK: - NewNoteView boody
     
@@ -55,7 +89,7 @@ struct NewNoteView: View
             {
                 noteID = UUID()
                 
-                myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                noteEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
                 
                 isDeleted = false
             }
@@ -83,9 +117,9 @@ struct NewNoteView: View
             {
                 if(firstSave)
                 {
-                    myNotesEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
+                    noteEntity = myNotesViewModel.addNote(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteDate: Date(), noteTag: noteTag)
                     
-                    firstSave = false
+                    firstSave = false                    
                 }
             }
         }
@@ -120,13 +154,10 @@ struct NewNoteView: View
                 saveTime
             }
             
-            ToolbarItemGroup(placement: .keyboard)
-            {
-                tagButtonKeyboard
-            }
             
             ToolbarItemGroup(placement: .keyboard)
             {
+                tagButtonKeyboard
                 dismissKeyboardButton
             }
         }
@@ -139,13 +170,10 @@ struct NewNoteView: View
         Button(action: {
             manualSaveButtonPress = true
             saveButtonPressed()
-            
         })
         {
             Text("Done")
         }
-        .buttonStyle(.plain)
-        .foregroundColor(.accentColor)
         .disabled(isTextAppropriate() ? false : true)
     }
     
@@ -211,8 +239,6 @@ struct NewNoteView: View
         {
             Image(systemName: "keyboard.chevron.compact.down")
         }
-        .buttonStyle(.plain)
-        .foregroundColor(.accentColor)
     }
     
     // MARK: - saveButtonPressed()
@@ -221,11 +247,11 @@ struct NewNoteView: View
     {
         if isTextAppropriate()
         {
-            myNotesEntity!.noteTitle = noteTitle
-            myNotesEntity!.noteText = noteText
-            myNotesEntity!.noteTag = noteTag
-            myNotesEntity!.noteDate = Date()
-            myNotesEntity!.noteCardColour = "NoteCardYellowColour"
+            noteEntity!.noteTitle = noteTitle
+            noteEntity!.noteText = noteText
+            noteEntity!.noteTag = noteTag
+            noteEntity!.noteDate = Date()
+            noteEntity!.noteCardColour = "NoteCardYellowColour"
             
             myNotesViewModel.updateNote()
             

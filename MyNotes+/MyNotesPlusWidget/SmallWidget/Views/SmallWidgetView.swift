@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SmallWidgetView: View
 {
+    @Environment(\.colorScheme) var colourScheme
     var entry: SimpleEntry
     
     var body: some View
@@ -30,9 +31,9 @@ struct SmallWidgetView: View
                     else
                     {
                         Text(entry.sharedData[0].noteTag)
-                            .padding(5)
+                            .padding(10)
 
-                        Text(entry.sharedData[0].noteTitle)
+                        Text(entry.sharedData[0].noteTitle.isEmpty ? "No Title" : entry.sharedData[0].noteTitle)
                     }
                 }
                 
@@ -57,15 +58,26 @@ struct SmallWidgetView: View
             {
                 if(entry.sharedData.count > 0)
                 {
-                    if(entry.sharedData.firstIndex(where: { $0.noteID.uuidString == entry.configuration.CustomNote?.identifier ?? UUID().uuidString }) != nil)
+                    if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
                     {
-                        Text(getNoteText(noteID:entry.configuration.CustomNote?.identifier ?? UUID().uuidString) ?? entry.sharedData[0].noteText)
+                        if(entry.sharedData.firstIndex(where: { $0.noteID.uuidString == entry.configuration.CustomNote?.identifier ?? UUID().uuidString }) != nil)
+                        {
+                            Text(getNoteText(noteID:entry.configuration.CustomNote?.identifier ?? UUID().uuidString) ?? entry.sharedData[0].noteText)
+                        }
+                        
+                        else
+                        {
+                            Text(entry.sharedData[0].noteText)
+                        }
                     }
                     
                     else
                     {
-                        Text(entry.sharedData[0].noteText)
-                            
+                        HStack
+                        {
+                            Image(systemName: "lock.fill")
+                            Text("Locked")
+                        }
                     }
                 }
                 
@@ -81,6 +93,7 @@ struct SmallWidgetView: View
             Spacer()
         }
         .background(entry.sharedData.count > 0 ? (Color(getNoteCardColour(noteID: entry.configuration.CustomNote?.identifier ?? UUID().uuidString) ?? entry.sharedData[0].noteCardColour)) : Color("NoteCardYellowColour"))
+        .brightness(colourScheme == .light ? 0 : -0.15)
     }
     
     func getNoteCardColour(noteID: String) -> String?
@@ -115,7 +128,7 @@ struct SmallWidgetView: View
         {
             if(note.noteID.uuidString == noteID)
             {
-                return note.noteTitle
+                return note.noteTitle.isEmpty ? "No Title" : note.noteTitle
             }
         }
         

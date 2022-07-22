@@ -18,27 +18,30 @@ struct NotesCellListView: View
     {
         ZStack(alignment: .leading)
         {
-            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, noteTitle: noteEntity.noteTitle ?? "", originalNoteTitle: noteEntity.noteTitle ?? "", noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"))
+            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity, noteTitle: noteEntity.noteTitle ?? "", originalNoteTitle: noteEntity.noteTitle ?? "", noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"))
             {
                 EmptyView()
             }
+            .transition(.opacity)
             .opacity(0)
             
-            if noteEntity.noteText != nil && noteEntity.noteTitle != nil
+            if(noteEntity.noteText != nil && noteEntity.noteTitle != nil)
             {
-                if !noteEntity.noteText!.isEmpty || !noteEntity.noteTitle!.isEmpty
-                {
+//                if(!noteEntity.noteText!.isEmpty || !noteEntity.noteTitle!.isEmpty)
+//                {
                     HStack
                     {
+                        Text(noteEntity.noteTag!)
+                            .padding(.leading, myNotesViewModel.isAnyNotePinned() ? 10 : 0)
+                        
                         VStack(alignment: .leading)
                         {
-                            Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Title")
+                            Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "New Note" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "New Note")
                                 .lineLimit(1)
-                                .font(.body.bold())
                                                         
                             HStack
                             {
-                                Text(noteEntity.noteDate ?? Date(), style: .date)
+                                Text(noteEntity.noteDate ?? Date(), format: .dateTime.day().month())
                                 
                                 Text(noteEntity.noteText?.replacingOccurrences(of: "\n", with: " ") ?? "No Content")
                                     .lineLimit(1)
@@ -54,9 +57,12 @@ struct NotesCellListView: View
                             Image(systemName: "pin.circle")
                         }
                         
-                        Text(noteEntity.noteTag!)
+                        if(noteEntity.isNoteLocked)
+                        {
+                            Image(systemName: "lock.fill")
+                        }
                     }
-                }
+//                }
             }
         }
     }

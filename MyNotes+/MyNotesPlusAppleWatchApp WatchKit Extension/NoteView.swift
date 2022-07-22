@@ -34,16 +34,12 @@ struct NoteView: View
         {
             VStack
             {
-                HStack(spacing: 10)
-                {
-                    Text(noteTag)
+                (Text(noteTag) +
+                 Text(" ") + 
+                 Text(noteTitle)
+                    .fontWeight(.semibold)
+                )
                     
-                    Text(noteTitle)
-                        .fontWeight(.semibold)
-                    
-                    Spacer()
-                }
-                
                 Divider()
                 
                 Text(noteText)

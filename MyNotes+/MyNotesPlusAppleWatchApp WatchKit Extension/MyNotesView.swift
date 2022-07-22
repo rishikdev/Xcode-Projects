@@ -22,119 +22,86 @@ struct MyNotesView: View
         {
             // MARK: - List of notes
             
-            List
+            ZStack
             {
-                // MARK: - Pinned notes
-                
-                // This for loop displays the unpinned notes
-                ForEach(searchResults)
-                {
-                    noteEntity in
-
-                    if(noteEntity.isPinned)
-                    {
-                        NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
-                            .transition(.scale)
-                            .swipeActions(edge: .leading, allowsFullSwipe: true)
-                            {
-                                Button(action: {
-                                    withAnimation
-                                    {
-                                        noteEntity.isPinned.toggle()
-                                        myNotesViewModel.updateNote()
-                                    }
-                                })
-                                {
-                                    Image(systemName: noteEntity.isPinned ? "pin.slash" : "pin")
-                                }
-                                .tint(.blue)
-                            }
-                            .swipeActions(edge: .trailing, allowsFullSwipe: true)
-                            {
-                                Button(action: {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1)
-                                    {
-                                        withAnimation
-                                        {
-                                            myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
-                                        }
-                                    }
-                                })
-                                {
-                                    Image(systemName: "trash")
-                                }
-                                .tint(.red)
-                            }
-                    }
-                }
-                
-                // MARK: - Unpinned notes
-                
-                // This for loop displays the unpinned notes
-                ForEach(searchResults)
-                {
-                    noteEntity in
-                    
-                    if(!noteEntity.isPinned)
-                    {
-                        NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
-                            .transition(.scale)
-                            .swipeActions(edge: .leading, allowsFullSwipe: true)
-                            {
-                                Button(action: {
-                                    withAnimation
-                                    {
-                                        noteEntity.isPinned.toggle()
-                                        myNotesViewModel.updateNote()
-                                    }
-                                })
-                                {
-                                    Image(systemName: noteEntity.isPinned ? "pin.slash" : "pin")
-                                }
-                                .tint(.blue)
-                            }
-                            .swipeActions(edge: .trailing, allowsFullSwipe: true)
-                            {
-                                Button(action: {
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1)
-                                    {
-                                        withAnimation
-                                        {
-                                            myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
-                                        }
-                                    }
-                                })
-                                {
-                                    Image(systemName: "trash")
-                                }
-                                .tint(.red)
-                            }
-                    }
-                }
-            }
-            .refreshable
-            {
-                myNotesViewModel.fetchNotes()
-            }
-            .navigationTitle("My Notes Plus")
-            .navigationBarTitleDisplayMode(.inline)
-            .searchable(text: $searchQuery)
-            // MARK: - toolbar()
-            .toolbar()
-            {
-                ToolbarItemGroup(placement: .primaryAction)
+                if(myNotesViewModel.noteEntities.isEmpty)
                 {
                     VStack
                     {
-                        addNoteButton
-                        filterButton
-                        Spacer()
+                        Text("No Notes")
+                        
+                        (Text("Scroll up ") + Text(Image(systemName: "arrow.up.circle")) + Text(" to add one!"))
+                            .multilineTextAlignment(.center)
+                            .font(.caption2)
+                    }
+                    .foregroundColor(.gray)
+                }
+                
+                List
+                {
+                    // MARK: - Pinned notes
+                    
+                    // This for loop displays the unpinned notes
+                    ForEach(searchResults)
+                    {
+                        noteEntity in
+
+                        if(noteEntity.isPinned)
+                        {
+                            NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
+                                .modifier(ListViewModifierCollection(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity))
+                        }
+                    }
+                    
+                    // MARK: - Unpinned notes
+                    
+                    // This for loop displays the unpinned notes
+                    ForEach(searchResults)
+                    {
+                        noteEntity in
+                        
+                        if(!noteEntity.isPinned)
+                        {
+                            NotesCellListView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity)
+                                .modifier(ListViewModifierCollection(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity))
+                        }
                     }
                 }
-            }
-            .onAppear
-            {
-                myNotesViewModel.fetchNotes()
+                .refreshable
+                {
+                    myNotesViewModel.fetchNotes()
+                }
+                .navigationTitle("My Notes Plus")
+                .navigationBarTitleDisplayMode(.inline)
+                .if(!myNotesViewModel.noteEntities.isEmpty)
+                {
+                    view in
+                    
+                    view
+                        .searchable(text: $searchQuery)
+                }
+                // MARK: - toolbar()
+                .toolbar()
+                {
+                    ToolbarItemGroup(placement: .primaryAction)
+                    {
+                        VStack
+                        {
+                            addNoteButton
+                            
+                            HStack
+                            {
+                                refreshButton
+                                filterButton
+                            }
+                            Spacer()
+                        }
+                    }
+                }
+                .onAppear
+                {
+                    myNotesViewModel.fetchNotes()
+                }
             }
         }
     }
@@ -184,8 +151,6 @@ struct MyNotesView: View
             {
                 Image(systemName: "line.3.horizontal.decrease.circle")
                     .overlay(FilterButtonDot(filter: quickSettings))
-                
-                Text("Filter")
             }
         }
         .sheet(isPresented: $showFilters)
@@ -195,7 +160,18 @@ struct MyNotesView: View
         .buttonStyle(BorderedButtonStyle(tint: .blue))
     }
     
-    // MARK: - settingsButton_notesCount
+    // MARK: - refreshButton
+    
+    var refreshButton: some View
+    {
+        Button(action: { myNotesViewModel.fetchNotes() })
+        {
+            Image(systemName: "arrow.clockwise")
+        }
+        .buttonStyle(BorderedButtonStyle(tint: .yellow))
+    }
+    
+    // MARK: - notesCount
     
     var notesCount: some View
     {
@@ -228,38 +204,29 @@ struct NotesCellListView: View
                 {
                     HStack
                     {
+                        Text(noteEntity.noteTag!)
+                        
                         VStack(alignment: .leading)
                         {
                             Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Title")
                                 .lineLimit(1)
                                                         
-                            VStack
-                            {
-                                Text(noteEntity.noteText?.replacingOccurrences(of: "\n", with: " ") ?? "No Content")
-                                    .lineLimit(1)
-                                
-                                
-                            }
-                            .font(.caption)
-                            .foregroundColor(.gray)
+//                            HStack
+//                            {
+//                                Text(noteEntity.noteDate ?? Date(), format: .dateTime.day().month())
+//
+//                                Text(noteEntity.noteText?.replacingOccurrences(of: "\n", with: " ") ?? "No Content")
+//                                    .lineLimit(1)
+//                            }
+//                            .font(.callout)
+//                            .foregroundColor(.gray)
                         }
                         
                         Spacer()
                         
-                        VStack
+                        if(noteEntity.isPinned)
                         {
-                            HStack
-                            {
-                                if(noteEntity.isPinned)
-                                {
-                                    Image(systemName: "pin.circle")
-                                }
-                            
-                                Text(noteEntity.noteTag!)
-                            }
-                            
-                            Text(noteEntity.noteDate ?? Date(), format: .dateTime.day().month())
-                                .font(.caption2)
+                            Image(systemName: "pin.circle")
                         }
                     }
                 }
@@ -279,6 +246,67 @@ struct FilterButtonDot: View
         Text(filter.currentFilter == "🔴🟢🔵🟡⚪️" ? "" : filter.currentFilter)
             .frame(width: 30)
             .font(.headline)
+    }
+}
+
+// MARK: - Custom ListViewModifierCollection
+
+struct ListViewModifierCollection: ViewModifier
+{
+    let myNotesViewModel: MyNotesViewModel
+    let noteEntity: MyNotesEntity
+    
+    func body(content: Content) -> some View
+    {
+        content
+            .swipeActions(edge: .leading, allowsFullSwipe: true)
+            {
+                Button(action: {
+                    withAnimation
+                    {
+                        noteEntity.isPinned.toggle()
+                        myNotesViewModel.updateNote()
+                    }
+                })
+                {
+                    Image(systemName: noteEntity.isPinned ? "pin.slash" : "pin")
+                }
+                .tint(.blue)
+            }
+            .swipeActions(edge: .trailing, allowsFullSwipe: true)
+            {
+                Button(action: {
+                    withAnimation
+                    {
+                        myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
+                    }
+                })
+                {
+                    Image(systemName: "trash")
+                }
+                .tint(.red)
+            }
+    }
+}
+
+// MARK: - View extension
+extension View
+{
+    /// Applies the given transform if the given condition evaluates to `true`.
+    /// - Parameters:
+    ///   - condition: The condition to evaluate.
+    ///   - transform: The transform to apply to the source `View`.
+    /// - Returns: Either the original `View` or the modified `View` if the condition is `true`.
+    @ViewBuilder func `if`<Content: View>(_ condition: Bool, transform: (Self) -> Content) -> some View
+    {
+        if condition
+        {
+            transform(self)
+        }
+        else
+        {
+            self
+        }
     }
 }
 

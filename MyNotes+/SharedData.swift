@@ -15,7 +15,7 @@ struct SharedData: Hashable, Identifiable
     let noteTag: String
     let noteCardColour: String
     let noteDate: Date
-    let isNoteLocked: Bool
+    let url: URL
     
     var id: UUID
     {

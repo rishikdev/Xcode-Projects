@@ -11,6 +11,7 @@ struct FilterSheet: View
 {
     @Environment(\.colorScheme) var colourScheme
     @Environment(\.dismiss) var dismiss
+    
     @ObservedObject var quickSettings: QuickSettingsClass
     
     var body: some View
@@ -24,9 +25,8 @@ struct FilterSheet: View
                 {
                     Text("Cancel")
                 }
-                .padding()
-                .buttonStyle(.plain)
-                .foregroundColor(.accentColor)
+                .padding(.leading, 10)
+                .padding(.top, 10)
                 
                 Spacer()
             }

@@ -25,6 +25,8 @@ import SwiftUI
     
     @Published var isAuthenticated: Bool = false
     @Published var quickSettings = QuickSettingsClass()
+    @Published var didUserDeleteNote: Bool = false
+    @Published var isAppLocked: Bool = false
     
     let myNotesContainer: NSPersistentCloudKitContainer
     let dateTimeFormatter = DateFormatter()
@@ -77,13 +79,13 @@ import SwiftUI
                 let noteTag = entity.noteTag!
                 let noteDate = entity.noteDate!
                 let noteCardColour = entity.noteCardColour!
-                let isNoteLocked = quickSettings.isUsingBiometric
+                let url = URL(string: "mynotesplus:///\(noteID)")!
                 
-                let sharedData = SharedData(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteTag: noteTag, noteCardColour: noteCardColour, noteDate: noteDate, isNoteLocked: isNoteLocked)
+                let sharedData = SharedData(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteTag: noteTag, noteCardColour: noteCardColour, noteDate: noteDate, url: url)
                 
-                sharedDataArray.append(sharedData)
+                sharedDataArray.append(sharedData)                
             }
-            
+                                    
             #if !os(watchOS)
             WidgetCenter.shared.reloadAllTimelines()
             #endif
@@ -123,6 +125,7 @@ import SwiftUI
         newNote.noteDate = noteDate
         newNote.noteTag = noteTag
         newNote.noteCardColour = "NoteCardYellowColour"
+        newNote.isNoteLocked = quickSettings.isUsingBiometric
         
         saveNote()
         
@@ -230,6 +233,21 @@ import SwiftUI
         }
         
         return false
+    }
+    
+    func getTotalPinnedNotesCount() -> Int
+    {
+        var count = 0
+        
+        for entity in noteEntities
+        {
+            if(entity.isPinned)
+            {
+                count = count + 1
+            }
+        }
+        
+        return count
     }
 }
 

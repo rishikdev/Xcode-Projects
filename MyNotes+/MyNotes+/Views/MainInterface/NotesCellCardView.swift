@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - NotesCellGridView
 
-struct NotesCellGridView: View
+struct NotesCellCardView: View
 {
     @Environment(\.colorScheme) var colourScheme
     
@@ -52,33 +52,48 @@ struct NotesCellGridView: View
                     {
                         withAnimation
                         {
-                            shadowX = 1
-                            shadowY = 1
+                            shadowX = 0
+                            shadowY = 0
                             shadowRadius = 1
                         }
 
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5)
                         {
                             isNavigationLinkActive = true
+                            
+                            withAnimation
+                            {
+                                shadowX = 0
+                                shadowY = 0
+                                shadowRadius = 5
+                            }
                         }
+                    }
+                    .onChange(of: colourScheme)
+                    {
+                        newColourScheme in
+                        
+                        shadowX = 0
+                        shadowY = 0
+                        shadowRadius = 5
                     }
             }
             
-            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, noteTitle: noteEntity.noteTitle ?? "", originalNoteTitle: noteEntity.noteTitle ?? "", noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"), isActive: $isNavigationLinkActive)
+            NavigationLink(destination: UpdateNoteView(myNotesViewModel: myNotesViewModel, noteEntity: noteEntity, noteTitle: noteEntity.noteTitle ?? "", originalNoteTitle: noteEntity.noteTitle ?? "", noteText: noteEntity.noteText ?? "", originalNoteText: noteEntity.noteText ?? "", noteTag: noteEntity.noteTag ?? "⚪️", originalNoteTag: noteEntity.noteTag ?? "⚪️"), isActive: $isNavigationLinkActive)
             {
                 EmptyView()
             }
             .opacity(0)
             
-            if noteEntity.noteText != nil && noteEntity.noteTitle != nil
+            if(noteEntity.noteText != nil && noteEntity.noteTitle != nil)
             {
-                if !noteEntity.noteText!.isEmpty || !noteEntity.noteTitle!.isEmpty
-                {
+//                if(!noteEntity.noteText!.isEmpty || !noteEntity.noteTitle!.isEmpty)
+//                {
                     VStack
                     {
                         VStack(alignment: .leading)
                         {
-                            Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Title")
+                            Text(noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "New Note" : noteEntity.noteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "No Title")
                                 .font(currentDevice == .phone ? .caption : .body)
                                 .fontWeight(.bold)
                                 .lineLimit(2)
@@ -113,8 +128,8 @@ struct NotesCellGridView: View
                         .font(.caption)
                         .foregroundColor(.black)
                     }
-                    .padding(5)
-                }
+                    .padding(10)
+//                }
             }
         }
         .onAppear
@@ -123,9 +138,9 @@ struct NotesCellGridView: View
             {
                 withAnimation
                 {
-                    shadowX = 10
-                    shadowY = 10
-                    shadowRadius = 10
+                    shadowX = 0
+                    shadowY = 0
+                    shadowRadius = 5
                 }
             }
         }
@@ -133,14 +148,21 @@ struct NotesCellGridView: View
         {
             withAnimation
             {
-                shadowX = 1
-                shadowY = 1
+                shadowX = 0
+                shadowY = 0
                 shadowRadius = 1
             }
 
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5)
             {
                 isNavigationLinkActive = true
+                
+                withAnimation
+                {
+                    shadowX = 0
+                    shadowY = 0
+                    shadowRadius = 5
+                }
             }
         }
         .padding(.horizontal)

@@ -11,14 +11,72 @@ import SwiftUI
 
 struct UpdateNoteView: View
 {
+//    @Environment(\.presentationMode) var presentationMode
+    
+    // This variable keeps track of when the application is dismissed
+//    @Environment(\.scenePhase) var scenePhase
+    
+    @StateObject var myNotesViewModel: MyNotesViewModel
+    
+    @State var noteEntity: MyNotesEntity
+    @State var noteTitle: String
+    @State var originalNoteTitle: String
+    @State var noteText: String
+    @State var originalNoteText: String
+    @State var noteTag: String
+    @State var originalNoteTag: String
+    
+//    @State var showTags: Bool = false
+//    @State var animateButton: Bool = false
+//    @State private var showConfirmationDialog = false
+//    @State var manualUpdateButtonPress: Bool = false
+//
+//    @FocusState private var textBodyIsFocused: Bool
+//
+//    @State private var isShareSheetPresented: Bool = false
+//    @State private var isConfirmDeletePresented: Bool = false
+    
+    let dateTimeFormatter = DateFormatter()
+    
+    @State private var currentDevice = UIDevice.current.userInterfaceIdiom
+    
+    var body: some View
+    {
+        VStack
+        {
+            if(myNotesViewModel.noteEntities.contains(noteEntity))
+            {
+                NoteDetailView(myNotesViewModel: myNotesViewModel,
+                               noteEntity: noteEntity,
+                               noteTitle: noteTitle,
+                               originalNoteTitle: originalNoteTitle,
+                               noteText: noteText,
+                               originalNoteText: originalNoteText,
+                               noteTag: noteTag,
+                               originalNoteTag: originalNoteTag)
+            }
+            
+            else
+            {
+                SelectNoteView(myNotesViewModel: myNotesViewModel)
+            }
+        }
+    }
+}
+
+// MARK: - NoteDetailView
+
+struct NoteDetailView: View
+{
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     // This variable keeps track of when the application is dismissed
     @Environment(\.scenePhase) var scenePhase
     
     @StateObject var myNotesViewModel: MyNotesViewModel
     
-    @State var myNotesEntity: MyNotesEntity
+    @State var noteEntity: MyNotesEntity
     @State var noteTitle: String
     @State var originalNoteTitle: String
     @State var noteText: String
@@ -38,7 +96,8 @@ struct UpdateNoteView: View
     
     let dateTimeFormatter = DateFormatter()
     
-    // MARK: - UpdateNoteView body
+    @State private var currentDevice = UIDevice.current.userInterfaceIdiom
+    @State var isTestSheetPresented: Bool = false
     
     var body: some View
     {
@@ -75,7 +134,7 @@ struct UpdateNoteView: View
                 {
                     withAnimation
                     {
-                        myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                        myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
                     }
                 }
                 
@@ -84,10 +143,6 @@ struct UpdateNoteView: View
                     updateButtonPressed()
                 }
             }
-        }
-        .sheet(isPresented: $isShareSheetPresented)
-        {
-            ShareSheetView(activityItems: [noteTitle + "\n" + "\n" + noteText])
         }
         .toolbar()
         {
@@ -101,18 +156,15 @@ struct UpdateNoteView: View
                 updateTime
             }
             
-            ToolbarItem(placement: .bottomBar)
+            ToolbarItemGroup(placement: .bottomBar)
             {
-                deleteButton_shareButton
+                deleteButton
+                shareButton
             }
             
             ToolbarItemGroup(placement: .keyboard)
             {
                 tagButtonKeyboard
-            }
-            
-            ToolbarItemGroup(placement: .keyboard)
-            {
                 dismissKeyboardButton
             }
         }
@@ -125,13 +177,10 @@ struct UpdateNoteView: View
         Button(action: {
             manualUpdateButtonPress = true
             updateButtonPressed()
-            
         })
         {
             Text("Done")
         }
-        .buttonStyle(.plain)
-        .foregroundColor(.accentColor)
         .disabled(isTextAppropriate() ? false : true)
     }
     
@@ -141,44 +190,51 @@ struct UpdateNoteView: View
     {
         VStack
         {
-            Text(myNotesEntity.noteDate ?? Date(), style: .date)
-            Text(myNotesEntity.noteDate ?? Date(), style: .time)
+            Text(noteEntity.noteDate ?? Date(), style: .date)
+            Text(noteEntity.noteDate ?? Date(), style: .time)
         }
         .foregroundColor(Color.gray)
         .font(.caption2)
     }
     
-    // MARK: - deleteButton_shareButton
+    // MARK: - deleteButton
     
-    var deleteButton_shareButton: some View
+    var deleteButton: some View
     {
-        HStack
+        Button(role: .destructive, action: {
+            self.isConfirmDeletePresented = true
+        })
         {
-            Button(role: .destructive, action: {
-                self.isConfirmDeletePresented = true
+            Image(systemName: "trash")
+                .foregroundColor(.red)
+        }
+        .confirmationDialog("Are you sure you want to delete the note?", isPresented: self.$isConfirmDeletePresented, titleVisibility: .visible)
+        {
+            Button("Delete", role: .destructive, action: {
+                withAnimation
+                {
+                    myNotesViewModel.deleteNoteByID(noteID: noteEntity.noteID!)
+                }
             })
-            {
-                Image(systemName: "trash")
-            }
-            .confirmationDialog("Are you sure?", isPresented: $isConfirmDeletePresented, titleVisibility: .visible)
-            {
-                Button("Delete", role: .destructive, action: {
-                    myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
-                })
-            }
-            .buttonStyle(.plain)
-            .foregroundColor(.accentColor)
-            
-            Spacer()
-            
-            Button(action: {
-                self.isShareSheetPresented.toggle()
-            })
-            {
-                Image(systemName: "square.and.arrow.up")
-            }
-            .buttonStyle(.plain)
-            .foregroundColor(.accentColor)
+        }
+//        message: {
+//            Text("You cannot undo this action.")
+//        }
+    }
+    
+    // MARK: - shareButton
+    
+    var shareButton: some View
+    {
+        Button(action: {
+            isShareSheetPresented.toggle()
+        })
+        {
+            Image(systemName: "square.and.arrow.up")
+        }
+        .sheet(isPresented: $isShareSheetPresented)
+        {
+            ShareSheetView(activityItems: [noteTitle + "\n" + noteText])
         }
     }
     
@@ -192,7 +248,7 @@ struct UpdateNoteView: View
                 .zIndex(1)
                 .padding(.trailing, 20)
             
-            HStack(spacing: 15)
+            HStack(spacing: 20)
             {
                 let tags = ["🔴", "🟢", "🔵", "🟡", "⚪️"]
                 
@@ -220,7 +276,7 @@ struct UpdateNoteView: View
                 }
             }
             .opacity(showTags ? 1 : 0)
-            .zIndex(0)
+            .zIndex(0)            
         }
     }
     
@@ -232,8 +288,6 @@ struct UpdateNoteView: View
         {
             Image(systemName: "keyboard.chevron.compact.down")
         }
-        .buttonStyle(.plain)
-        .foregroundColor(.accentColor)
     }
     
     // MARK: - updateButtonPressed()
@@ -244,10 +298,10 @@ struct UpdateNoteView: View
         {
             dateTimeFormatter.dateFormat = "HH:mm E, d MMM y"
             
-            myNotesEntity.noteTitle = noteTitle
-            myNotesEntity.noteText = noteText
-            myNotesEntity.noteTag = noteTag
-            myNotesEntity.noteDate = Date()
+            noteEntity.noteTitle = noteTitle
+            noteEntity.noteText = noteText
+            noteEntity.noteTag = noteTag
+            noteEntity.noteDate = Date()
             
             withAnimation
             {
@@ -304,7 +358,7 @@ struct UpdateNoteView: View
         .scaleEffect(animateButton ? 1.1 : 1)
     }
 }
-
+ 
 // MARK: - ShareSheetView
 
 private struct ShareSheetView: UIViewControllerRepresentable

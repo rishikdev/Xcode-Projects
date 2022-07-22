@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MediumWidgetView: View
 {
+    @Environment(\.colorScheme) var colourScheme
     var entry: MediumWidgetIntentSimpleEntry
     let columns = [GridItem(.adaptive(minimum: 150))]
     
@@ -82,6 +83,7 @@ struct MediumWidgetView: View
             }
         }
         .background(LinearGradient(gradient: Gradient(colors: [.mint, .purple, .pink]), startPoint: .top, endPoint: .bottom))
+        .brightness(colourScheme == .light ? 0 : -0.15)
     }
 }
 
@@ -112,10 +114,25 @@ struct UserSelectedNoteCard: View
             
             Spacer()
             
-            Text(getNoteText(noteID: noteID, entry: entry) ?? entry.sharedData[0].noteText)
+            if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
+            {
+                Text(getNoteText(noteID: noteID, entry: entry) ?? entry.sharedData[0].noteText)
+                    .font(.caption)
+                    .padding(5)
+                    .foregroundColor(.black)
+            }
+            
+            else
+            {
+                HStack
+                {
+                    Image(systemName: "lock.fill")
+                    Text("Locked")
+                }
                 .font(.caption)
                 .padding(5)
                 .foregroundColor(.black)
+            }
             
             Spacer()
         }
@@ -138,7 +155,7 @@ struct DefaultNoteCard: View
                 Text(entry.sharedData[index].noteTag)
                     .padding(10)
                 
-                Text(entry.sharedData[index].noteTitle)
+                Text(entry.sharedData[index].noteTitle.isEmpty ? "No Title" : entry.sharedData[index].noteTitle)
                     .fontWeight(.bold)
                 
                 Spacer()
@@ -151,10 +168,24 @@ struct DefaultNoteCard: View
             
             Spacer()
             
-            Text(entry.sharedData[index].noteText)
+            if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
+            {
+                Text(entry.sharedData[index].noteText)
+                    .font(.caption)
+                    .padding(5)
+                    .foregroundColor(.black)
+            }
+            else
+            {
+                HStack
+                {
+                    Image(systemName: "lock.fill")
+                    Text("Locked")
+                }
                 .font(.caption)
                 .padding(5)
                 .foregroundColor(.black)
+            }
             
             Spacer()
         }
@@ -195,7 +226,7 @@ func getNoteTitle(noteID: String, entry: MediumWidgetIntentSimpleEntry) -> Strin
     {
         if(note.noteID.uuidString == noteID)
         {
-            return note.noteTitle
+            return note.noteTitle.isEmpty ? "No Title" : note.noteTitle
         }
     }
     

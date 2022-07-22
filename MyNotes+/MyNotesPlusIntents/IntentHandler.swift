@@ -9,21 +9,23 @@ import Intents
 
 class IntentHandler: INExtension, ConfigurationIntentHandling, MediumWidgetConfigurationIntentHandling, LargeWidgetConfigurationIntentHandling
 {
+    // MARK: - Small Widget
+    
     @MainActor
     func provideCustomNoteOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<CustomNote>?, Error?) -> Void)
     {
             let notes: [CustomNote] = MyNotesViewModel().sharedDataArray.map
             {
-                note in
+                sharedDatum in
                 
                 let sharedNote = CustomNote(
-                    identifier: note.noteID.uuidString,
-                    display: note.noteTitle.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : note.noteTitle
+                    identifier: sharedDatum.noteID.uuidString,
+                    display: sharedDatum.noteTitle.trimmingCharacters(in: .whitespacesAndNewlines).count == 0 ? "No Title" : sharedDatum.noteTitle
                 )
-                sharedNote.noteCardColour = note.noteCardColour
-                sharedNote.noteTitle = note.noteTitle
-                sharedNote.noteText = note.noteText
-                sharedNote.noteTag = note.noteTag
+                sharedNote.noteCardColour = sharedDatum.noteCardColour
+                sharedNote.noteTitle = sharedDatum.noteTitle
+                sharedNote.noteText = sharedDatum.noteText
+                sharedNote.noteTag = sharedDatum.noteTag
                 
                 return sharedNote
             }
@@ -34,6 +36,8 @@ class IntentHandler: INExtension, ConfigurationIntentHandling, MediumWidgetConfi
             // Call the completion handler, passing the collection.
             completion(collection, nil)
     }
+    
+    // MARK: - Medium Widget
     
     @MainActor
     func provideCustomNote1OptionsCollection(for intent: MediumWidgetConfigurationIntent, with completion: @escaping (INObjectCollection<CustomNoteMediumWidget>?, Error?) -> Void)
@@ -86,6 +90,8 @@ class IntentHandler: INExtension, ConfigurationIntentHandling, MediumWidgetConfi
         // Call the completion handler, passing the collection.
         completion(collection, nil)
     }
+    
+    // MARK: - Large Widget
     
     @MainActor
     func provideNoteOptionsCollection(for intent: LargeWidgetConfigurationIntent, with completion: @escaping (INObjectCollection<CustomNoteLargeWidget>?, Error?) -> Void)

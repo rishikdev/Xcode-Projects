@@ -65,7 +65,7 @@ struct NewNoteView: View
             
         })
         {
-            Text("Done")
+            Text("Save")
         }
         .tint(.blue)
         .disabled(isTextAppropriate() ? false : true)

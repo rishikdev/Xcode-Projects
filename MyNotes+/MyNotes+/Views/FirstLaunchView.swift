@@ -11,6 +11,9 @@ struct FirstLaunchView: View
 {
     @Environment(\.dismiss) var dismiss
     @StateObject var myNotesViewModel: MyNotesViewModel
+    #if os(iOS)
+     let screenWidth = UIScreen.main.bounds.size.width
+    #endif
     
     var body: some View
     {
@@ -73,13 +76,18 @@ struct FirstLaunchView: View
             
             Spacer()
             
-            Button("Continue")
+            Button
             {
                 withAnimation
                 {
                     myNotesViewModel.firstLaunch = false
                     dismiss()
                 }
+            } label: {
+                Text("Continue")
+                #if os(iOS)
+                    .frame(width: screenWidth - 50, height: 40)
+                #endif
             }
             .buttonStyle(.borderedProminent)
             .padding()

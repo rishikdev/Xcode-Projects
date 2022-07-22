@@ -71,76 +71,98 @@ struct NoteListView: View
     @Environment(\.colorScheme) var colourScheme
     
     var entry: LargeWidgetIntentSimpleEntry
-    var columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View
     {
-        VStack
+        VStack(spacing: 3)
         {
             HStack
             {
+                Spacer()
+                
                 Text("My Notes Plus")
                     .fontWeight(.black)
-                    .padding(10)
+                    .padding(.leading, 10)
+                    .padding(.top, 5)
+                    .padding(.bottom, 5)
+                    .brightness(0.3)
                 
                 Spacer()
             }
-            .background(colourScheme == .light ? .white : Color(UIColor.systemGroupedBackground))
-//            .foregroundColor(.white)
+            .background(Color("NoteCardYellowColour"))
             .brightness(-0.15)
             .clipped()
             .shadow(radius: 5)
             
-            ForEach(0..<(entry.sharedData.count > 5 ? 5 : entry.sharedData.count), id: \.self )
+            if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
             {
-                index in
-                
-                VStack(spacing: 2.5)
+                ForEach(0..<min(entry.sharedData.count, 5), id: \.self )
                 {
-                    HStack
+                    index in
+                    
+                    VStack(spacing: 4)
                     {
-                        Text(entry.sharedData[index].noteTag)
-                            .font(.caption)
-                        
-                        if(entry.sharedData[index].noteTitle.count > 45)
+                        HStack
                         {
-                            Text("\(String(entry.sharedData[index].noteTitle.suffix(45)))...")
-                                .font(.caption)
-                                .fontWeight(.semibold)
+                            Text(entry.sharedData[index].noteTag)
+                            
+                            if(entry.sharedData[index].noteTitle.count > 45)
+                            {
+                                Text("\(String(entry.sharedData[index].noteTitle.suffix(45)))...")
+                                    .fontWeight(.semibold)
+                            }
+                            
+                            else
+                            {
+                                Text(entry.sharedData[index].noteTitle.isEmpty ? "No Title" : entry.sharedData[index].noteTitle)
+                                    .fontWeight(.semibold)
+                            }
+                            
+                            Spacer()
                         }
-                        
-                        else
+                                            
+                        HStack
                         {
-                            Text(entry.sharedData[index].noteTitle)
-                                .font(.caption)
-                                .fontWeight(.semibold)
+                            Text(entry.sharedData[index].noteDate, format: .dateTime.day().month())
+                            
+                            Text(entry.sharedData[index].noteText.replacingOccurrences(of: "\n", with: " "))
+                                .lineLimit(1)
+                            
+                            Spacer()
                         }
+                        .foregroundColor(.gray)
+                        .font(.callout)
+                    }
+                    .padding(10)
+                    
+                    Divider()
+                        .background(colourScheme == .light ? .gray : .white)
                         
-                        Spacer()
-                    }
-                                        
-                    HStack
-                    {
-                        Text(entry.sharedData[index].noteDate, style: .date)
-                        Text(entry.sharedData[index].noteText)
-                            .lineLimit(1)
-                        Spacer()
-                    }
-                    .font(.caption2)
                 }
-                .padding(10)
+                .padding(.leading, 20)
+            }
+            
+            else
+            {
+                Spacer()
                 
-                Divider()
-                    .background(colourScheme == .light ? .gray : .white)
+                HStack
+                {
+                    Image(systemName: "lock.fill")
+                    Text("Locked")
+                }
             }
             
             Spacer()
         }
+        .background(colourScheme == .light ? .white : Color(UIColor.systemGroupedBackground))
+        .minimumScaleFactor(0.65)
     }
 }
 
 struct NoteSingleCardView: View
 {
+    @Environment(\.colorScheme) var colourScheme
     var entry: LargeWidgetIntentSimpleEntry
     
     var body: some View
@@ -165,19 +187,33 @@ struct NoteSingleCardView: View
             
             Spacer()
             
-            Text(getNoteText(noteID:entry.configuration.Note?.identifier ?? UUID().uuidString, entry: entry) ?? entry.sharedData[0].noteText)
-                .padding(5)
-                .font(.callout)
+            if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
+            {
+                Text(getNoteText(noteID:entry.configuration.Note?.identifier ?? UUID().uuidString, entry: entry) ?? entry.sharedData[0].noteText)
+                    .padding(5)
+                    .font(.callout)
+            }
+            
+            else
+            {
+                HStack
+                {
+                    Image(systemName: "lock.fill")
+                    Text("Locked")
+                }
+            }
             
             Spacer()
         }
         .foregroundColor(.black)
         .background((Color(getNoteCardColour(noteID: entry.configuration.Note?.identifier ?? UUID().uuidString, entry: entry) ?? entry.sharedData[0].noteCardColour)))
+        .brightness(colourScheme == .light ? 0 : -0.15)
     }
 }
 
 struct DefaultNodeSingleCardView: View
 {
+    @Environment(\.colorScheme) var colourScheme
     var entry: LargeWidgetIntentSimpleEntry
     
     var body: some View
@@ -189,7 +225,7 @@ struct DefaultNodeSingleCardView: View
                 Text(entry.sharedData[0].noteTag)
                     .padding(10)
 
-                Text(entry.sharedData[0].noteTitle)
+                Text(entry.sharedData[0].noteTitle.isEmpty ? "No Title" : entry.sharedData[0].noteTitle)
                     .fontWeight(.black)
                 
                 Spacer()
@@ -202,14 +238,27 @@ struct DefaultNodeSingleCardView: View
             
             Spacer()
             
-            Text(entry.sharedData[0].noteText)
-                .padding(5)
-                .font(.callout)
+            if(!entry.sharedData[0].noteCardColour.contains("-LOCKED"))
+            {
+                Text(entry.sharedData[0].noteText)
+                    .padding(5)
+                    .font(.callout)
+            }
+            
+            else
+            {
+                HStack
+                {
+                    Image(systemName: "lock.fill")
+                    Text("Locked")
+                }
+            }
             
             Spacer()
         }
         .foregroundColor(.black)
         .background((Color(entry.sharedData[0].noteCardColour)))
+        .brightness(colourScheme == .light ? 0 : -0.15)
     }
 }
 
@@ -245,7 +294,7 @@ func getNoteTitle(noteID: String, entry: LargeWidgetIntentSimpleEntry) -> String
     {
         if(note.noteID.uuidString == noteID)
         {
-            return note.noteTitle
+            return note.noteTitle.isEmpty ? "No Title" : note.noteTitle
         }
     }
     
