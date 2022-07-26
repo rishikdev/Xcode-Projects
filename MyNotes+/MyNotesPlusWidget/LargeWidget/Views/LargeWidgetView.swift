@@ -43,7 +43,7 @@ struct LargeWidgetView: View
             {
                 HStack
                 {
-                    Text("My Notes Plus")
+                    Text("My Notes +")
                         .fontWeight(.black)
                         .padding(10)
                     
@@ -80,7 +80,7 @@ struct NoteListView: View
             {
                 Spacer()
                 
-                Text("My Notes Plus")
+                Text("My Notes +")
                     .fontWeight(.black)
                     .padding(.leading, 10)
                     .padding(.top, 5)
@@ -124,6 +124,7 @@ struct NoteListView: View
                         HStack
                         {
                             Text(entry.sharedData[index].noteDate, format: .dateTime.day().month())
+                                .font(.caption)
                             
                             Text(entry.sharedData[index].noteText.replacingOccurrences(of: "\n", with: " "))
                                 .lineLimit(1)

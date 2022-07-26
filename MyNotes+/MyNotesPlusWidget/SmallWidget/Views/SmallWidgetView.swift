@@ -40,7 +40,7 @@ struct SmallWidgetView: View
                 else
                 {
                     Spacer()
-                    Text("My Notes Plus")
+                    Text("My Notes +")
                         .padding(5)
                 }
                 

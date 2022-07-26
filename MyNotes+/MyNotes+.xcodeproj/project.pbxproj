@@ -63,6 +63,10 @@
 		5C6CA79C2878DCC90049D625 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79B2878DCC90049D625 /* MediumWidgetView.swift */; };
 		5C6CA79E2878DCD00049D625 /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */; };
 		5C6CA7A02878E03A0049D625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C65DDF92855495600FDB05C /* Assets.xcassets */; };
+		5C86D172288EE9BF004ACE98 /* FirstTabVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D171288EE9BF004ACE98 /* FirstTabVIew.swift */; };
+		5C86D174288EEA19004ACE98 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D173288EEA19004ACE98 /* SecondTabView.swift */; };
+		5C86D176288EEA30004ACE98 /* ThirdTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D175288EEA30004ACE98 /* ThirdTabView.swift */; };
+		5C86D178288EF6D2004ACE98 /* ZerothTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C86D177288EF6D2004ACE98 /* ZerothTabView.swift */; };
 		5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */; };
 		5CAC04DD2885C58A00C8B4B2 /* NotesCellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DC2885C58A00C8B4B2 /* NotesCellCardView.swift */; };
 		5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */; };
@@ -83,7 +87,6 @@
 		5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
 		5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8C828821C3E00808D53 /* MyNotesView.swift */; };
 		5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
-		5CC5D8CD28821EAB00808D53 /* FirstLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */; };
 		5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */; };
 		5CC5D8D42882530900808D53 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5D8D32882530900808D53 /* CloudKit.framework */; };
 		5CD6C8272880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
@@ -237,6 +240,10 @@
 		5C6CA79B2878DCC90049D625 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
 		5C6CA79D2878DCD00049D625 /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
 		5C6F9DAA2875CE7F0023CDF7 /* MyNotesContainer V3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyNotesContainer V3.xcdatamodel"; sourceTree = "<group>"; };
+		5C86D171288EE9BF004ACE98 /* FirstTabVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabVIew.swift; sourceTree = "<group>"; };
+		5C86D173288EEA19004ACE98 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
+		5C86D175288EEA30004ACE98 /* ThirdTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabView.swift; sourceTree = "<group>"; };
+		5C86D177288EF6D2004ACE98 /* ZerothTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZerothTabView.swift; sourceTree = "<group>"; };
 		5CAC04D92885C55200C8B4B2 /* NotesCellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellListView.swift; sourceTree = "<group>"; };
 		5CAC04DC2885C58A00C8B4B2 /* NotesCellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCellCardView.swift; sourceTree = "<group>"; };
 		5CAC04DE2885C6C700C8B4B2 /* ContextMenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuItems.swift; sourceTree = "<group>"; };
@@ -401,13 +408,9 @@
 		5C415A622877814400FD75ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C86D170288EE996004ACE98 /* FirstLaunchView */,
 				5CAC04DB2885C55B00C8B4B2 /* MainInterface */,
-				5C41737528874031001D7FE2 /* SelectNoteView.swift */,
-				5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */,
-				5C65DE2428554A7B00FDB05C /* NewNoteView.swift */,
-				5C65DE2028554A7B00FDB05C /* UpdateNoteView.swift */,
-				5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */,
-				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
+				5C4D063D28903C5E00024F92 /* OtherViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,6 +423,18 @@
 				5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5C4D063D28903C5E00024F92 /* OtherViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C41737528874031001D7FE2 /* SelectNoteView.swift */,
+				5C65DE2428554A7B00FDB05C /* NewNoteView.swift */,
+				5C65DE2028554A7B00FDB05C /* UpdateNoteView.swift */,
+				5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */,
+				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
+			);
+			path = OtherViews;
 			sourceTree = "<group>";
 		};
 		5C65DDE92855495500FDB05C = {
@@ -512,6 +527,18 @@
 				5C6CA78F2878CA1E0049D625 /* MyNotesPlusWidgetView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5C86D170288EE996004ACE98 /* FirstLaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				5C65DE2328554A7B00FDB05C /* FirstLaunchView.swift */,
+				5C86D177288EF6D2004ACE98 /* ZerothTabView.swift */,
+				5C86D171288EE9BF004ACE98 /* FirstTabVIew.swift */,
+				5C86D173288EEA19004ACE98 /* SecondTabView.swift */,
+				5C86D175288EEA30004ACE98 /* ThirdTabView.swift */,
+			);
+			path = FirstLaunchView;
 			sourceTree = "<group>";
 		};
 		5CAC04DB2885C55B00C8B4B2 /* MainInterface */ = {
@@ -867,9 +894,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C86D172288EE9BF004ACE98 /* FirstTabVIew.swift in Sources */,
 				5C4173742886F87D001D7FE2 /* MyNotesNonSectionView.swift in Sources */,
+				5C86D176288EEA30004ACE98 /* ThirdTabView.swift in Sources */,
 				5CAC04DD2885C58A00C8B4B2 /* NotesCellCardView.swift in Sources */,
 				5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */,
+				5C86D178288EF6D2004ACE98 /* ZerothTabView.swift in Sources */,
 				5CAC04DA2885C55200C8B4B2 /* NotesCellListView.swift in Sources */,
 				5C65DE2F28554A7B00FDB05C /* FirstLaunchView.swift in Sources */,
 				5C65DDF82855495500FDB05C /* MyNotesView.swift in Sources */,
@@ -885,6 +915,7 @@
 				5C65DE3128554A7B00FDB05C /* QuickSettingsClass.swift in Sources */,
 				5C41737628874031001D7FE2 /* SelectNoteView.swift in Sources */,
 				5C415A612877359400FD75ED /* MotionManagerClass.swift in Sources */,
+				5C86D174288EEA19004ACE98 /* SecondTabView.swift in Sources */,
 				5CD6C8302880C816001722B3 /* LargeWidgetIntent.intentdefinition in Sources */,
 				5C65DE3328554A7B00FDB05C /* MyNotesContainer.xcdatamodeld in Sources */,
 				5C65DE3428554A7B00FDB05C /* FilterSheet.swift in Sources */,
@@ -921,7 +952,6 @@
 				5CC5D8A9288219EF00808D53 /* NoteView.swift in Sources */,
 				5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */,
 				5CC5D8AF288219EF00808D53 /* ComplicationController.swift in Sources */,
-				5CC5D8CD28821EAB00808D53 /* FirstLaunchView.swift in Sources */,
 				5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */,
 				5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */,
 				5CC5D8AD288219EF00808D53 /* NotificationView.swift in Sources */,
@@ -1214,8 +1244,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MyNotes--Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Notes Plus";
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to unlock your data!";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Notes +";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID to unlock My Notes +";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1253,8 +1283,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MyNotes--Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "My Notes Plus";
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID is required to unlock your data!";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Notes +";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID to unlock My Notes +";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

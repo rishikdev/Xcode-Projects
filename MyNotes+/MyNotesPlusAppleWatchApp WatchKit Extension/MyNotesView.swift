@@ -71,7 +71,7 @@ struct MyNotesView: View
                 {
                     myNotesViewModel.fetchNotes()
                 }
-                .navigationTitle("My Notes Plus")
+                .navigationTitle("My Notes +")
                 .navigationBarTitleDisplayMode(.inline)
                 .if(!myNotesViewModel.noteEntities.isEmpty)
                 {

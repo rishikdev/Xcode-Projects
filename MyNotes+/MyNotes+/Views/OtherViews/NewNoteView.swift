@@ -251,7 +251,7 @@ private struct CreateNoteView: View
             noteEntity!.noteText = noteText
             noteEntity!.noteTag = noteTag
             noteEntity!.noteDate = Date()
-            noteEntity!.noteCardColour = "NoteCardYellowColour"
+            noteEntity!.noteCardColour = QuickSettingsClass().isUsingBiometric ? "NoteCardYellowColour-LOCKED" : "NoteCardYellowColour"
             
             myNotesViewModel.updateNote()
             

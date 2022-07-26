@@ -91,33 +91,7 @@ struct MyNotesApp: App
                     
                     else
                     {
-                        VStack
-                        {
-                            Spacer()
-                            
-                            Button("Unlock My Notes")
-                            {
-                                #if !os(watchOS)
-                                myNotesViewModel.authenticate()
-                                #endif
-                            }
-                            
-                            Spacer()
-                            
-                            Button(action: { showAlert = true })
-                            {
-                                Image(systemName: "info.circle")
-                            }
-                            .alert("If you are unable to unlock My Notes, please make sure that Touch ID or Face ID is enabled in your device's Settings app.", isPresented: $showAlert)
-                            {
-                                Button("OK", role: .cancel, action: { })
-                            }
-                            .padding()
-                            
-                        }
-                        .font(.title2)
-                        .buttonStyle(.plain)
-                        .foregroundColor(.accentColor)
+                        UnlockMyNotesPlus
                     }
                 }
                 
@@ -127,6 +101,64 @@ struct MyNotesApp: App
                         .transition(.scale)
                 }
             }
+        }
+    }
+    
+    var UnlockMyNotesPlus: some View
+    {
+        ZStack
+        {
+            LinearGradient(gradient: Gradient(colors: [Color("NoteCardYellowColour"), Color("NoteCardGreenColour"), Color("NoteCardPinkColour")]),
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
+            .ignoresSafeArea()
+            
+            VStack
+            {
+                Spacer()
+                
+                Image("Icon")
+                    .resizable()
+                    .frame(width: 75, height: 75)
+                    .cornerRadius(15)
+                    .shadow(radius: 5)
+                    .padding()
+                                            
+                Button("Unlock My Notes +")
+                {
+                    #if !os(watchOS)
+                    myNotesViewModel.authenticate()
+                    #endif
+                }
+                .foregroundColor(.white)
+                .padding(10)
+                .background(.teal)
+                .cornerRadius(15)
+                .shadow(radius: 5)
+                
+                Spacer()
+                
+                Button(action: { showAlert = true })
+                {
+                    Image(systemName: "info.circle")
+                }
+                .alert("Unable to unlock My Notes +?", isPresented: $showAlert)
+                {
+                    Button("OK", role: .cancel, action: { })
+                } message: {
+                    Text("If you are unable to unlock My Notes, please make sure that Touch ID or Face ID is enabled in your device's Settings app.")
+                }
+                .foregroundColor(.white)
+                .padding()
+                .background(.teal)
+                .cornerRadius(50)
+                .shadow(radius: 5)
+                .padding()
+                
+            }
+            .font(.title2)
+            .buttonStyle(.plain)
+            .foregroundColor(.accentColor)
         }
     }
 }

@@ -56,11 +56,6 @@ struct NotesCellListView: View
                         {
                             Image(systemName: "pin.circle")
                         }
-                        
-                        if(noteEntity.isNoteLocked)
-                        {
-                            Image(systemName: "lock.fill")
-                        }
                     }
 //                }
             }

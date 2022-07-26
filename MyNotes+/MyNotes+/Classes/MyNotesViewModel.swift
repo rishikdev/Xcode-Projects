@@ -185,7 +185,7 @@ import SwiftUI
         
         if(context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error))
         {
-            let touchIDReason = "Touch ID is required to unlock your data!"
+            let touchIDReason = "Use Touch ID to unlock My Notes +"
             
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: touchIDReason)
             {

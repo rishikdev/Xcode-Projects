@@ -59,7 +59,7 @@ struct MediumWidgetView: View
                     {
                         Spacer()
                         
-                        Text("My Notes Plus")
+                        Text("My Notes +")
                             .padding(5)
                         
                         Spacer()
