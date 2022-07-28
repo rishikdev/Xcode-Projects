@@ -5,3 +5,4 @@ Current projects:
 - [My Kitchen](/My%20Kitchen)
 - [My Notes](/My%20Notes)
 - [Remember Me?](/Remember%20Me%3F)
+- [My Notes Plus](/MyNotesPlus)
