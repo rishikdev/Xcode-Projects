@@ -24,7 +24,7 @@ As described above, there are three difficulty levels to choose from:
 
 You get **one point for each correct emoticon** you identify or recall. However, **for each incorrect emoticon you select, you lose a point**. The lowest score is capped at 0, so you cannot score in the negatives. **There are no penalties for failing to recall emoticons**. This is designed in such a way to **discourage the users from selecting all the emoticons** and scoring 100% every-time.
 
-## Screenshots
+# Screenshots
 
 #### Light Mode
 <p align="center">
@@ -42,6 +42,6 @@ You get **one point for each correct emoticon** you identify or recall. However,
   <img src="https://github.com/rishikdev/Images/blob/main/Remember%20Me%3F/Score%20Dark.gif" width="225"/>
 </p>
 
-## Where to find Remember Me?
+# Where to find Remember Me?
 
 This application is now available on the [App Store](https://apps.apple.com/us/app/remember-me/id1627908191?itsct=apps_box_link&itscg=30200).
