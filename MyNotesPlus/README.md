@@ -21,7 +21,7 @@ but they also have the option of choosing a note that they want to see instead.
 ## Apple Watch Application
 In addition to implementing widgets, I have also developed a ***companion Apple Watch application***. With the watch application, users can add, pin/unpin or delete a note, and they can also view a note which they created on their iPhone or iPad. Since My Notes Plus uses CloudKit to persist data on iCloud, the notes created on any device will be available on other devices signed-in with the same Apple ID.
 
-## Screenshots (iPhone 12 Mini)
+# Screenshots (iPhone 12 Mini)
 #### Light Mode
 <p align = "center">
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Plus/iPhone_List_Light.png" width = 250/>
@@ -49,5 +49,5 @@ In addition to implementing widgets, I have also developed a ***companion Apple 
   <img src="https://github.com/rishikdev/Images/blob/main/My%20Notes%20Plus/Watch_Filter.png" width = 200/>
 </p>
 
-## Where to find My Notes Plus
+# Where to find My Notes Plus
 You can [download](https://apps.apple.com/us/app/my-notes-plus/id1636570752?itsct=apps_box_badge&itscg=30200) the application from the App Store!
