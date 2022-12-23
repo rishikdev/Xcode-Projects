@@ -1,15 +1,13 @@
 //
-//  UpdateNoteView.swift
+//  NoteEntryView.swift
 //  My Notes
 //
-//  Created by Rishik Dev on 18/02/22.
+//  Created by Rishik Dev on 23/12/22.
 //
 
 import SwiftUI
 
-// MARK: - UpdateNoteView
-
-struct UpdateNoteView: View
+struct NoteEntryView: View
 {
     @Environment(\.presentationMode) var presentationMode
     
@@ -29,12 +27,13 @@ struct UpdateNoteView: View
     @State var animateButton: Bool = false
     @State private var showConfirmationDialog = false
     @State var manualUpdateButtonPress: Bool = false
+    @State private var isConfirmDeletePresented: Bool = false
     
     @FocusState private var textBodyIsFocused: Bool
     
     let dateTimeFormatter = DateFormatter()
     
-    // MARK: - UpdateNoteView body
+    // MARK: - NoteEntryView body
     
     var body: some View
     {
@@ -66,7 +65,7 @@ struct UpdateNoteView: View
         {
             if(originalNoteTitle != noteTitle || originalNoteText != noteText || originalNoteTag != noteTag)
             {
-                if(noteText.trimmingCharacters(in: .whitespacesAndNewlines).count == 0)
+                if(!isTextAppropriate())
                 {
                     withAnimation
                     {
@@ -92,9 +91,13 @@ struct UpdateNoteView: View
                 updateTime
             }
             
-            ToolbarItem(placement: .bottomBar)
+            ToolbarItemGroup(placement: .bottomBar)
             {
-                deleteButton
+                HStack
+                {
+                    deleteButton
+                    Spacer()
+                }
             }
             
             ToolbarItemGroup(placement: .keyboard)
@@ -143,18 +146,24 @@ struct UpdateNoteView: View
     
     var deleteButton: some View
     {
-        HStack
+        Button(role: .destructive, action: {
+            self.isConfirmDeletePresented = true
+        })
         {
-            Button(action: {
-                myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+            Image(systemName: "trash")
+                .foregroundColor(.red)
+        }
+        .confirmationDialog("Are you sure?", isPresented: self.$isConfirmDeletePresented, titleVisibility: .visible)
+        {
+            Button("Delete", role: .destructive, action: {
+                withAnimation
+                {
+                    myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                }
             })
-            {
-                Image(systemName: "trash")
-            }
-            .buttonStyle(.plain)
-            .foregroundColor(.accentColor)
-            
-            Spacer()
+        }
+        message: {
+            Text("You cannot undo this action.")
         }
     }
     
@@ -225,7 +234,10 @@ struct UpdateNoteView: View
             myNotesEntity.noteTag = noteTag
             myNotesEntity.noteDate = Date()
             
-            myNotesViewModel.updateNote()
+            withAnimation
+            {
+                myNotesViewModel.updateNote()
+            }
             
             textBodyIsFocused = !manualUpdateButtonPress
             
@@ -278,13 +290,8 @@ struct UpdateNoteView: View
     }
 }
 
-//struct UpdateNoteView_Previews: PreviewProvider
-//{
-//    static var previews: some View
-//    {
-//        NavigationView
-//        {
-//            UpdateNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), textBody: "", selectedTag: "⚪️")
-//        }
+//struct NoteEntryView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NoteEntryView()
 //    }
 //}

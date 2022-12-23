@@ -14,8 +14,10 @@ struct My_NotesApp: App
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.colorScheme) var colorScheme
     
+    
     @StateObject var myNotesViewModel = MyNotesViewModel()
     @StateObject var quickSettings = QuickSettingsClass()
+    @StateObject var checkAppVersion = CheckApplicationVersion()
     
     @State var showAlert: Bool = false
     @State var opacity: CGFloat = 0
@@ -24,9 +26,9 @@ struct My_NotesApp: App
     {
         WindowGroup
         {
-            if(myNotesViewModel.firstLaunch)
+            if(checkAppVersion.currentApplicationVersion != checkAppVersion.savedAppVersion || myNotesViewModel.firstLaunch)
             {
-                FirstLaunchView(myNotesViewModel: myNotesViewModel)
+                FirstLaunchView(myNotesViewModel: myNotesViewModel, checkAppVersion: checkAppVersion)
             }
             
             else

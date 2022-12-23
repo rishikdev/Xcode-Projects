@@ -14,10 +14,14 @@ import SwiftUI
 
 @MainActor class MyNotesViewModel: ObservableObject
 {
-    @Published var notesEntities: [MyNotesEntity] = []
-    @StateObject var quickSettings = QuickSettingsClass()
     @AppStorage("firstLaunch") var firstLaunch: Bool = true
+    
+    @Published var notesEntities: [MyNotesEntity] = []
+    @Published var quickSettings = QuickSettingsClass()
     @Published var isAuthenticated: Bool = false
+    @Published var sortByKey: String = "noteDate"
+    @Published var didUserDeleteNote: Bool = false
+    @Published var enableNewNoteButton: Bool = true
     
     let myNotesContainer: NSPersistentContainer
     let dateTimeFormatter = DateFormatter()
@@ -36,7 +40,6 @@ import SwiftUI
             }
         }
         
-        
         fetchNotes()
     }
     
@@ -45,8 +48,8 @@ import SwiftUI
     func fetchNotes()
     {
         let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
-        let sort = NSSortDescriptor(key: "noteDate", ascending: false)
-        request.sortDescriptors = [sort]
+        let sortBy = NSSortDescriptor(key: quickSettings.currentSortByKey, ascending: quickSettings.sortInAscending)
+        request.sortDescriptors = [sortBy]
         
         do
         {
@@ -174,6 +177,38 @@ import SwiftUI
         {
             // Do some error handling here
         }
+    }
+    
+    // MARK: - isAnyNotePinned
+    
+    func isAnyNotePinned() -> Bool
+    {
+        for entity in notesEntities
+        {
+            if(entity.isPinned)
+            {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    // MARK: - getTotalPinnedNotesCount
+    
+    func getTotalPinnedNotesCount() -> Int
+    {
+        var count = 0
+        
+        for entity in notesEntities
+        {
+            if(entity.isPinned)
+            {
+                count = count + 1
+            }
+        }
+        
+        return count
     }
 }
 
