@@ -27,6 +27,7 @@ import SwiftUI
     @Published var quickSettings = QuickSettingsClass()
     @Published var didUserDeleteNote: Bool = false
     @Published var isAppLocked: Bool = false
+    @Published var sortByKey: String = "noteDate"
     
     let myNotesContainer: NSPersistentCloudKitContainer
     let dateTimeFormatter = DateFormatter()
@@ -63,8 +64,8 @@ import SwiftUI
     func fetchNotes()
     {
         let request = NSFetchRequest<MyNotesEntity>(entityName: "MyNotesEntity")
-        let sort = NSSortDescriptor(key: "noteDate", ascending: false)
-        request.sortDescriptors = [sort]
+        let sortBy = NSSortDescriptor(key: quickSettings.currentSortByKey, ascending: quickSettings.sortInAscending)
+        request.sortDescriptors = [sortBy]
         
         do
         {
@@ -83,7 +84,7 @@ import SwiftUI
                 
                 let sharedData = SharedData(noteID: noteID, noteTitle: noteTitle, noteText: noteText, noteTag: noteTag, noteCardColour: noteCardColour, noteDate: noteDate, url: url)
                 
-                sharedDataArray.append(sharedData)                
+                sharedDataArray.append(sharedData)
             }
                                     
             #if !os(watchOS)
@@ -234,6 +235,8 @@ import SwiftUI
         
         return false
     }
+    
+    // MARK: - getTotalPinnedNotesCount
     
     func getTotalPinnedNotesCount() -> Int
     {

@@ -47,7 +47,8 @@ struct NotesCellListView: View
                                     .lineLimit(1)
                             }
                             .font(.callout)
-                            .foregroundColor(Color(UIColor.systemGray))
+                            .opacity(0.5)
+//                            .foregroundColor(Color(UIColor.systemGray))
                         }
                         
                         Spacer()

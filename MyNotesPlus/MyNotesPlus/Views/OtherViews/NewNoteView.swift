@@ -44,7 +44,7 @@ struct NewNoteView: View
 private struct CreateNoteView: View
 {
     @Environment(\.presentationMode) var presentationMode
-    
+    @Environment(\.dismiss) var dismiss
     // This variable keeps track of when the application is dismissed
     @Environment(\.scenePhase) var scenePhase
     
@@ -153,7 +153,6 @@ private struct CreateNoteView: View
             {
                 saveTime
             }
-            
             
             ToolbarItemGroup(placement: .keyboard)
             {

@@ -85,10 +85,10 @@ struct MyNotesSectionView: View
     }
 }
 
-//struct MyNotesSectionView_Previews: PreviewProvider
-//{
-//    static var previews: some View
-//    {
-//        MyNotesSectionView()
-//    }
-//}
+struct MyNotesSectionView_Previews: PreviewProvider
+{
+    static var previews: some View
+    {
+        MyNotesSectionView(myNotesViewModel: MyNotesViewModel(), quickSettings: QuickSettingsClass())
+    }
+}

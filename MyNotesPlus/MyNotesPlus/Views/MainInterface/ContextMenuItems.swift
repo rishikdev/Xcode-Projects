@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ContextMenuItems: View
 {
-    @StateObject var myNotesVViewModel: MyNotesViewModel
+    @StateObject var myNotesViewModel: MyNotesViewModel
     @State var myNotesEntity: MyNotesEntity
     @State var isCardView: Bool
     
@@ -78,8 +78,8 @@ struct ContextMenuItems: View
                 {
                     withAnimation
                     {
-                        myNotesVViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
-                        myNotesVViewModel.didUserDeleteNote.toggle()
+                        myNotesViewModel.deleteNoteByID(noteID: myNotesEntity.noteID!)
+                        myNotesViewModel.didUserDeleteNote.toggle()
                     }
                 }
             })
@@ -105,7 +105,7 @@ struct ContextMenuItems: View
         {
             withAnimation
             {
-                myNotesVViewModel.updateNote()
+                myNotesViewModel.updateNote()
             }
         }
     }
@@ -119,7 +119,7 @@ struct ContextMenuItems: View
             withAnimation
             {
                 myNotesEntity.isPinned.toggle()
-                myNotesVViewModel.updateNote()
+                myNotesViewModel.updateNote()
             }
         }
     }
@@ -133,7 +133,7 @@ struct ContextMenuItems: View
             withAnimation
             {
                 myNotesEntity.noteCardColour = cardColour
-                myNotesVViewModel.updateNote()
+                myNotesViewModel.updateNote()
             }
         }
     }

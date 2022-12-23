@@ -130,7 +130,7 @@ struct SettingsSheet: View
 enum ViewStyleEnum: String, CaseIterable
 {
     case list = "List"
-    case grid = "Grid"
+    case card = "Card"
     
     var imageName: String
     {
@@ -138,12 +138,11 @@ enum ViewStyleEnum: String, CaseIterable
         {
             case .list:
                 return "list.dash"
-            case .grid:
+            case .card:
                 return "square.grid.2x2"
         }
     }
 }
-
 
 struct SettingsView_Previews: PreviewProvider
 {

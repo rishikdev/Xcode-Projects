@@ -24,8 +24,8 @@ struct NotesCellCardView: View
     
     @State private var minWidthiPhone: CGFloat = 150
     @State private var minHeightiPhone: CGFloat = 230
-    @State private var minWidthiPad: CGFloat = 250
-    @State private var minHeightiPad: CGFloat = 350
+    @State private var minWidthiPad: CGFloat = 200
+    @State private var minHeightiPad: CGFloat = 280
     
     // Enable motionManager to enable moving shadows
 //    @ObservedObject var motionManager = MotionManager()
@@ -169,11 +169,10 @@ struct NotesCellCardView: View
     }
 }
 
-
 //struct NotesCellGridView_Previews: PreviewProvider
 //{
 //    static var previews: some View
 //    {
-//        NotesCellGridView(myNotesViewModel: MyNotesViewModel(), noteEntity: MyNotesEntity())
+//        NotesCellCardView(myNotesViewModel: MyNotesViewModel(), noteEntity: MyNotesEntity())
 //    }
 //}

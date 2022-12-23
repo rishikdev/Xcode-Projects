@@ -64,13 +64,13 @@ struct MyNotesView: View
                             }
                         }
                     
-                    // MARK: - case .grid
-                    case .grid:
+                    // MARK: - case .card
+                    case .card:
                         withAnimation
                         {
                             ScrollView
                             {
-                                LazyVGrid(columns: columns, alignment: .center, spacing: 25)
+                                LazyVGrid(columns: columns, alignment: .center, spacing: 40)
                                 {
                                     // MARK: - Pinned notes
                                     ForEach(searchResults)
@@ -96,6 +96,7 @@ struct MyNotesView: View
                                         }
                                     }
                                 }
+                                .padding(.bottom)
                                 .listStyle(.insetGrouped)
                             }
                             .refreshable
@@ -103,11 +104,11 @@ struct MyNotesView: View
                                 myNotesViewModel.fetchNotes()
                             }
                             .searchable(text: $searchQuery)
+//                            .navigationViewStyle(.stack)
                         }
                 }
                 
                 // MARK: - Bottom buttons
-                
                 HStack
                 {
                     settingsButton
@@ -135,7 +136,7 @@ struct MyNotesView: View
             
             if(myNotesViewModel.noteEntities.isEmpty)
             {
-                Text("No Notes")
+                Text("No notes")
                     .font(.largeTitle)
                     .foregroundColor(.gray)
             }
@@ -147,6 +148,7 @@ struct MyNotesView: View
                     .foregroundColor(.gray)
             }
         }
+        .customNavigationViewStyle(if: quickSettings.viewStylePreference == .card, then: StackNavigationViewStyle(), else: ColumnsNavigationViewStyle())
     }
     
     // MARK: - searchResults
@@ -174,19 +176,25 @@ struct MyNotesView: View
     
     var filterButton: some View
     {
-        Button(action: {
-            showFilters.toggle()
-        })
+        VStack
         {
-            Image(systemName: "line.3.horizontal.decrease.circle")
-                .overlay(FilterButtonDot(filter: quickSettings))
-        }
-        .sheet(isPresented: $showFilters)
-        {
-            FilterSheet(quickSettings: quickSettings)
+            Menu
+            {
+                FilterMenu(quickSettings: quickSettings)
+                Divider()
+                SortByMenu(myNotesViewModel: myNotesViewModel, quickSettings: quickSettings)
+            }
+            label:
+            {
+                Image(systemName: "ellipsis.circle")
+                    .overlay(FilterButtonDot(filter: quickSettings))
+                    .buttonStyle(.plain)
+            }
         }
     }
-        
+    
+    // MARK: - settingsButton
+    
     var settingsButton: some View
     {
         Button(action: {
@@ -194,6 +202,7 @@ struct MyNotesView: View
         })
         {
             Image(systemName: "gear")
+                .font(.title2)
         }
         .sheet(isPresented: $showSettings)
         {
@@ -201,12 +210,16 @@ struct MyNotesView: View
         }
     }
     
+    // MARK: - notesCount
+    
     var notesCount: some View
     {
         Text(searchResults.count > 0 ? (searchResults.count == 1 ? "1 Note" : "\(searchResults.count) Notes") : "No Notes")
             .font(.caption2)
             .foregroundColor(.gray)
     }
+    
+    // MARK: - newNoteButton
     
     var newNoteButton: some View
     {
@@ -219,6 +232,7 @@ struct MyNotesView: View
                     myNotesViewModel.didUserDeleteNote = false
                     activateNewNoteView = true
                 }
+                .font(.title2)
         }
     }
 }
@@ -284,7 +298,7 @@ struct ListViewModifierCollection: ViewModifier
             {
                 withAnimation
                 {
-                    ContextMenuItems(myNotesVViewModel: myNotesViewModel, myNotesEntity: noteEntity, isCardView: false)
+                    ContextMenuItems(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, isCardView: false)
                         .transition(.scale)
                 }
             }
@@ -312,9 +326,48 @@ struct CardViewModifierCollection: ViewModifier
             .transition(.scale)
             .contextMenu
             {
-                ContextMenuItems(myNotesVViewModel: myNotesViewModel, myNotesEntity: noteEntity, isCardView: true)
+                ContextMenuItems(myNotesViewModel: myNotesViewModel, myNotesEntity: noteEntity, isCardView: true)
                     .transition(.scale)
             }
+    }
+}
+
+// MARK: - View extension customNavigationViewStyle
+
+extension View
+{
+    public func customNavigationViewStyle<T, U>(if condition: Bool, then modifierT: T, else modifierU: U) -> some View where T: ViewModifier, U: ViewModifier
+    {
+        Group
+        {
+            if(condition)
+            {
+                modifier(modifierT)
+            }
+            
+            else
+            {
+                modifier(modifierU)
+            }
+        }
+    }
+}
+
+// MARK: - ColumnsNavigationViewStyle
+
+struct ColumnsNavigationViewStyle: ViewModifier
+{
+    func body(content: Content) -> some View {
+        content.navigationViewStyle(.columns)
+    }
+}
+
+// MARK: - StackNavigationViewStyle
+
+struct StackNavigationViewStyle: ViewModifier
+{
+    func body(content: Content) -> some View {
+        content.navigationViewStyle(.stack)
     }
 }
 
@@ -323,6 +376,11 @@ struct ContentView_Previews: PreviewProvider
     static var previews: some View
     {
         MyNotesView(myNotesViewModel: MyNotesViewModel(), quickSettings: QuickSettingsClass())
-//            .preferredColorScheme(.dark)
+            .previewDisplayName("Light Mode")
+//            .previewInterfaceOrientation(.landscapeLeft)
+        
+        MyNotesView(myNotesViewModel: MyNotesViewModel(), quickSettings: QuickSettingsClass())
+            .preferredColorScheme(.dark)
+            .previewDisplayName("Dark Mode")
     }
 }

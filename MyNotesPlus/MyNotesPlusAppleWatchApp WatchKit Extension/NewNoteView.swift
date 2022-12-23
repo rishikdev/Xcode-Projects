@@ -33,18 +33,10 @@ struct NewNoteView: View
             TextField("Title", text: $noteTitle)
                 .font(.body.bold())
                 .focused($textBodyIsFocused)
-                .onChange(of: noteTitle)
-                {
-                    print($0)
-                }
             
             TextField("Body", text: $noteText)
 //                .font(.body.bold())
                 .focused($textBodyIsFocused)
-                .onChange(of: noteText)
-                {
-                    print($0)
-                }
             
             tagButtonView
                 .padding()

@@ -9,16 +9,18 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>tlfZUB</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>21E258</string>
+	<string>22C65</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>13F17a</string>
+	<string>14C18</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>13.4</string>
+	<string>14.2</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
 			<key>INIntentCategory</key>
 			<string>information</string>
+			<key>INIntentDescription</key>
+			<string>Select a note or see a list of your notes</string>
 			<key>INIntentDescriptionID</key>
 			<string>uuyUIL</string>
 			<key>INIntentEligibleForWidgets</key>

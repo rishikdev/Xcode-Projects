@@ -48,7 +48,7 @@
 		5C65DE3128554A7B00FDB05C /* QuickSettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2528554A7B00FDB05C /* QuickSettingsClass.swift */; };
 		5C65DE3228554A7B00FDB05C /* MyNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */; };
 		5C65DE3328554A7B00FDB05C /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
-		5C65DE3428554A7B00FDB05C /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */; };
+		5C65DE3428554A7B00FDB05C /* FilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterMenu.swift */; };
 		5C65DE3928554E9000FDB05C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C65DE3828554E9000FDB05C /* CloudKit.framework */; };
 		5C665FEA287E236C00E4BF25 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
 		5C665FEB287E236C00E4BF25 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
@@ -87,7 +87,7 @@
 		5CC5D8C728821BC100808D53 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C665FE9287E236C00E4BF25 /* SharedData.swift */; };
 		5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5D8C828821C3E00808D53 /* MyNotesView.swift */; };
 		5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2728554A7B00FDB05C /* MyNotesContainer.xcdatamodeld */; };
-		5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */; };
+		5CC5D8CF2882228200808D53 /* FilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2A28554A7B00FDB05C /* FilterMenu.swift */; };
 		5CC5D8D42882530900808D53 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5D8D32882530900808D53 /* CloudKit.framework */; };
 		5CD6C8272880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
 		5CD6C8282880B729001722B3 /* MediumWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8262880B729001722B3 /* MediumWidgetIntents.intentdefinition */; };
@@ -99,6 +99,10 @@
 		5CD6C8322880C824001722B3 /* LargeWidgetIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C82F2880C816001722B3 /* LargeWidgetIntent.intentdefinition */; };
 		5CD6C8342880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8332880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift */; };
 		5CD6C8362880C8CA001722B3 /* LargeWidgetSimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD6C8352880C8CA001722B3 /* LargeWidgetSimpleEntry.swift */; };
+		5CF24798293FFE6400C803FA /* SortByMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF24797293FFE6400C803FA /* SortByMenu.swift */; };
+		5CF2479B293FFE6400C803FA /* SortByMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF24797293FFE6400C803FA /* SortByMenu.swift */; };
+		5CF2479C2940023000C803FA /* SortByMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF24797293FFE6400C803FA /* SortByMenu.swift */; };
+		5CF2479D2940023100C803FA /* SortByMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF24797293FFE6400C803FA /* SortByMenu.swift */; };
 		5CFD4DC92889B39200C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5CFD4DCA2889B39400C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
 		5CFD4DCB2889B39500C0030D /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */; };
@@ -227,7 +231,7 @@
 		5C65DE2628554A7B00FDB05C /* MyNotesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNotesViewModel.swift; sourceTree = "<group>"; };
 		5C65DE2828554A7B00FDB05C /* MyNotesContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNotesContainer.xcdatamodel; sourceTree = "<group>"; };
 		5C65DE2928554A7B00FDB05C /* MyNotesContainer V2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "MyNotesContainer V2.xcdatamodel"; sourceTree = "<group>"; };
-		5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
+		5C65DE2A28554A7B00FDB05C /* FilterMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterMenu.swift; sourceTree = "<group>"; };
 		5C65DE3528554E7C00FDB05C /* MyNotes--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MyNotes--Info.plist"; sourceTree = SOURCE_ROOT; };
 		5C65DE3628554E8D00FDB05C /* MyNotesPlus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyNotesPlus.entitlements; sourceTree = "<group>"; };
 		5C65DE3828554E9000FDB05C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -267,6 +271,7 @@
 		5CD6C82F2880C816001722B3 /* LargeWidgetIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LargeWidgetIntent.intentdefinition; sourceTree = "<group>"; };
 		5CD6C8332880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetIntentTimelineProvider.swift; sourceTree = "<group>"; };
 		5CD6C8352880C8CA001722B3 /* LargeWidgetSimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetSimpleEntry.swift; sourceTree = "<group>"; };
+		5CF24797293FFE6400C803FA /* SortByMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortByMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,8 +436,9 @@
 				5C41737528874031001D7FE2 /* SelectNoteView.swift */,
 				5C65DE2428554A7B00FDB05C /* NewNoteView.swift */,
 				5C65DE2028554A7B00FDB05C /* UpdateNoteView.swift */,
-				5C65DE2A28554A7B00FDB05C /* FilterSheet.swift */,
+				5C65DE2A28554A7B00FDB05C /* FilterMenu.swift */,
 				5C65DE2228554A7B00FDB05C /* SettingsSheet.swift */,
+				5CF24797293FFE6400C803FA /* SortByMenu.swift */,
 			);
 			path = OtherViews;
 			sourceTree = "<group>";
@@ -869,6 +875,7 @@
 				5C09CBD92880A06C00316B17 /* MyNotesPlusWidgetFamily.swift in Sources */,
 				5C6CA79A2878DCC00049D625 /* SmallWidgetView.swift in Sources */,
 				5C6CA79E2878DCD00049D625 /* LargeWidgetView.swift in Sources */,
+				5CF2479C2940023000C803FA /* SortByMenu.swift in Sources */,
 				5CD6C8342880C89A001722B3 /* LargeWidgetIntentTimelineProvider.swift in Sources */,
 				5C6CA7942878CAD70049D625 /* QuickSettingsClass.swift in Sources */,
 				5CFD4DC92889B39200C0030D /* SettingsSheet.swift in Sources */,
@@ -884,6 +891,7 @@
 				5C3CB2852880579C007E6E7A /* MyNotesViewModel.swift in Sources */,
 				5C3CB286288057F4007E6E7A /* QuickSettingsClass.swift in Sources */,
 				5C3CB281287F87EC007E6E7A /* SharedData.swift in Sources */,
+				5CF2479D2940023100C803FA /* SortByMenu.swift in Sources */,
 				5CFD4DCA2889B39400C0030D /* SettingsSheet.swift in Sources */,
 				5C3CB280287F86BF007E6E7A /* SmallWidget.intentdefinition in Sources */,
 				5C3CB278287F86A5007E6E7A /* IntentHandler.swift in Sources */,
@@ -900,6 +908,7 @@
 				5C86D172288EE9BF004ACE98 /* FirstTabVIew.swift in Sources */,
 				5C4173742886F87D001D7FE2 /* MyNotesNonSectionView.swift in Sources */,
 				5C86D176288EEA30004ACE98 /* ThirdTabView.swift in Sources */,
+				5CF24798293FFE6400C803FA /* SortByMenu.swift in Sources */,
 				5CAC04DD2885C58A00C8B4B2 /* NotesCellCardView.swift in Sources */,
 				5CAC04DF2885C6C700C8B4B2 /* ContextMenuItems.swift in Sources */,
 				5C86D178288EF6D2004ACE98 /* ZerothTabView.swift in Sources */,
@@ -921,7 +930,7 @@
 				5C86D174288EEA19004ACE98 /* SecondTabView.swift in Sources */,
 				5CD6C8302880C816001722B3 /* LargeWidgetIntent.intentdefinition in Sources */,
 				5C65DE3328554A7B00FDB05C /* MyNotesContainer.xcdatamodeld in Sources */,
-				5C65DE3428554A7B00FDB05C /* FilterSheet.swift in Sources */,
+				5C65DE3428554A7B00FDB05C /* FilterMenu.swift in Sources */,
 				5C1A9EC12880EF770079D645 /* IntentHandler.swift in Sources */,
 				5C665FEA287E236C00E4BF25 /* SharedData.swift in Sources */,
 			);
@@ -951,9 +960,10 @@
 				5CC5D8C528821BC100808D53 /* MyNotes_App.swift in Sources */,
 				5CC5D8CA28821C3E00808D53 /* MyNotesView.swift in Sources */,
 				5C4A55562884C2F400A3D7CE /* NewNoteView.swift in Sources */,
+				5CF2479B293FFE6400C803FA /* SortByMenu.swift in Sources */,
 				5CC5D8AB288219EF00808D53 /* NotificationController.swift in Sources */,
 				5CC5D8A9288219EF00808D53 /* NoteView.swift in Sources */,
-				5CC5D8CF2882228200808D53 /* FilterSheet.swift in Sources */,
+				5CC5D8CF2882228200808D53 /* FilterMenu.swift in Sources */,
 				5CC5D8AF288219EF00808D53 /* ComplicationController.swift in Sources */,
 				5CC5D8CC28821EA000808D53 /* MyNotesContainer.xcdatamodeld in Sources */,
 				5CC5D8C128821BC100808D53 /* MyNotesViewModel.swift in Sources */,
@@ -1010,7 +1020,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyNotesPlusWidget/Info.plist;
@@ -1022,7 +1032,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1040,7 +1050,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyNotesPlusWidget/Info.plist;
@@ -1052,7 +1062,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1068,7 +1078,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusIntents/MyNotesPlusIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyNotesPlusIntents/Info.plist;
@@ -1080,7 +1090,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1096,7 +1106,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusIntents/MyNotesPlusIntents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyNotesPlusIntents/Info.plist;
@@ -1108,7 +1118,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.MyNotesPlusIntents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1241,13 +1251,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlus/MyNotesPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MyNotes--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "My Notes Plus";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID to unlock My Notes Plus";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1262,7 +1273,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus;
 				PRODUCT_NAME = "My Notes Plus";
 				SUPPORTS_MACCATALYST = NO;
@@ -1280,13 +1291,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlus/MyNotesPlus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlus/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MyNotes--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "My Notes Plus";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Use Face ID to unlock My Notes Plus";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1301,7 +1313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus;
 				PRODUCT_NAME = "My Notes Plus";
 				SUPPORTS_MACCATALYST = NO;
@@ -1394,7 +1406,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MyNotesPlusAppleWatchApp WatchKit Extension/MyNotesPlusAppleWatchApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlusAppleWatchApp WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
@@ -1409,7 +1421,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1428,7 +1440,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MyNotesPlusAppleWatchApp WatchKit Extension/MyNotesPlusAppleWatchApp WatchKit Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"MyNotesPlusAppleWatchApp WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_PREVIEWS = YES;
@@ -1443,7 +1455,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1463,13 +1475,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusAppleWatchApp/MyNotesPlusAppleWatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = MyNotesPlusAppleWatchApp_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SRRSS.MyNotesPlus;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp;
 				PRODUCT_NAME = "My Notes Plus";
 				SDKROOT = watchos;
@@ -1489,13 +1501,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MyNotesPlusAppleWatchApp/MyNotesPlusAppleWatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = MyNotesPlusAppleWatchApp_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SRRSS.MyNotesPlus;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SRRSS.MyNotesPlus.watchkitapp;
 				PRODUCT_NAME = "My Notes Plus";
 				SDKROOT = watchos;

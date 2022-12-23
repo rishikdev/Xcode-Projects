@@ -11,11 +11,6 @@ import SwiftUI
 
 struct UpdateNoteView: View
 {
-//    @Environment(\.presentationMode) var presentationMode
-    
-    // This variable keeps track of when the application is dismissed
-//    @Environment(\.scenePhase) var scenePhase
-    
     @StateObject var myNotesViewModel: MyNotesViewModel
     
     @State var noteEntity: MyNotesEntity
@@ -25,16 +20,6 @@ struct UpdateNoteView: View
     @State var originalNoteText: String
     @State var noteTag: String
     @State var originalNoteTag: String
-    
-//    @State var showTags: Bool = false
-//    @State var animateButton: Bool = false
-//    @State private var showConfirmationDialog = false
-//    @State var manualUpdateButtonPress: Bool = false
-//
-//    @FocusState private var textBodyIsFocused: Bool
-//
-//    @State private var isShareSheetPresented: Bool = false
-//    @State private var isConfirmDeletePresented: Bool = false
     
     let dateTimeFormatter = DateFormatter()
     
@@ -106,12 +91,25 @@ struct NoteDetailView: View
             TextField("Title", text: $noteTitle)
                 .font(.largeTitle.bold())
                 .focused($textBodyIsFocused)
-            
+
             Divider()
-            
+
             TextEditor(text: $noteText)
                 .focused($textBodyIsFocused)
                 .padding(.bottom)
+            
+            if(!textBodyIsFocused)
+            {
+                HStack
+                {
+                    deleteButton
+                    Spacer()
+                    shareButton
+                }
+                .font(.title2)
+                .padding(.horizontal)
+                .padding(.bottom)
+            }
         }
         .padding(.horizontal)
         .onChange(of: scenePhase)
@@ -154,12 +152,6 @@ struct NoteDetailView: View
             ToolbarItem(placement: .principal)
             {
                 updateTime
-            }
-            
-            ToolbarItemGroup(placement: .bottomBar)
-            {
-                deleteButton
-                shareButton
             }
             
             ToolbarItemGroup(placement: .keyboard)
@@ -208,7 +200,7 @@ struct NoteDetailView: View
             Image(systemName: "trash")
                 .foregroundColor(.red)
         }
-        .confirmationDialog("Are you sure you want to delete the note?", isPresented: self.$isConfirmDeletePresented, titleVisibility: .visible)
+        .confirmationDialog("Are you sure?", isPresented: self.$isConfirmDeletePresented, titleVisibility: .visible)
         {
             Button("Delete", role: .destructive, action: {
                 withAnimation
@@ -217,9 +209,9 @@ struct NoteDetailView: View
                 }
             })
         }
-//        message: {
-//            Text("You cannot undo this action.")
-//        }
+        message: {
+            Text("You cannot undo this action.")
+        }
     }
     
     // MARK: - shareButton
@@ -392,7 +384,7 @@ private struct ShareSheetView: UIViewControllerRepresentable
 //    {
 //        NavigationView
 //        {
-//            UpdateNoteView(myNotesViewModel: MyNotesViewModel(), myNotesEntity: MyNotesEntity(), textBody: "", selectedTag: "⚪️")
+//            UpdateNoteView(myNotesViewModel: MyNotesViewModel(), noteEntity: MyNotesEntity(), noteTitle: "Test Title", originalNoteTitle: "Test Title", noteText: "Some text", originalNoteText: "Some text", noteTag: "", originalNoteTag: "")
 //        }
 //    }
 //}

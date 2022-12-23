@@ -149,13 +149,13 @@ struct MyNotesView: View
         {
             HStack
             {
-                Image(systemName: "line.3.horizontal.decrease.circle")
+                Image(systemName: "ellipsis.circle")
                     .overlay(FilterButtonDot(filter: quickSettings))
             }
         }
         .sheet(isPresented: $showFilters)
         {
-            FilterSheet(quickSettings: quickSettings)
+            FilterMenu(quickSettings: quickSettings)
         }
         .buttonStyle(BorderedButtonStyle(tint: .blue))
     }
