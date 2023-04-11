@@ -1,0 +1,117 @@
+/* 
+  Localizable.strings
+  SocialifyMe
+
+  Created by Rishik Dev on 07/03/23.
+  
+*/
+
+// MARK: - Application Name
+"CFBundleDisplayName" = "सोशलिफ़ाई";
+
+// MARK: - View Controller Titles
+"onboardingVCTitle" = "सोशलिफ़ाई";
+"signUpVCTitle" = "साइन अप";
+"homeTabVCTitle" = "आपके लिए";
+"exploreTabVCTitle" = "अन्वेषण";
+"messagesTabVCTitle" = "संदेश";
+"settingsTabVC" = "सेटिंग्स";
+"createPostVC" = "पोस्ट बनाएँ";
+
+// MARK: - Label Texts + Text Field Placeholders
+// The keys for both labels and text fields are the same
+
+"email" = "ईमेल";
+"password" = "पासवर्ड";
+"confirmPassword" = "पासवर्ड की पुष्टि कीजिए";
+"firstName" = "प्रथम (मूल) नाम";
+"middleName" = "मध्य नाम";
+"lastName" = "उपनाम";
+"gender" = "लिंग";
+"phoneNumber" = "दूरभाष क्रमांक";
+"age" = "उम्र";
+"dateOfBirth" = "जन्मदिन";
+"city" = "शहर";
+"state" = "राज्य";
+"country" = "देश";
+"noContent" = "कोई चित्र नहीं";
+"noFriends" = "कोई मित्रगण नहीं";
+"noMessages" = "कोई संदेश नहीं";
+"labelPosts" = "पोस्ट";
+"labelFollowers" = "अनुयायि";
+"labelFollowing" = "फॉलो";
+"labelYourPosts" = "आपके पोस्ट्स";
+"labelNoPosts" = "कोई पोस्ट नहीं";
+"labelPostError" = "कुछ गड़बड़ हो गई";
+
+// MARK: - Tab Bar Titles
+"homeTab" = "घर";
+"friendsTab" = "अन्वेषण";
+"messagesTab" = "संदेश";
+"settingsTab" = "सेटिंग्स";
+
+// MARK: - Alert Titles
+"successful" = "सफलता!";
+"unsuccessful" = "कुछ गड़बड़ी हो गई";
+"confirmation" = "क्या आप यकीनन यह करना चाहते हैं?";
+
+
+// MARK: - Alert Messages
+"alertFirstName" = "कृपया अपना प्रथम (मूल) नाम भरें";
+"alertLastName" = "कृपया अपना उपनाम भरें";
+"alertGender" = "कृपया अपना लिंग चुनें";
+"alertPasswordMismatch" = "आपके द्वारा प्रदान किए गए पासवर्ड मेल नहीं खा रहे हैं";
+"alertPhoneNumber" = "कृपया एक मान्य दूरभाष क्रमांक भरें। दूरभाष क्रमांक १० अंकों का होना चाहिए।";
+"alertDateOfBirth" = "कृपया एक मान्य आयु भरें। आयु शून्य से अधिक होनी चाहिए।";
+"alertCity" = "कृपया अपने शहर का नाम भरें";
+"alertState" = "कृपया अपने राज्य का नाम भरें";
+"alertCountry" = "कृपया अपने देश का नाम भरें";
+"loginWithDifferentProvider" = "आपने पहले *** के द्वारा साइन इन किया था। कृपया *** के द्वारा फिर से साइन इन करने का प्रयास करें।";
+"successfulSignUp" = "आपका खाता सफलतापूर्वक बन गया है!";
+"unsuccessfulSignUpWrongEmailPassword" = "कृपया एक वैध ईमेल और पासवर्ड भरें। पासवर्ड छह वर्ण या उससे अधिक लंबा होना चाहिए।";
+"unsuccessfulSignUpUserAlreadyExists" = "समान ईमेल वाला एक खाता पहले से मौजूद है। इसके बजाय साइन इन करने का प्रयास करें।";
+"unsuccessfulSignUpUserUnknown" = "आपका खाता इस समय नहीं बनाया जा सका। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"successfulProfileCreation" = "आपका प्रोफ़ाइल सफलतापूर्वक बन गया है!";
+"successfulProfileUpdation" = "आपका प्रोफ़ाइल सफलतापूर्वक बदल दिया गया है!";
+"unsuccessfulProfileCreation" = "आपका प्रोफ़ाइल नहीं बनाया जा सका। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"unsuccessfulProfileUpdation" = "आपका प्रोफ़ाइल नहीं बदला जा सका। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"successfulSignUpUnsuccessfulProfileCreation" = "आपका खाता सफलतापूर्वक बन गया है! लेकिन, आपका प्रोफ़ाइल नहीं बनाया जा सका। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"successfulSignIn" = "आपने सफतलापूर्वक साइन इन कर लिया है";
+"unsuccessfulSignIn" = "कृपया एक वैध ईमेल और पासवर्ड भरें";
+"successfulSignOut" = "आपने सफलतापूर्वक साइन आउट कर लिया है!";
+"unsuccessfulSignOut" = "साइन आउट करने में कुछ गड़बड़ी हो गई। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"completeProfileUponSuccessfulSignUpUsingProvider" = "आपका खाता सफलतापूर्वक बन गया है! क्या आप अपनी प्रोफ़ाइल अभी पूर्ण करना चाहेंगे?";
+"signOutMessage" = "यदि आप साइन आउट करते हैं तो आप सोशलिफ़ाई से संदेश और अन्य सूचनाएं प्राप्त नहीं कर पाएंगे";
+"successfulProfilePhotoUpload" = "आपकी प्रोफ़ाइल चित्र सफलतापूर्वक भर कर दी गई है!";
+"unsuccessfulProfilePhotoUpload" = "आपकी प्रोफ़ाइल चित्र नहीं भारी जा सकी। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"successfulPostUpload" = "आपकी चित्र सफलतापूर्वक भर कर दी गई है!";
+"unsuccessfulPostUpload" = "आपकी प्रोफ़ाइल चित्र नहीं भारी जा सकी। कृपया कुछ देर बाद पुन: प्रयास करें।";
+"successfulProfileCreationUnsuccessfulProfilePhotoUpload" = "आपका प्रोफ़ाइल सफलतापूर्वक बन गया है! लेकिन, आपकी प्रोफ़ाइल चित्र नहीं भारी जा सकी।";
+"successfulProfileUpdationUnsuccessfulProfilePhotoUpload" = "आपका प्रोफ़ाइल सफलतापूर्वक बदल दिया गया है! लेकिन, आपकी प्रोफ़ाइल चित्र नहीं भारी जा सकी।.";
+"successfulPostFetch" = "पोस्ट सफलतापूर्वक लाई गईं!";
+"unsuccessfulPostFetch" = "पोस्ट प्राप्त नहीं की जा सकीं। कृपया कुछ देर बाद पुन: प्रयास करें।";
+
+// MARK: - Gender Strings
+"male" = "नर";
+"female" = "नारी";
+"other" = "अन्य";
+
+// MARK: - Errors
+"operationTerminatedByTheUser" = "ऑपरेशन उपयोगकर्ता द्वारा समाप्त कर दिया गया";
+
+// MARK: - Buttons
+"buttonSignIn" = "साइन इन";
+"buttonSignUp" = "साइन अप";
+"buttonSignInWithGoogle" = "गूगल द्वारा साइन इन करें";
+"buttonSignInWithFacebook" = "फ़ेसबुक द्वारा साइन इन करें";
+"buttonOk" = "ठीक है";
+"buttonYesSure" = "हाँ, यकीनन";
+"buttonNoMaybeLater" = "नहीं, शायद बाद में";
+"buttonUpdateProfile" = "प्रोफाइल बदलें";
+"buttonSignOut" = "साइन आउट";
+"buttonCancel" = "रद्द करें";
+"buttonSave" = "सेव";
+"buttonGender" = "अपना लिंग चुनें";
+"buttonEditProfile" = "प्रोफाइल बदलें";
+"buttonSelectPhoto" = "चित्र चुनें";
+"buttonPost" = "पोस्ट";

@@ -1,0 +1,116 @@
+/* 
+  Localizable.strings
+  SocialifyMe
+
+  Created by Rishik Dev on 07/03/23.
+  
+*/
+
+// MARK: - Application Name
+"CFBundleDisplayName" = "التواصل الاجتماعي";
+
+// MARK: - View Controller Titles
+"onboardingVCTitle" = "التواصل الاجتماعي";
+"signUpVCTitle" = "اشتراك";
+"homeTabVCTitle" = "خلاصتك";
+"exploreTabVCTitle" = "يستكشف";
+"messagesTabVCTitle" = "رسائل";
+"settingsTabVC" = "إعدادات";
+"createPostVC" = "إنشاء منشور";
+
+// MARK: - Label Texts + Text Field Placeholders
+// The keys for both labels and text fields are the same
+
+"email" = "بريد إلكتروني";
+"password" = "كلمة المرور";
+"confirmPassword" = "تأكيد كلمة المرور";
+"firstName" = "الاسم الأول";
+"middleName" = "الاسم الأوسط";
+"lastName" = "اسم العائلة";
+"gender" = "جنس";
+"phoneNumber" = "رقم التليفون";
+"age" = "عمر";
+"dateOfBirth" = "تاريخ الميلاد";
+"city" = "مدينة";
+"state" = "ولاية";
+"country" = "دولة";
+"noContent" = "لا يوجد محتوى";
+"noFriends" = "لا أصدقاء";
+"noMessages" = "لا رسائل";
+"labelPosts" = "مشاركات";
+"labelFollowers" = "متابعون";
+"labelFollowing" = "أتابع";
+"labelYourPosts" = "منشوراتك";
+"labelNoPosts" = "لا توجد مشاركات";
+"labelPostError" = "هناك خطأ ما";
+
+// MARK: - Tab Bar Titles
+"homeTab" = "بيت";
+"friendsTab" = "يستكشف";
+"messagesTab" = "رسائل";
+"settingsTab" = "إعدادات";
+
+// MARK: - Alert Titles
+"successful" = "ناجح!";
+"unsuccessful" = "يوجد شئ غير صحيح";
+"confirmation" = "هل أنت متأكد؟";
+
+// MARK: - Alert Messages
+"alertFirstName" = "يرجى ادخال الاسم الاول";
+"alertLastName" = "الرجاء إدخال اسمك الأخير";
+"alertGender" = "الرجاء إدخال جنسك";
+"alertPasswordMismatch" = "كلمات المرور التي قدمتها غير متطابقة";
+"alertPhoneNumber" = "يرجى إدخال رقم هاتف صالح. يجب أن يتكون رقم الهاتف من 10 أرقام.";
+"alertDateOfBirth" = "الرجاء إدخال عمر صالح. يجب أن يكون العمر أكبر من الصفر.";
+"alertCity" = "الرجاء إدخال مدينتك";
+"alertState" = "الرجاء إدخال دولتك";
+"alertCountry" = "الرجاء إدخال بلدك";
+"loginWithDifferentProvider" = "لقد قمت بتسجيل الدخول مسبقًا باستخدام ***. الرجاء محاولة تسجيل الدخول باستخدام *** مرة أخرى.";
+"successfulSignUp" = "تم إنشاء حسابك بنجاح!";
+"unsuccessfulSignUpWrongEmailPassword" = "الرجاء إدخال عنوان بريد إلكتروني وكلمة مرور صالحين. يجب أن تتكون كلمة المرور من ستة أحرف أو أكثر.";
+"unsuccessfulSignUpUserAlreadyExists" = "يوجد بالفعل حساب بنفس عنوان البريد الإلكتروني. حاول الغناء بدلاً من ذلك.";
+"unsuccessfulSignUpUserUnknown" = "لا يمكن إنشاء حسابك. الرجاء معاودة المحاولة في وقت لاحق.";
+"successfulProfileCreation" = "تم إنشاء ملف التعريف الخاص بك بنجاح!";
+"successfulProfileUpdation" = "تم تحديث ملف التعريف الخاص بك بنجاح!";
+"unsuccessfulProfileCreation" = "لا يمكن إنشاء ملف التعريف الخاص بك. الرجاء معاودة المحاولة في وقت لاحق.";
+"unsuccessfulProfileUpdation" = "لا يمكن تحديث ملف التعريف الخاص بك. الرجاء معاودة المحاولة في وقت لاحق.";
+"successfulSignUpUnsuccessfulProfileCreation" = "تم إنشاء حسابك بنجاح! ومع ذلك ، لا يمكن إنشاء ملف التعريف الخاص بك. الرجاء معاودة المحاولة في وقت لاحق.";
+"successfulSignIn" = "لقد قمت بتسجيل الدخول بنجاح!";
+"unsuccessfulSignIn" = "يرجى التحقق من عنوان بريدك الإلكتروني و / أو كلمة المرور";
+"successfulSignOut" = "لقد قمت بتسجيل الخروج بنجاح!";
+"unsuccessfulSignOut" = "حدث خطأ ما أثناء تسجيل الخروج. حاول مرة أخرى في وقت لاحق.";
+"completeProfileUponSuccessfulSignUpUsingProvider" = "لقد ثم انشاء حسابك بنجاح! هل ترغب في استكمال ملف التعريف الخاص بك الآن؟";
+"signOutMessage" = "لن تتمكن من تلقي الرسائل والإشعارات الأخرى من SocialifyMe إذا قمت بتسجيل الخروج.";
+"successfulProfilePhotoUpload" = "تم تحميل صورة ملفك الشخصي بنجاح!";
+"unsuccessfulProfilePhotoUpload" = "لا يمكن تحميل صورة ملفك الشخصي. الرجاء معاودة المحاولة في وقت لاحق.";
+"successfulPostUpload" = "تم نشر صورتك بنجاح!";
+"unsuccessfulPostUpload" = "لا يمكن نشر صورتك. الرجاء معاودة المحاولة في وقت لاحق.";
+"successfulProfileCreationUnsuccessfulProfilePhotoUpload" = "تم إنشاء ملف التعريف الخاص بك بنجاح! ومع ذلك ، لا يمكن تحميل صورة ملفك الشخصي.";
+"successfulProfileUpdationUnsuccessfulProfilePhotoUpload" = "تم تحديث ملف التعريف الخاص بك بنجاح! ومع ذلك ، لا يمكن تحميل صورة ملفك الشخصي.";
+"successfulPostFetch" = "تم جلب المشاركات بنجاح!";
+"unsuccessfulPostFetch" = "لا يمكن جلب المشاركات. الرجاء معاودة المحاولة في وقت لاحق.";
+
+// MARK: - Gender Strings
+"male" = "ذكر";
+"female" = "أنثى";
+"other" = "آخر";
+
+// MARK: - Errors
+"operationTerminatedByTheUser" = "تم إنهاء العملية من قبل المستخدم";
+
+// MARK: - Buttons
+"buttonSignIn" = "تسجيل الدخول";
+"buttonSignUp" = "اشتراك";
+"buttonSignInWithGoogle" = "الدخول مع جوجل";
+"buttonSignInWithFacebook" = "قم بتسجيل الدخول باستخدام الفيسبوك";
+"buttonOk" = "نعم";
+"buttonYesSure" = "نعم بالتأكيد!";
+"buttonNoMaybeLater" = "لا ربما في وقت لاحق";
+"buttonUpdateProfile" = "تحديث الملف";
+"buttonSignOut" = "خروج";
+"buttonCancel" = "يلغي";
+"buttonSave" = "يحفظ";
+"buttonGender" = "اختر جنسك";
+"buttonEditProfile" = "تعديل الملف الشخصي";
+"buttonSelectPhoto" = "اختر الصور";
+"buttonPost" = "بريد";

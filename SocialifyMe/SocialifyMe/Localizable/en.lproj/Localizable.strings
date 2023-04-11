@@ -1,0 +1,116 @@
+/* 
+  Localizable.strings
+  SocialifyMe
+
+  Created by Rishik Dev on 07/03/23.
+  
+*/
+
+// MARK: - Application Name
+"CFBundleDisplayName" = "SocialifyMe";
+
+// MARK: - View Controller Titles
+"onboardingVCTitle" = "SocialifyMe";
+"signUpVCTitle" = "Sign Up";
+"homeTabVCTitle" = "Your Feed";
+"exploreTabVCTitle" = "Explore";
+"messagesTabVCTitle" = "Messages";
+"settingsTabVC" = "Settings";
+"createPostVC" = "Create Post";
+
+// MARK: - Label Texts + Text Field Placeholders
+// The keys for both labels and text fields are the same
+
+"email" = "Email";
+"password" = "Password";
+"confirmPassword" = "Confirm Password";
+"firstName" = "First Name";
+"middleName" = "Middle Name";
+"lastName" = "Last Name";
+"gender" = "Gender";
+"phoneNumber" = "Phone Number";
+"age" = "Age";
+"dateOfBirth" = "Date of Birth";
+"city" = "City";
+"state" = "State";
+"country" = "Country";
+"noContent" = "No Content";
+"noFriends" = "No Friends";
+"noMessages" = "No Messages";
+"labelPosts" = "Posts";
+"labelFollowers" = "Followers";
+"labelFollowing" = "Following";
+"labelYourPosts" = "Your Posts";
+"labelNoPosts" = "No Posts";
+"labelPostError" = "Something went wrong";
+
+// MARK: - Tab Bar Titles
+"homeTab" = "Home";
+"friendsTab" = "Explore";
+"messagesTab" = "Messages";
+"settingsTab" = "Settings";
+
+// MARK: - Alert Titles
+"successful" = "Successful!";
+"unsuccessful" = "Something's not right";
+"confirmation" = "Are you sure?";
+
+// MARK: - Alert Messages
+"alertFirstName" = "Please enter your first name";
+"alertLastName" = "Please enter your last name";
+"alertGender" = "Please enter your gender";
+"alertPasswordMismatch" = "The passwords you provided are not matching";
+"alertPhoneNumber" = "Please enter a valid phone number. Phone number should be of 10 digits.";
+"alertDateOfBirth" = "Please enter a valid age. Age should be greater than zero.";
+"alertCity" = "Please enter your city";
+"alertState" = "Please enter your state";
+"alertCountry" = "Please enter your country";
+"loginWithDifferentProvider" = "You previously signed in with ***. Please try signing in with *** again.";
+"successfulSignUp" = "You account was created successfully!";
+"unsuccessfulSignUpWrongEmailPassword" = "Please enter a valid email address and password. Password must be six characters long or more.";
+"unsuccessfulSignUpUserAlreadyExists" = "An account with the same email address already exists. Try singing in instead.";
+"unsuccessfulSignUpUserUnknown" = "Your account could not be created. Please try again later.";
+"successfulProfileCreation" = "Your profile was created successfully!";
+"successfulProfileUpdation" = "Your profile was updated successfully!";
+"unsuccessfulProfileCreation" = "Your profile could not be created. Please try again later.";
+"unsuccessfulProfileUpdation" = "Your profile could not be updated. Please try again later.";
+"successfulSignUpUnsuccessfulProfileCreation" = "You account was created successfully! However, Your profile could not be created. Please try again later.";
+"successfulSignIn" = "You have signed in successfully!";
+"unsuccessfulSignIn" = "Please check your email address and/or password";
+"successfulSignOut" = "You have signed out successfully!";
+"unsuccessfulSignOut" = "Something went wrong while signing out. Try again later.";
+"completeProfileUponSuccessfulSignUpUsingProvider" = "Your account was created successfully! Would you like to complete your profile now?";
+"signOutMessage" = "You will not be able to receive messages and other notifications from SocialifyMe if you sign out.";
+"successfulProfilePhotoUpload" = "Your profile photo was uploaded successfully!";
+"unsuccessfulProfilePhotoUpload" = "Your profile photo could not be uploaded. Please try again later.";
+"successfulPostUpload" = "Your photo was posted successfully!";
+"unsuccessfulPostUpload" = "Your photo could not be posted. Please try again later.";
+"successfulProfileCreationUnsuccessfulProfilePhotoUpload" = "Your profile was created successfully! However, your profile photo could not be uploaded.";
+"successfulProfileUpdationUnsuccessfulProfilePhotoUpload" = "Your profile was updated successfully! However, your profile photo could not be uploaded.";
+"successfulPostFetch" = "Posts Fetched successfully!";
+"unsuccessfulPostFetch" = "Posts could not be fetched. Please try again later.";
+
+// MARK: - Gender Strings
+"male" = "Male";
+"female" = "Female";
+"other" = "Other";
+
+// MARK: - Errors
+"operationTerminatedByTheUser" = "Operation terminated by the user";
+
+// MARK: - Buttons
+"buttonSignIn" = "Sign In";
+"buttonSignUp" = "Sign Up";
+"buttonSignInWithGoogle" = "Sign In with Google";
+"buttonSignInWithFacebook" = "Sign In with Facebook";
+"buttonOk" = "OK";
+"buttonYesSure" = "Yes, sure!";
+"buttonNoMaybeLater" = "No, maybe later";
+"buttonUpdateProfile" = "Update Profile";
+"buttonSignOut" = "Sign Out";
+"buttonCancel" = "Cancel";
+"buttonSave" = "Save";
+"buttonGender" = "Select your gender";
+"buttonEditProfile" = "Edit Profile";
+"buttonSelectPhoto" = "Select Photo";
+"buttonPost" = "Post";
