@@ -7,6 +7,13 @@ Steps to compile and run the application:
 # Dependencies
 There are no dependencies.
 
+# API Endpoints
+This application uses the following two API endpoints to fetch data:
+| API Endpoint | Use |
+| ------------ | --- |
+| https://themealdb.com/api/json/v1/1/filter.php?c=Dessert | This endpoint is used for fetching the list of meals in the Dessert category. |
+| https://themealdb.com/api/json/v1/1/lookup.php?i=MEAL_ID | This endpoint is used for fetching the meal details by its ID. |
+
 # Notes
 1. Please make sure that the device is connected to the internet as the application relies on it to make API calls.
 2. If there is anything wrong with the API call, or if the device is not connected to the internet, an error message will be displayed on the screen.
