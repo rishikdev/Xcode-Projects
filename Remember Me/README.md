@@ -1,6 +1,6 @@
 # About [Remember Me?](https://apps.apple.com/us/app/remember-me/id1627908191?itsct=apps_box_link&itscg=30200)
 
-I have developed this application to take part in ***Apple's Swift Student Challenge (2022)***. The entire application has been developed as a **Swift Playgrounds App** in Xcode. 
+Developed this application to take part in ***Apple's Swift Student Challenge (2022)***. It is a **Swift Playgrounds App**. 
 
 ## Motivation behind Remember Me?
 
