@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "RYTD",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is RYTD (Return YouTube Dislikes). It brings dislikes back to YouTube!",
+        "description": "Description of what the extension does."
+    }
+}

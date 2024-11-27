@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C25E4962A954B44000A174E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4952A954B44000A174E /* AppDelegate.swift */; };
+		5C25E4982A954B44000A174E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4972A954B44000A174E /* SceneDelegate.swift */; };
+		5C25E49B2A954B44000A174E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4992A954B44000A174E /* LaunchScreen.storyboard */; };
+		5C25E49E2A954B44000A174E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E49C2A954B44000A174E /* Main.storyboard */; };
+		5C25E4A72A954B44000A174E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4A62A954B44000A174E /* AppDelegate.swift */; };
+		5C25E4AA2A954B44000A174E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4A82A954B44000A174E /* Main.storyboard */; };
+		5C25E4B12A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C25E4B02A954B44000A174E /* RYTD Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C25E4BB2A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C25E4BA2A954B44000A174E /* RYTD Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C25E4C12A954B44000A174E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47C2A954B43000A174E /* Main.html */; };
+		5C25E4C22A954B44000A174E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47C2A954B43000A174E /* Main.html */; };
+		5C25E4C32A954B44000A174E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47E2A954B43000A174E /* Icon.png */; };
+		5C25E4C42A954B44000A174E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47E2A954B43000A174E /* Icon.png */; };
+		5C25E4C52A954B44000A174E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47F2A954B43000A174E /* Style.css */; };
+		5C25E4C62A954B44000A174E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47F2A954B43000A174E /* Style.css */; };
+		5C25E4C72A954B44000A174E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4802A954B43000A174E /* Script.js */; };
+		5C25E4C82A954B44000A174E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4802A954B43000A174E /* Script.js */; };
+		5C25E4C92A954B44000A174E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4812A954B43000A174E /* ViewController.swift */; };
+		5C25E4CA2A954B44000A174E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4812A954B43000A174E /* ViewController.swift */; };
+		5C25E4CB2A954B44000A174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4822A954B44000A174E /* Assets.xcassets */; };
+		5C25E4CC2A954B44000A174E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4822A954B44000A174E /* Assets.xcassets */; };
+		5C25E4CD2A954B44000A174E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4842A954B44000A174E /* SafariWebExtensionHandler.swift */; };
+		5C25E4CE2A954B44000A174E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4842A954B44000A174E /* SafariWebExtensionHandler.swift */; };
+		5C25E4CF2A954B44000A174E /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4862A954B44000A174E /* _locales */; };
+		5C25E4D02A954B44000A174E /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4862A954B44000A174E /* _locales */; };
+		5C25E4D12A954B44000A174E /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4872A954B44000A174E /* images */; };
+		5C25E4D22A954B44000A174E /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4872A954B44000A174E /* images */; };
+		5C25E4D32A954B44000A174E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4882A954B44000A174E /* manifest.json */; };
+		5C25E4D42A954B44000A174E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4882A954B44000A174E /* manifest.json */; };
+		5C25E4D52A954B44000A174E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4892A954B44000A174E /* background.js */; };
+		5C25E4D62A954B44000A174E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4892A954B44000A174E /* background.js */; };
+		5C25E4D72A954B44000A174E /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48A2A954B44000A174E /* content.js */; };
+		5C25E4D82A954B44000A174E /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48A2A954B44000A174E /* content.js */; };
+		5C25E4D92A954B44000A174E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48B2A954B44000A174E /* popup.html */; };
+		5C25E4DA2A954B44000A174E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48B2A954B44000A174E /* popup.html */; };
+		5C25E4DB2A954B44000A174E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48C2A954B44000A174E /* popup.css */; };
+		5C25E4DC2A954B44000A174E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48C2A954B44000A174E /* popup.css */; };
+		5C25E4DD2A954B44000A174E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48D2A954B44000A174E /* popup.js */; };
+		5C25E4DE2A954B44000A174E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48D2A954B44000A174E /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C25E4B22A954B44000A174E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C25E4762A954B43000A174E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C25E4AF2A954B44000A174E;
+			remoteInfo = "RYTD Extension (iOS)";
+		};
+		5C25E4BC2A954B44000A174E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C25E4762A954B43000A174E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C25E4B92A954B44000A174E;
+			remoteInfo = "RYTD Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C25E4E42A954B44000A174E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C25E4B12A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4EB2A954B44000A174E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C25E4BB2A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C25E47D2A954B43000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		5C25E47E2A954B43000A174E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5C25E47F2A954B43000A174E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		5C25E4802A954B43000A174E /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		5C25E4812A954B43000A174E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C25E4822A954B44000A174E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C25E4842A954B44000A174E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		5C25E4862A954B44000A174E /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		5C25E4872A954B44000A174E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		5C25E4882A954B44000A174E /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		5C25E4892A954B44000A174E /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		5C25E48A2A954B44000A174E /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		5C25E48B2A954B44000A174E /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		5C25E48C2A954B44000A174E /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		5C25E48D2A954B44000A174E /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		5C25E4922A954B44000A174E /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C25E4952A954B44000A174E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C25E4972A954B44000A174E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5C25E49A2A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C25E49D2A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C25E49F2A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C25E4A42A954B44000A174E /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C25E4A62A954B44000A174E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C25E4A92A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C25E4AB2A954B44000A174E /* RYTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RYTD.entitlements; sourceTree = "<group>"; };
+		5C25E4B02A954B44000A174E /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C25E4B52A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C25E4BA2A954B44000A174E /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C25E4BF2A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C25E4C02A954B44000A174E /* RYTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RYTD.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C25E48F2A954B44000A174E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4A12A954B44000A174E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4AD2A954B44000A174E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4B72A954B44000A174E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C25E4752A954B43000A174E = {
+			isa = PBXGroup;
+			children = (
+				5C25E47A2A954B43000A174E /* Shared (App) */,
+				5C25E4832A954B44000A174E /* Shared (Extension) */,
+				5C25E4942A954B44000A174E /* iOS (App) */,
+				5C25E4A52A954B44000A174E /* macOS (App) */,
+				5C25E4B42A954B44000A174E /* iOS (Extension) */,
+				5C25E4BE2A954B44000A174E /* macOS (Extension) */,
+				5C25E4932A954B44000A174E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C25E47A2A954B43000A174E /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4812A954B43000A174E /* ViewController.swift */,
+				5C25E4822A954B44000A174E /* Assets.xcassets */,
+				5C25E47B2A954B43000A174E /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		5C25E47B2A954B43000A174E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E47C2A954B43000A174E /* Main.html */,
+				5C25E47E2A954B43000A174E /* Icon.png */,
+				5C25E47F2A954B43000A174E /* Style.css */,
+				5C25E4802A954B43000A174E /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C25E4832A954B44000A174E /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4842A954B44000A174E /* SafariWebExtensionHandler.swift */,
+				5C25E4852A954B44000A174E /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		5C25E4852A954B44000A174E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4862A954B44000A174E /* _locales */,
+				5C25E4872A954B44000A174E /* images */,
+				5C25E4882A954B44000A174E /* manifest.json */,
+				5C25E4892A954B44000A174E /* background.js */,
+				5C25E48A2A954B44000A174E /* content.js */,
+				5C25E48B2A954B44000A174E /* popup.html */,
+				5C25E48C2A954B44000A174E /* popup.css */,
+				5C25E48D2A954B44000A174E /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C25E4932A954B44000A174E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4922A954B44000A174E /* RYTD.app */,
+				5C25E4A42A954B44000A174E /* RYTD.app */,
+				5C25E4B02A954B44000A174E /* RYTD Extension.appex */,
+				5C25E4BA2A954B44000A174E /* RYTD Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C25E4942A954B44000A174E /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4952A954B44000A174E /* AppDelegate.swift */,
+				5C25E4972A954B44000A174E /* SceneDelegate.swift */,
+				5C25E4992A954B44000A174E /* LaunchScreen.storyboard */,
+				5C25E49C2A954B44000A174E /* Main.storyboard */,
+				5C25E49F2A954B44000A174E /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		5C25E4A52A954B44000A174E /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4A62A954B44000A174E /* AppDelegate.swift */,
+				5C25E4A82A954B44000A174E /* Main.storyboard */,
+				5C25E4AB2A954B44000A174E /* RYTD.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		5C25E4B42A954B44000A174E /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4B52A954B44000A174E /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		5C25E4BE2A954B44000A174E /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				5C25E4BF2A954B44000A174E /* Info.plist */,
+				5C25E4C02A954B44000A174E /* RYTD.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C25E4912A954B44000A174E /* RYTD (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C25E4E52A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD (iOS)" */;
+			buildPhases = (
+				5C25E48E2A954B44000A174E /* Sources */,
+				5C25E48F2A954B44000A174E /* Frameworks */,
+				5C25E4902A954B44000A174E /* Resources */,
+				5C25E4E42A954B44000A174E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C25E4B32A954B44000A174E /* PBXTargetDependency */,
+			);
+			name = "RYTD (iOS)";
+			productName = "RYTD (iOS)";
+			productReference = 5C25E4922A954B44000A174E /* RYTD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C25E4A32A954B44000A174E /* RYTD (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C25E4EC2A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD (macOS)" */;
+			buildPhases = (
+				5C25E4A02A954B44000A174E /* Sources */,
+				5C25E4A12A954B44000A174E /* Frameworks */,
+				5C25E4A22A954B44000A174E /* Resources */,
+				5C25E4EB2A954B44000A174E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C25E4BD2A954B44000A174E /* PBXTargetDependency */,
+			);
+			name = "RYTD (macOS)";
+			productName = "RYTD (macOS)";
+			productReference = 5C25E4A42A954B44000A174E /* RYTD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C25E4AF2A954B44000A174E /* RYTD Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C25E4E12A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD Extension (iOS)" */;
+			buildPhases = (
+				5C25E4AC2A954B44000A174E /* Sources */,
+				5C25E4AD2A954B44000A174E /* Frameworks */,
+				5C25E4AE2A954B44000A174E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RYTD Extension (iOS)";
+			productName = "RYTD Extension (iOS)";
+			productReference = 5C25E4B02A954B44000A174E /* RYTD Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5C25E4B92A954B44000A174E /* RYTD Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C25E4E82A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD Extension (macOS)" */;
+			buildPhases = (
+				5C25E4B62A954B44000A174E /* Sources */,
+				5C25E4B72A954B44000A174E /* Frameworks */,
+				5C25E4B82A954B44000A174E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RYTD Extension (macOS)";
+			productName = "RYTD Extension (macOS)";
+			productReference = 5C25E4BA2A954B44000A174E /* RYTD Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C25E4762A954B43000A174E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					5C25E4912A954B44000A174E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5C25E4A32A954B44000A174E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5C25E4AF2A954B44000A174E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					5C25E4B92A954B44000A174E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5C25E4792A954B43000A174E /* Build configuration list for PBXProject "RYTD" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C25E4752A954B43000A174E;
+			productRefGroup = 5C25E4932A954B44000A174E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C25E4912A954B44000A174E /* RYTD (iOS) */,
+				5C25E4A32A954B44000A174E /* RYTD (macOS) */,
+				5C25E4AF2A954B44000A174E /* RYTD Extension (iOS) */,
+				5C25E4B92A954B44000A174E /* RYTD Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C25E4902A954B44000A174E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4C32A954B44000A174E /* Icon.png in Resources */,
+				5C25E49B2A954B44000A174E /* LaunchScreen.storyboard in Resources */,
+				5C25E4C12A954B44000A174E /* Main.html in Resources */,
+				5C25E4C72A954B44000A174E /* Script.js in Resources */,
+				5C25E4CB2A954B44000A174E /* Assets.xcassets in Resources */,
+				5C25E49E2A954B44000A174E /* Main.storyboard in Resources */,
+				5C25E4C52A954B44000A174E /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4A22A954B44000A174E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4C42A954B44000A174E /* Icon.png in Resources */,
+				5C25E4C62A954B44000A174E /* Style.css in Resources */,
+				5C25E4AA2A954B44000A174E /* Main.storyboard in Resources */,
+				5C25E4C82A954B44000A174E /* Script.js in Resources */,
+				5C25E4CC2A954B44000A174E /* Assets.xcassets in Resources */,
+				5C25E4C22A954B44000A174E /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4AE2A954B44000A174E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4D52A954B44000A174E /* background.js in Resources */,
+				5C25E4DB2A954B44000A174E /* popup.css in Resources */,
+				5C25E4D92A954B44000A174E /* popup.html in Resources */,
+				5C25E4D12A954B44000A174E /* images in Resources */,
+				5C25E4D32A954B44000A174E /* manifest.json in Resources */,
+				5C25E4CF2A954B44000A174E /* _locales in Resources */,
+				5C25E4D72A954B44000A174E /* content.js in Resources */,
+				5C25E4DD2A954B44000A174E /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4B82A954B44000A174E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4D62A954B44000A174E /* background.js in Resources */,
+				5C25E4DC2A954B44000A174E /* popup.css in Resources */,
+				5C25E4DA2A954B44000A174E /* popup.html in Resources */,
+				5C25E4D22A954B44000A174E /* images in Resources */,
+				5C25E4D42A954B44000A174E /* manifest.json in Resources */,
+				5C25E4D02A954B44000A174E /* _locales in Resources */,
+				5C25E4D82A954B44000A174E /* content.js in Resources */,
+				5C25E4DE2A954B44000A174E /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C25E48E2A954B44000A174E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4C92A954B44000A174E /* ViewController.swift in Sources */,
+				5C25E4962A954B44000A174E /* AppDelegate.swift in Sources */,
+				5C25E4982A954B44000A174E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4A02A954B44000A174E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4CA2A954B44000A174E /* ViewController.swift in Sources */,
+				5C25E4A72A954B44000A174E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4AC2A954B44000A174E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4CD2A954B44000A174E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C25E4B62A954B44000A174E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C25E4CE2A954B44000A174E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C25E4B32A954B44000A174E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C25E4AF2A954B44000A174E /* RYTD Extension (iOS) */;
+			targetProxy = 5C25E4B22A954B44000A174E /* PBXContainerItemProxy */;
+		};
+		5C25E4BD2A954B44000A174E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C25E4B92A954B44000A174E /* RYTD Extension (macOS) */;
+			targetProxy = 5C25E4BC2A954B44000A174E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C25E47C2A954B43000A174E /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C25E47D2A954B43000A174E /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		5C25E4992A954B44000A174E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C25E49A2A954B44000A174E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5C25E49C2A954B44000A174E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C25E49D2A954B44000A174E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C25E4A82A954B44000A174E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C25E4A92A954B44000A174E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C25E4DF2A954B44000A174E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C25E4E02A954B44000A174E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5C25E4E22A954B44000A174E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD.Extension;
+				PRODUCT_NAME = "RYTD Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C25E4E32A954B44000A174E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD.Extension;
+				PRODUCT_NAME = "RYTD Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C25E4E62A954B44000A174E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD;
+				PRODUCT_NAME = RYTD;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C25E4E72A954B44000A174E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD;
+				PRODUCT_NAME = RYTD;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C25E4E92A954B44000A174E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/RYTD.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD.Extension;
+				PRODUCT_NAME = "RYTD Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5C25E4EA2A954B44000A174E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/RYTD.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD.Extension;
+				PRODUCT_NAME = "RYTD Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5C25E4ED2A954B44000A174E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/RYTD.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD;
+				PRODUCT_NAME = RYTD;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5C25E4EE2A954B44000A174E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/RYTD.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikdev.RYTD;
+				PRODUCT_NAME = RYTD;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C25E4792A954B43000A174E /* Build configuration list for PBXProject "RYTD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C25E4DF2A954B44000A174E /* Debug */,
+				5C25E4E02A954B44000A174E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C25E4E12A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C25E4E22A954B44000A174E /* Debug */,
+				5C25E4E32A954B44000A174E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C25E4E52A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C25E4E62A954B44000A174E /* Debug */,
+				5C25E4E72A954B44000A174E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C25E4E82A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C25E4E92A954B44000A174E /* Debug */,
+				5C25E4EA2A954B44000A174E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C25E4EC2A954B44000A174E /* Build configuration list for PBXNativeTarget "RYTD (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C25E4ED2A954B44000A174E /* Debug */,
+				5C25E4EE2A954B44000A174E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C25E4762A954B43000A174E /* Project object */;
+}

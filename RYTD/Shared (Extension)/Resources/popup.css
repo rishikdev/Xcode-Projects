@@ -1,0 +1,30 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+  width: auto;
+  padding: 15px;
+  font-family: system-ui;
+  text-align: center;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode styles go here. */
+    
+    a {
+        color: lightblue;
+    }
+    
+    .body {
+        background-color: black;
+    }
+}
