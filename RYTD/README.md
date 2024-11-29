@@ -1,4 +1,4 @@
-# About RYTD (Return YouTube Dislike)
+# About [RYTD (Return YouTube Dislike)](https://apple.co/3B7zfFr)
 I developed this application in response to the high demand for a Safari-specific extension to view YouTube dislike counts.
 While similar tools exist for other browsers, as a dedicated Safari user, I often felt left out. 
 So, I took matters into my own hands and built this extension for Safari users like you!
@@ -21,6 +21,17 @@ including iPhones, iPads, and Macs.
   <img src="https://github.com/rishikdev/Images/blob/main/RYTD/iPhone%2016%20Pro%20Max/Dark/RYTD.png" width = 225/>
 </p>
 
+### iPad Pro (13) Light Mode
+<p align = "center">
+  <img src="https://github.com/rishikdev/Images/blob/main/RYTD/iPad%20Pro%2013/Light/RYTD.png" width = 500/>
+  <img src="https://github.com/rishikdev/Images/blob/main/RYTD/iPad%20Pro%2013/Light/Safari.png" width = 500/>
+</p>
+
+### iPad Pro (13) Dark Mode
+<p align = "center">
+  <img src="https://github.com/rishikdev/Images/blob/main/RYTD/iPad%20Pro%2013/Dark/RYTD.png" width = 500/>
+</p>
+
 ### MacBook Pro (14) Light Mode
 <p align = "center">
   <img src="https://github.com/rishikdev/Images/blob/main/RYTD/MacBook%20Pro%2014/Light/RYTD.png" width = 500/>
@@ -31,3 +42,6 @@ including iPhones, iPads, and Macs.
 <p align = "center">
   <img src="https://github.com/rishikdev/Images/blob/main/RYTD/MacBook%20Pro%2014/Dark/RYTD.png" width = 500/>
 </p>
+
+# Where to find RYTD
+You can [download](https://apple.co/3B7zfFr) the application from the App Store.
