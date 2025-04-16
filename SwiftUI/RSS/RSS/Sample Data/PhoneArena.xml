@@ -1,0 +1,1108 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>PhoneArena - Articles</title>
+        <link>https://www.phonearena.com/</link>
+        <description>
+            PhoneArena.com - Cell Phone Reviews, News, Specs and Info.
+        </description>
+        <language>en-us</language>
+        <copyright>
+            Copyright 2001-2025 PhoneArena. All rights reserved.
+        </copyright>
+        <managingEditor>phonearena@phonearena.com (Phone Arena)</managingEditor>
+        <image>
+            <title>PhoneArena - Articles</title>
+            <url>
+                https://www.phonearena.com/images/logo/phonearena-logo-light-blue-small.png
+            </url>
+            <link>https://www.phonearena.com/</link>
+            <width>144</width>
+            <height>80</height>
+        </image>
+        <atom:link href="https://www.phonearena.com/feed/news" rel="self" type="application/rss+xml"/>
+        <item>
+            <title>
+                Samsung asks TSMC to manufacture Exynos, gets rejected
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166670-two/Samsung-asks-TSMC-to-manufacture-Exynos-gets-rejected.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/tsmc-rejects-samsung-exynos-deal_id166670
+            </link>
+            <guid>
+                https://www.phonearena.com/news/tsmc-rejects-samsung-exynos-deal_id166670
+            </guid>
+            <description>
+                Samsung recently asked TSMC to take on manufacturing Exynos chipsets but the latter rejected this proposition.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 17:45:46 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/tsmc-rejects-samsung-exynos-deal_id166670#comments
+            </comments>
+            <author>Abdullah Asim</author>
+        </item>
+        <item>
+            <title>
+                Google Pixel and Mark Rober launch a satellite to capture selfies in space
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166672-two/Google-Pixel-and-Mark-Rober-launch-a-satellite-to-capture-selfies-in-space.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/google-pixel-and-mark-rober-launch-a-satellite-to-capture-selfies-in-space_id166672
+            </link>
+            <guid>
+                https://www.phonearena.com/news/google-pixel-and-mark-rober-launch-a-satellite-to-capture-selfies-in-space_id166672
+            </guid>
+            <description>
+                Google Pixel and Mark Rober launch a satellite to capture selfies in space
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 17:02:06 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/google-pixel-and-mark-rober-launch-a-satellite-to-capture-selfies-in-space_id166672#comments
+            </comments>
+            <author>Johanna Romero</author>
+        </item>
+        <item>
+            <title>
+                Google's Gemini app partners with Associated Press for real-time news delivery
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166669-two/Googles-Gemini-app-partners-with-Associated-Press-for-real-time-news-delivery.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/googles-gemini-app-partners-with-associated-press-for-real-time-news-delivery_id166669
+            </link>
+            <guid>
+                https://www.phonearena.com/news/googles-gemini-app-partners-with-associated-press-for-real-time-news-delivery_id166669
+            </guid>
+            <description>
+                <![CDATA[
+                    Google&#039;s Gemini app partners with Associated Press for real-time news delivery
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 16:28:00 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/googles-gemini-app-partners-with-associated-press-for-real-time-news-delivery_id166669#comments
+            </comments>
+            <author>Johanna Romero</author>
+        </item>
+        <item>
+            <title>
+                These U.S. states and cities have the most cellular dead zones. How does your state rank?
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166635-two/These-U.S.-states-and-cities-have-the-most-cellular-dead-zones.-How-does-your-state-rank.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/these-us-states-cities-have-the-worst-cell-service_id166635
+            </link>
+            <guid>
+                https://www.phonearena.com/news/these-us-states-cities-have-the-worst-cell-service_id166635
+            </guid>
+            <description>
+                Cincinnati is the worst city and Hawaii the worst state when it comes to reporting cellular dead zones.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 14:55:10 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/these-us-states-cities-have-the-worst-cell-service_id166635#comments
+            </comments>
+            <author>Alan Friedman</author>
+        </item>
+        <item>
+            <title>
+                Android 16 Developer Beta reveals volume panel and slider UI redesign
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166667-two/Android-16-Developer-Beta-reveals-volume-panel-and-slider-UI-redesign.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/android-16-developer-beta-reveals-volume-panel-and-slider-ui-redesign_id166667
+            </link>
+            <guid>
+                https://www.phonearena.com/news/android-16-developer-beta-reveals-volume-panel-and-slider-ui-redesign_id166667
+            </guid>
+            <description>
+                Android 16 Developer Beta reveals volume panel and slider UI redesign
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 14:18:28 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/android-16-developer-beta-reveals-volume-panel-and-slider-ui-redesign_id166667#comments
+            </comments>
+            <author>Johanna Romero</author>
+        </item>
+        <item>
+            <title>
+                Samsung's secretive Galaxy S25 Slim is now an open book ahead of next week's big Unpacked event
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166668-two/Samsungs-secretive-Galaxy-S25-Slim-is-now-an-open-book-ahead-of-next-weeks-big-Unpacked-event.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-galaxy-s25-slim-leaked-renders-dimensions-specs-may-2025-release_id166668
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-galaxy-s25-slim-leaked-renders-dimensions-specs-may-2025-release_id166668
+            </guid>
+            <description>
+                The oft-rumored Samsung Galaxy S25 Slim is pictured for the first time today, showing off its gloriously thin design in ultra-high-quality renders before an Unpacked event where this particular device is still unlikely to be fully detailed.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 13:43:03 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-galaxy-s25-slim-leaked-renders-dimensions-specs-may-2025-release_id166668#comments
+            </comments>
+            <author>Adrian Diaconescu</author>
+        </item>
+        <item>
+            <title>
+                Samsung Care+ now offers free unlimited same-day repairs
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166666-two/Samsung-Care-now-offers-free-unlimited-same-day-repairs.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-care-now-offers-free-unlimited-same-day-repairs_id166666
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-care-now-offers-free-unlimited-same-day-repairs_id166666
+            </guid>
+            <description>
+                Samsung Care+ now offers free unlimited same-day repairs
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 12:31:51 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-care-now-offers-free-unlimited-same-day-repairs_id166666#comments
+            </comments>
+            <author>Johanna Romero</author>
+        </item>
+        <item>
+            <title>
+                Samsung Galaxy S25 series official cases leaked, revealing a variety of colors and styles
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166665-two/Samsung-Galaxy-S25-series-official-cases-leaked-revealing-a-variety-of-colors-and-styles.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-galaxy-s25-official-cases-leaked-revealing-a-variety-of-colors-and-styles_id166665
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-galaxy-s25-official-cases-leaked-revealing-a-variety-of-colors-and-styles_id166665
+            </guid>
+            <description>
+                Samsung Galaxy S25 series official cases leaked, revealing a variety of colors and styles
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 10:39:07 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-galaxy-s25-official-cases-leaked-revealing-a-variety-of-colors-and-styles_id166665#comments
+            </comments>
+            <author>Johanna Romero</author>
+        </item>
+        <item>
+            <title>
+                WhatsApp is adding new camera effects, self stickers, and quick reactions
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166653-two/WhatsApp-is-adding-new-camera-effects-self-stickers-and-quick-reactions.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/whatsapp-update-camera-effects-quick-reactions_id166653
+            </link>
+            <guid>
+                https://www.phonearena.com/news/whatsapp-update-camera-effects-quick-reactions_id166653
+            </guid>
+            <description>
+                WhatsApp is kicking off 2025 with a brand-new update that introduces new ways to interact with friends and family.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 09:32:50 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/whatsapp-update-camera-effects-quick-reactions_id166653#comments
+            </comments>
+            <author>Cosmin Vasile</author>
+        </item>
+        <item>
+            <title>
+                Light up the party with the sweetly discounted JBL Pulse 5 Bluetooth speaker
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166664-two/Light-up-the-party-with-the-sweetly-discounted-JBL-Pulse-5-Bluetooth-speaker.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/jbl-pulse-5-sweetly-discounted_id166664
+            </link>
+            <guid>
+                https://www.phonearena.com/news/jbl-pulse-5-sweetly-discounted_id166664
+            </guid>
+            <description>
+                <![CDATA[
+                    The speaker delivers great sound and comes with a mesmerizing light show, making it great for gatherings. Don&#039;t hesitate and grab one for less while the offer lasts!
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:56:08 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/jbl-pulse-5-sweetly-discounted_id166664#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                TikTok reportedly ready to go dark in the US this Sunday, January 19
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166661-two/TikTok-reportedly-ready-to-go-dark-in-the-US-this-Sunday-January-19.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/tiktok-reportedly-ready-to-go-dark-in-the-us-this-sunday-january-19_id166661
+            </link>
+            <guid>
+                https://www.phonearena.com/news/tiktok-reportedly-ready-to-go-dark-in-the-us-this-sunday-january-19_id166661
+            </guid>
+            <description>
+                According to a new report, TikTok is preparing for immediate and abrupt US shutdown...
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:45:01 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/tiktok-reportedly-ready-to-go-dark-in-the-us-this-sunday-january-19_id166661#comments
+            </comments>
+            <author>Iskra Petrova</author>
+        </item>
+        <item>
+            <title>
+                ChatGPT's beta feature paves the way for its future as an AI agent
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166662-two/ChatGPTs-beta-feature-paves-the-way-for-its-future-as-an-AI-agent.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/chatgpt-new-feature-paves-the-way-for-future-ai-agent_id166662
+            </link>
+            <guid>
+                https://www.phonearena.com/news/chatgpt-new-feature-paves-the-way-for-future-ai-agent_id166662
+            </guid>
+            <description>
+                OpenAI is introducing a new beta feature in ChatGPT called Tasks, allowing users to schedule actions and set reminders for the future.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:35:21 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/chatgpt-new-feature-paves-the-way-for-future-ai-agent_id166662#comments
+            </comments>
+            <author>Tsveta Ermenkova</author>
+        </item>
+        <item>
+            <title>
+                Walmart is clearing out its Apple Watch Series 9 inventory with an exceptional 45mm deal
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166658-two/Walmart-is-clearing-out-its-Apple-Watch-Series-9-inventory-with-an-exceptional-45mm-deal.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/apple-watch-series-9-walmart-clearance-deal-45mm-exceptional-discount_id166658
+            </link>
+            <guid>
+                https://www.phonearena.com/news/apple-watch-series-9-walmart-clearance-deal-45mm-exceptional-discount_id166658
+            </guid>
+            <description>
+                <![CDATA[
+                    Walmart&#039;s extraordinary new &quot;clearance&quot; sale makes the 2023-released Apple Watch Series 9 cheaper than ever in a GPS-only variant with a 45mm case.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:26:02 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/apple-watch-series-9-walmart-clearance-deal-45mm-exceptional-discount_id166658#comments
+            </comments>
+            <author>Adrian Diaconescu</author>
+        </item>
+        <item>
+            <title>
+                Apple's AirPods Max headphones now scream luxury at bargain price after steep discount
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166659-two/Apples-AirPods-Max-headphones-now-scream-luxury-at-bargain-price-after-steep-discount.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/airpods-max-steep-discount_id166659
+            </link>
+            <guid>
+                https://www.phonearena.com/news/airpods-max-steep-discount_id166659
+            </guid>
+            <description>
+                <![CDATA[
+                    The headphones offer great sound and ANC, and are now even more tempting while on sale for $149 off on Amazon. Don&#039;t wait and save!
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:03:39 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/airpods-max-steep-discount_id166659#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                Newbie-friendly, fun lights, rugged phone: the Doogee Blade GT
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166663-two/Newbie-friendly-fun-lights-rugged-phone-the-Doogee-Blade-GT.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/Newbie-friendly-fun-lights-rugged-phone-the-Doogee-Blade-GT_id166663
+            </link>
+            <guid>
+                https://www.phonearena.com/news/Newbie-friendly-fun-lights-rugged-phone-the-Doogee-Blade-GT_id166663
+            </guid>
+            <description>
+                The Doogee Blade GT puts style and futurism in a rugged phone.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:03:36 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/Newbie-friendly-fun-lights-rugged-phone-the-Doogee-Blade-GT_id166663#comments
+            </comments>
+            <author>Preslav Kateliev</author>
+        </item>
+        <item>
+            <title>
+                The advanced Garmin Fenix 7 gets a sizzling-hot $269 discount at Walmart
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166655-two/The-advanced-Garmin-Fenix-7-gets-a-sizzling-hot-269-discount-at-Walmart.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/garmin-fenix-7-269-discount-walmart_id166655
+            </link>
+            <guid>
+                https://www.phonearena.com/news/garmin-fenix-7-269-discount-walmart_id166655
+            </guid>
+            <description>
+                The Garmin Fenix 7 Standard Edition is a true gem at Walmart right now, where you can save $259 on one.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:00:05 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/garmin-fenix-7-269-discount-walmart_id166655#comments
+            </comments>
+            <author>Polina Kovalakova</author>
+        </item>
+        <item>
+            <title>
+                The Galaxy S25 Ultra: in 2025, a flagship's magic is in the details
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166660-two/The-Galaxy-S25-Ultra-in-2025-a-flagships-magic-is-in-the-details.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-s25-new-clothes_id166660
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-s25-new-clothes_id166660
+            </guid>
+            <description>
+                <![CDATA[
+                    Ranting about the Samsung Galaxy S25 Ultra is apparently one of my favorite pastimes. It turns out that this phone lives rent-free in my head, given that I&#039;m not in the Samsung camp myself and I haven&#039;t used a Galaxy phone as a daily driver for several years now.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 08:00:01 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-s25-new-clothes_id166660#comments
+            </comments>
+            <author>Sebastian Pier</author>
+        </item>
+        <item>
+            <title>
+                At 62% off, the JBL Live 460NC sell for under $50, delivering up to 50 hours of playback on the cheap
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166657-two/At-62-off-the-JBL-Live-460NC-sell-for-under-50-delivering-up-to-50-hours-of-playback-on-the-cheap.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/jbl-live-460nc-62-percent-off_id166657
+            </link>
+            <guid>
+                https://www.phonearena.com/news/jbl-live-460nc-62-percent-off_id166657
+            </guid>
+            <description>
+                The headphones deliver good sound and are a steal at their current price. Take advantage of this offer while it lasts!
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 07:26:00 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/jbl-live-460nc-62-percent-off_id166657#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                Elon Musk’s latest battle: the SEC takes aim over Twitter paperwork delays
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166656-two/Elon-Musks-latest-battle-the-SEC-takes-aim-over-Twitter-paperwork-delays.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/elon-musks-latest-battle-the-sec-takes-aim-over-twitter-paperwork-delays_id166656
+            </link>
+            <guid>
+                https://www.phonearena.com/news/elon-musks-latest-battle-the-sec-takes-aim-over-twitter-paperwork-delays_id166656
+            </guid>
+            <description>Elon Musk is in some troubles.</description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 06:52:31 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/elon-musks-latest-battle-the-sec-takes-aim-over-twitter-paperwork-delays_id166656#comments
+            </comments>
+            <author>Iskra Petrova</author>
+        </item>
+        <item>
+            <title>
+                At $100 off, the OnePlus 12R with 16GB of RAM is the mid-range OnePlus phone you should buy
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166654-two/At-100-off-the-OnePlus-12R-with-16GB-of-RAM-is-the-mid-range-OnePlus-phone-you-should-buy.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/oneplus-12r-16-ram-100-off_id166654
+            </link>
+            <guid>
+                https://www.phonearena.com/news/oneplus-12r-16-ram-100-off_id166654
+            </guid>
+            <description>
+                The phone delivers fast performance, takes gorgeous photos and is a true bargain. Save today!
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 06:49:11 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/oneplus-12r-16-ram-100-off_id166654#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                The next-gen CarPlay is still coming, and it could let you add iPhone-like widgets
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166652-two/The-next-gen-CarPlay-is-still-coming-and-it-could-let-you-add-iPhone-like-widgets.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/next-gen-carplay-still-coming-with-iphone-like-widgets_id166652
+            </link>
+            <guid>
+                https://www.phonearena.com/news/next-gen-carplay-still-coming-with-iphone-like-widgets_id166652
+            </guid>
+            <description>
+                It looks like Apple is still pushing forward with the next-gen CarPlay, even though it missed its own 2024 launch target. But when it finally arrives, we now have a pretty clear idea of what to expect.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 06:08:32 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/next-gen-carplay-still-coming-with-iphone-like-widgets_id166652#comments
+            </comments>
+            <author>Tsveta Ermenkova</author>
+        </item>
+        <item>
+            <title>
+                Forget the Pixel 9 Pro: The Galaxy S24 Ultra and OnePlus 13 are the two flagships I recommend as a bargain expert
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166648-two/Forget-the-Pixel-9-Pro-The-Galaxy-S24-Ultra-and-OnePlus-13-are-the-two-flagships-I-recommend-as-a-bargain-expert.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-s24-ultra-oneplus-13-bargain-hunter-choice_id166648
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-s24-ultra-oneplus-13-bargain-hunter-choice_id166648
+            </guid>
+            <description>
+                The Galaxy S24 Ultra, OnePlus 13, and Pixel 9 Pro are all discounted right now, but I only recommend the first two options right now. Check out why right here.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 05:24:17 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-s24-ultra-oneplus-13-bargain-hunter-choice_id166648#comments
+            </comments>
+            <author>Polina Kovalakova</author>
+        </item>
+        <item>
+            <title>
+                In my opinion, as a savings expert, the Galaxy Tab S6 Lite (2024) offers even greater value at this price
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166646-two/In-my-opinion-as-a-savings-expert-the-Galaxy-Tab-S6-Lite-2024-offers-even-greater-value-at-this-price.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-tab-s6-lite-2024-expert-pick_id166646
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-tab-s6-lite-2024-expert-pick_id166646
+            </guid>
+            <description>
+                <![CDATA[
+                    The slate packs a punch, comes with an included S Pen, and is now even more affordable than usual, making it a true bargain. Don&#039;t wait &mdash; save today!
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 05:12:49 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-tab-s6-lite-2024-expert-pick_id166646#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                First details about Qualcomm’s Snapdragon 8s Elite chipset leak
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166634-two/First-details-about-Qualcomms-Snapdragon-8s-Elite-chipset-leak.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/qualcomm-snapdragon-8s-elite-specs_id166634
+            </link>
+            <guid>
+                https://www.phonearena.com/news/qualcomm-snapdragon-8s-elite-specs_id166634
+            </guid>
+            <description>
+                Qualcomm is developing a new high-end chipset that will be positioned below the Snapdragon 8 Elite (and even the Snapdragon 8 Gen 3).
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 05:01:11 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/qualcomm-snapdragon-8s-elite-specs_id166634#comments
+            </comments>
+            <author>Cosmin Vasile</author>
+        </item>
+        <item>
+            <title>
+                Leaked Zenfone 12 Ultra specs suggest it's ready to take on the Galaxy S25 Ultra
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166649-two/Leaked-Zenfone-12-Ultra-specs-suggest-its-ready-to-take-on-the-Galaxy-S25-Ultra.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/leaked-zenfone-12-ultra-specs-suggest-its-ready-to-take-on-the-galaxy-s25-ultra_id166649
+            </link>
+            <guid>
+                https://www.phonearena.com/news/leaked-zenfone-12-ultra-specs-suggest-its-ready-to-take-on-the-galaxy-s25-ultra_id166649
+            </guid>
+            <description>
+                The Zenfone 12 Ultra has appeared on Geekbench, revealing its processor.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 05:00:50 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/leaked-zenfone-12-ultra-specs-suggest-its-ready-to-take-on-the-galaxy-s25-ultra_id166649#comments
+            </comments>
+            <author>Iskra Petrova</author>
+        </item>
+        <item>
+            <title>
+                Samsung adopts the Apple playbook for foldable iPhone display crease
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166650-two/Samsung-adopts-the-Apple-playbook-for-foldable-iPhone-display-crease.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/Samsung-adopts-the-Apple-playbook-for-foldable-iPhone-display-crease_id166650
+            </link>
+            <guid>
+                https://www.phonearena.com/news/Samsung-adopts-the-Apple-playbook-for-foldable-iPhone-display-crease_id166650
+            </guid>
+            <description>
+                <![CDATA[ It&#039;ll wait and see. ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 04:34:23 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/Samsung-adopts-the-Apple-playbook-for-foldable-iPhone-display-crease_id166650#comments
+            </comments>
+            <author>Daniel Petrov</author>
+        </item>
+        <item>
+            <title>
+                The wait is over: Honor Magic 7 Pro officially launches worldwide
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166628-two/The-wait-is-over-Honor-Magic-7-Pro-officially-launches-worldwide.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/honor-magic-7-pro-global-launch_id166628
+            </link>
+            <guid>
+                https://www.phonearena.com/news/honor-magic-7-pro-global-launch_id166628
+            </guid>
+            <description>
+                When Honor unveiled the Magic 7 Pro in China back in October, it stirred the smartphone pan as a potential Android flagship contender. Now, two and a half months later, the wait is over.
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 04:02:35 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/honor-magic-7-pro-global-launch_id166628#comments
+            </comments>
+            <author>Mariyan Slavov</author>
+        </item>
+        <item>
+            <title>
+                A 6,600 mAh Battery Phone That Looks Good? Meet the Honor Magic 7 Lite
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166627-two/A-6600-mAh-Battery-Phone-That-Looks-Good-Meet-the-Honor-Magic-7-Lite.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/honor-magic-7-lite-global_id166627
+            </link>
+            <guid>
+                https://www.phonearena.com/news/honor-magic-7-lite-global_id166627
+            </guid>
+            <description>
+                <![CDATA[
+                    If you&rsquo;re in the market for a stylish, long-lasting phone that can handle a tumble or two, the Honor Magic 7 Lite is definitely worth your attention.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 04:02:04 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/honor-magic-7-lite-global_id166627#comments
+            </comments>
+            <author>Mariyan Slavov</author>
+        </item>
+        <item>
+            <title>
+                The second-gen of the most affordable flip foldable lands with a new look
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166645-two/The-second-gen-of-the-most-affordable-flip-foldable-lands-with-a-new-look.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/second-gen-most-affordable-flip-foldable-official-new-look_id166645
+            </link>
+            <guid>
+                https://www.phonearena.com/news/second-gen-most-affordable-flip-foldable-official-new-look_id166645
+            </guid>
+            <description>
+                <![CDATA[
+                    Nubia&#039;s Flip 2 foldable smartphone has officially landed in Japan, marking the company&#039;s second entry into the foldable market. The most noticeable update in this model is the cover screen.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 04:00:51 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/second-gen-most-affordable-flip-foldable-official-new-look_id166645#comments
+            </comments>
+            <author>Tsveta Ermenkova</author>
+        </item>
+        <item>
+            <title>
+                Disappointed by the Galaxy S25 series specs? Here are four big reasons to be excited instead!
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166641-two/Disappointed-by-the-Galaxy-S25-series-specs-Here-are-four-big-reasons-to-be-excited-instead.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-galaxy-s25-series-specs-four-reasons-to-be-excited-not-disappointed_id166641
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-galaxy-s25-series-specs-four-reasons-to-be-excited-not-disappointed_id166641
+            </guid>
+            <description>
+                <![CDATA[
+                    Because you probably have plenty of reasons to be disappointed or underwhelmed by the recently leaked specs of the Galaxy S25, S25 Plus, and S25 Ultra, I offer you today four big reasons to be happy with Samsung&#039;s next-gen powerhouses instead.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 03:40:48 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-galaxy-s25-series-specs-four-reasons-to-be-excited-not-disappointed_id166641#comments
+            </comments>
+            <author>Adrian Diaconescu</author>
+        </item>
+        <item>
+            <title>
+                Galaxy Unpacked 2025: How to watch and what to expect from the Galaxy S25 event?
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166639-two/Galaxy-Unpacked-2025-How-to-watch-and-what-to-expect-from-the-Galaxy-S25-event.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-unpacked-2025-how-to-watch-and-what-to-expect-from-the-galaxy-s25-event_id166639
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-unpacked-2025-how-to-watch-and-what-to-expect-from-the-galaxy-s25-event_id166639
+            </guid>
+            <description>
+                <![CDATA[
+                    Here&#039;s how to watch and what to expect from the upcoming Galaxy S25 event on January 22!
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 03:29:06 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-unpacked-2025-how-to-watch-and-what-to-expect-from-the-galaxy-s25-event_id166639#comments
+            </comments>
+            <author>Iskra Petrova</author>
+        </item>
+        <item>
+            <title>
+                As a deal hunter, I'd snag the Galaxy Watch 6 at 50% off if I were in the market for a smartwatch
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166640-two/As-a-deal-hunter-Id-snag-the-Galaxy-Watch-6-at-50-off-if-I-were-in-the-market-for-a-smartwatch.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-watch-6-50-percent-off-best-buy_id166640
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-watch-6-50-percent-off-best-buy_id166640
+            </guid>
+            <description>
+                The watch is loaded with features, has a sleek design and is a true bargain at its current price. So, act fast and grab one today!
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 03:23:44 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-watch-6-50-percent-off-best-buy_id166640#comments
+            </comments>
+            <author>Preslav Mladenov</author>
+        </item>
+        <item>
+            <title>
+                Extremely loud, the JBL Xtreme 4 drops to a new all-time low at Amazon
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166643-two/Extremely-loud-the-JBL-Xtreme-4-drops-to-a-new-all-time-low-at-Amazon.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/jbl-xtreme-4-new-best-price-amazon_id166643
+            </link>
+            <guid>
+                https://www.phonearena.com/news/jbl-xtreme-4-new-best-price-amazon_id166643
+            </guid>
+            <description>
+                <![CDATA[
+                    The JBL Xtreme 4 has received a surprisingly good discount at Amazon! You can now save 29% on one in several available colors. Don&#039;t miss out.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 03:04:44 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/jbl-xtreme-4-new-best-price-amazon_id166643#comments
+            </comments>
+            <author>Polina Kovalakova</author>
+        </item>
+        <item>
+            <title>
+                This OG flagship gets its Android 15 update, though star features are left out
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166642-two/This-OG-flagship-gets-its-Android-15-update-though-star-features-are-left-out.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/oneplus-10-pro-oxygenos-15-update_id166642
+            </link>
+            <guid>
+                https://www.phonearena.com/news/oneplus-10-pro-oxygenos-15-update_id166642
+            </guid>
+            <description>
+                <![CDATA[
+                    Despite this, the update (currently being rolled out in India) brings significant upgrades to the device&rsquo;s performance, visuals, and user experience. Among the additions are cool animation effects for smooth multi-app switching.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 02:20:58 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/oneplus-10-pro-oxygenos-15-update_id166642#comments
+            </comments>
+            <author>Sebastian Pier</author>
+        </item>
+        <item>
+            <title>
+                iPhones get customizable widgets and easy access to Opera's AI assistant
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166638-two/iPhones-get-customizable-widgets-and-easy-access-to-Operas-AI-assistant.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/iphones-customizable-widgets-easy-access-opera-ai-assistant_id166638
+            </link>
+            <guid>
+                https://www.phonearena.com/news/iphones-customizable-widgets-easy-access-opera-ai-assistant_id166638
+            </guid>
+            <description>
+                <![CDATA[
+                    Opera just made using Aria even easier &ndash; no sign-in required! Plus, Opera for iOS now offers customizable home screen widgets, letting you quickly access essentials like search, tabs, and, of course, Aria.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 02:19:26 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/iphones-customizable-widgets-easy-access-opera-ai-assistant_id166638#comments
+            </comments>
+            <author>Tsveta Ermenkova</author>
+        </item>
+        <item>
+            <title>
+                The official store launches another Lenovo Tab Plus promo that's hard to pass up
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166637-two/The-official-store-launches-another-Lenovo-Tab-Plus-promo-thats-hard-to-pass-up.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/lenovo-tab-plus-unmissable-promo-official-store_id166637
+            </link>
+            <guid>
+                https://www.phonearena.com/news/lenovo-tab-plus-unmissable-promo-official-store_id166637
+            </guid>
+            <description>
+                <![CDATA[
+                    If you&#039;re looking for a budget-friendly Android 14 tablet with excellent audio, grab the Lenovo Tab Plus! This buddy with 256GB of storage is $77 off at the Lenovo Store right now, offering even more value for money.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Wed, 15 Jan 2025 01:50:00 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/lenovo-tab-plus-unmissable-promo-official-store_id166637#comments
+            </comments>
+            <author>Polina Kovalakova</author>
+        </item>
+        <item>
+            <title>
+                Limited-time sale brings the Galaxy S24 to a $150 cheaper price on Amazon
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166636-two/Limited-time-sale-brings-the-Galaxy-S24-to-a-150-cheaper-price-on-Amazon.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/galaxy-s24-150-off-limited-time-amazon_id166636
+            </link>
+            <guid>
+                https://www.phonearena.com/news/galaxy-s24-150-off-limited-time-amazon_id166636
+            </guid>
+            <description>
+                For a limited time, Amazon lets you save $150 on the Galaxy S24 with 256GB of storage. Get one and save!
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 23:38:04 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/galaxy-s24-150-off-limited-time-amazon_id166636#comments
+            </comments>
+            <author>Polina Kovalakova</author>
+        </item>
+        <item>
+            <title>
+                Here's how to get your hands on Galaxy S25 before anyone else
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166632-two/Heres-how-to-get-your-hands-on-Galaxy-S25-before-anyone-else.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/Heres-how-to-get-your-hands-on-Galaxy-S25-before-anyone-else_id166632
+            </link>
+            <guid>
+                https://www.phonearena.com/news/Heres-how-to-get-your-hands-on-Galaxy-S25-before-anyone-else_id166632
+            </guid>
+            <description>
+                The Galaxy S25 will go on sale more than two weeks after its unveiling, but not everyone has to wait that long.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 22:50:36 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/Heres-how-to-get-your-hands-on-Galaxy-S25-before-anyone-else_id166632#comments
+            </comments>
+            <author>Anam Hamid</author>
+        </item>
+        <item>
+            <title>
+                Samsung Foundry, like TSMC, plans to build 2nm chips in the U.S.
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166633-two/Samsung-Foundry-like-TSMC-plans-to-build-2nm-chips-in-the-U.S..jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-tsmc-plan-to-build-2nm-chips-in-the-states_id166633
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-tsmc-plan-to-build-2nm-chips-in-the-states_id166633
+            </guid>
+            <description>
+                Samsung Foundry plans on building 3nm and 2nm chips inside a fab it is building in Tyler, Texas.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 22:15:00 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-tsmc-plan-to-build-2nm-chips-in-the-states_id166633#comments
+            </comments>
+            <author>Alan Friedman</author>
+        </item>
+        <item>
+            <title>
+                Samsung lowers the heat by switching to third-party supplier for Galaxy S25 RAM chip
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166631-two/Samsung-lowers-the-heat-by-switching-to-third-party-supplier-for-Galaxy-S25-RAM-chip.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/samsung-replaces-it-own-ram-chips-with-micron-ram-for-galaxy-s25-series_id166631
+            </link>
+            <guid>
+                https://www.phonearena.com/news/samsung-replaces-it-own-ram-chips-with-micron-ram-for-galaxy-s25-series_id166631
+            </guid>
+            <description>
+                <![CDATA[
+                    Samsung is replacing its own 13nm RAM chips on the Galaxy S25 line with Micron&#039;s 12nm RAM component.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 17:17:25 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/samsung-replaces-it-own-ram-chips-with-micron-ram-for-galaxy-s25-series_id166631#comments
+            </comments>
+            <author>Alan Friedman</author>
+        </item>
+        <item>
+            <title>
+                Is Samsung ignoring the one thing Galaxy S25 Ultra users actually want?
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166621-two/Is-Samsung-ignoring-the-one-thing-Galaxy-S25-Ultra-users-actually-want.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/Is-Samsung-ignoring-the-one-thing-Galaxy-S25-Ultra-users-actually-want_id166621
+            </link>
+            <guid>
+                https://www.phonearena.com/news/Is-Samsung-ignoring-the-one-thing-Galaxy-S25-Ultra-users-actually-want_id166621
+            </guid>
+            <description>
+                As Samsung ramps up the AI hype ahead of the Galaxy S25 Ultra launch, it seems to ignore the one key feature users actually want to see improved...
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 15:54:32 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/Is-Samsung-ignoring-the-one-thing-Galaxy-S25-Ultra-users-actually-want_id166621#comments
+            </comments>
+            <author>Victor Hristov</author>
+        </item>
+        <item>
+            <title>
+                T-Mobile is no longer letting you decide which app to use
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166629-two/T-Mobile-is-no-longer-letting-you-decide-which-app-to-use.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/T-Mobile-is-no-longer-letting-you-decide-which-app-to-use_id166629
+            </link>
+            <guid>
+                https://www.phonearena.com/news/T-Mobile-is-no-longer-letting-you-decide-which-app-to-use_id166629
+            </guid>
+            <description>
+                T-Mobile is officially asking people to delete the legacy app.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 15:04:04 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/T-Mobile-is-no-longer-letting-you-decide-which-app-to-use_id166629#comments
+            </comments>
+            <author>Anam Hamid</author>
+        </item>
+        <item>
+            <title>
+                Two capable mid-range 5G Galaxy handsets are coming to Boost at prices that won't bust you
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166626-two/Two-capable-mid-range-5G-Galaxy-handsets-are-coming-to-Boost-at-prices-that-wont-bust-you.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/boost-mobile-snags-two-mid-range-galaxy-mid-rangers_id166626
+            </link>
+            <guid>
+                https://www.phonearena.com/news/boost-mobile-snags-two-mid-range-galaxy-mid-rangers_id166626
+            </guid>
+            <description>
+                Boost Mobile is adding two capable low-priced mid-range Galaxy phones to its lineup.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 14:15:20 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/boost-mobile-snags-two-mid-range-galaxy-mid-rangers_id166626#comments
+            </comments>
+            <author>Alan Friedman</author>
+        </item>
+        <item>
+            <title>
+                Leaked Galaxy S25 promotional images show off Samsung’s newest phones ahead of launch
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166630-two/Leaked-Galaxy-S25-promotional-images-show-off-Samsungs-newest-phones-ahead-of-launch.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/leaked-galaxy-s25-promotional-images-show-samsungs-newest-phones_id166630
+            </link>
+            <guid>
+                https://www.phonearena.com/news/leaked-galaxy-s25-promotional-images-show-samsungs-newest-phones_id166630
+            </guid>
+            <description>
+                Galaxy S25 promotional images have been leaked, giving us a very clear glimpse at the upcoming phones and what Samsung is prioritizing for them.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 14:00:54 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/leaked-galaxy-s25-promotional-images-show-samsungs-newest-phones_id166630#comments
+            </comments>
+            <author>Abdullah Asim</author>
+        </item>
+        <item>
+            <title>
+                Android co-founder says "it's always funny" to hear Bill Gates "whine about losing mobile to Android"
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166625-two/Android-co-founder-says-its-always-funny-to-hear-Bill-Gates-whine-about-losing-mobile-to-Android.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/rich-miner-bill-gates-android_id166625
+            </link>
+            <guid>
+                https://www.phonearena.com/news/rich-miner-bill-gates-android_id166625
+            </guid>
+            <description>
+                <![CDATA[
+                    It&#039;s the little pleasures of life that often keep us going. Of course, there are also the big pleasures in life: unforgettable milestones of joy that linger for decades in our hearts and minds. Then, there&#039;s this, something in between, I guess.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 10:10:15 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/rich-miner-bill-gates-android_id166625#comments
+            </comments>
+            <author>Sebastian Pier</author>
+        </item>
+        <item>
+            <title>
+                Motorola's 2025 Moto G and Moto G Power handsets are here to take the US bang-for-buck crown
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166622-two/Motorolas-2025-Moto-G-and-Moto-G-Power-handsets-are-here-to-take-the-US-bang-for-buck-crown.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/motorola-2025-moto-g-moto-g-power-official-specs-features-prices-us-release-dates_id166622
+            </link>
+            <guid>
+                https://www.phonearena.com/news/motorola-2025-moto-g-moto-g-power-official-specs-features-prices-us-release-dates_id166622
+            </guid>
+            <description>
+                The decidedly feature-packed and surprisingly good-looking Motorola Moto G (2025) and Moto G Power (2025) are officially set for their commercial US releases in the next few weeks at amazingly low prices of $199.99 and $299.99 respectively.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 09:43:26 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/motorola-2025-moto-g-moto-g-power-official-specs-features-prices-us-release-dates_id166622#comments
+            </comments>
+            <author>Adrian Diaconescu</author>
+        </item>
+        <item>
+            <title>
+                12,000 iPhone 16 units have entered Indonesia despite the sales ban
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166623-two/12000-iPhone-16-units-have-entered-Indonesia-despite-the-sales-ban.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/more-than-12000-units-of-iphone-16-indonesia_id166623
+            </link>
+            <guid>
+                https://www.phonearena.com/news/more-than-12000-units-of-iphone-16-indonesia_id166623
+            </guid>
+            <description>
+                Well, well, well: despite being banned for sale in Indonesia, the iPhone 16 is finding its way into the country, as it turns out!
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 09:27:56 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/more-than-12000-units-of-iphone-16-indonesia_id166623#comments
+            </comments>
+            <author>Sebastian Pier</author>
+        </item>
+        <item>
+            <title>
+                PhoneArena launches new Review Ratings page: compare your favorite phones here
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166617-two/PhoneArena-launches-new-Review-Ratings-page-compare-your-favorite-phones-here.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/phonearena-launches-new-review-ratings-page_id166617
+            </link>
+            <guid>
+                https://www.phonearena.com/news/phonearena-launches-new-review-ratings-page_id166617
+            </guid>
+            <description>
+                <![CDATA[
+                    PhoneArena&#039;s new Review Rating hub page lets you easily compare your favorite phones and see their rankings across a number of categories...
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 09:12:59 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/phonearena-launches-new-review-ratings-page_id166617#comments
+            </comments>
+            <author>Victor Hristov</author>
+        </item>
+        <item>
+            <title>
+                You want an S Pen? The Galaxy S25 Ultra remains your best bet, even with downgrades
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166611-two/You-want-an-S-Pen-The-Galaxy-S25-Ultra-remains-your-best-bet-even-with-downgrades.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/want-s-pen-galaxy-s25-ultra-remains-your-best-bet-even-with-downgrades_id166611
+            </link>
+            <guid>
+                https://www.phonearena.com/news/want-s-pen-galaxy-s25-ultra-remains-your-best-bet-even-with-downgrades_id166611
+            </guid>
+            <description>
+                <![CDATA[
+                    Reportedly, the Galaxy S25 Ultra&#039;s S Pen won&#039;t support Bluetooth, which means it loses features like remote control for actions at a distance and air gestures for device control. A bit of a bummer for many, I know. Still, if you&#039;re looking for a flagship phone with an S Pen, the Galaxy S25 Ultra remains your best bet.
+                ]]>
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 09:12:29 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/want-s-pen-galaxy-s25-ultra-remains-your-best-bet-even-with-downgrades_id166611#comments
+            </comments>
+            <author>Tsveta Ermenkova</author>
+        </item>
+        <item>
+            <title>
+                Slimmest foldable may launch with blood pressure monitoring watch sidekick
+            </title>
+            <enclosure url="https://m-cdn.phonearena.com/images/article/166620-two/Slimmest-foldable-may-launch-with-blood-pressure-monitoring-watch-sidekick.jpg" length="" type="image/jpeg"/>
+            <link>
+                https://www.phonearena.com/news/Slimmest-foldable-may-launch-with-blood-pressure-monitoring-watch-sidekick_id166620
+            </link>
+            <guid>
+                https://www.phonearena.com/news/Slimmest-foldable-may-launch-with-blood-pressure-monitoring-watch-sidekick_id166620
+            </guid>
+            <description>
+                The Oppo Watch 2 may join the limited ranks of blood pressure measuring smartwatches.
+            </description>
+            <category>Articles</category>
+            <pubDate>Tue, 14 Jan 2025 08:19:30 -0600</pubDate>
+            <comments>
+                https://www.phonearena.com/news/Slimmest-foldable-may-launch-with-blood-pressure-monitoring-watch-sidekick_id166620#comments
+            </comments>
+            <author>Daniel Petrov</author>
+        </item>
+    </channel>
+</rss>

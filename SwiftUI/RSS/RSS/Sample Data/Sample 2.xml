@@ -1,0 +1,77 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sample 2 RSS Articles</title>
+        <link>https://www.sample1.com/</link>
+        <description>
+            Sample2.com - Cell Phone Reviews, News, Specs and Info.
+        </description>
+        <language>en-us</language>
+        <copyright>
+            Copyright 2001-2025 Sample 2. All rights reserved.
+        </copyright>
+        <managingEditor>phonearena@phonearena.com (Phone Arena)</managingEditor>
+        <image>
+            <title>Sample 2 - Articles</title>
+            <url>
+                https://www.phonearena.com/images/logo/phonearena-logo-light-blue-small.png
+            </url>
+            <link>https://www.phonearena.com/</link>
+            <width>144</width>
+            <height>80</height>
+        </image>
+        <atom:link href="https://www.phonearena.com/feed/news" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>
+                Sample 2 Title 1
+            </title>
+            <link>
+                Sample 2 Link 1
+            </link>
+            <description>
+                Sample 2 Description 1
+            </description>
+            <pubDate>Thu, 16 Jan 2025 05:17:06 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 2 Title 2
+            </title>
+            <link>
+                Sample 2 Link 2
+            </link>
+            <description>
+                Sample 2 Description 2
+            </description>
+            <pubDate>Wed, 15 Jan 2025 12:35:42 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 2 Title 3
+            </title>
+            <link>
+                Sample 2 Link 3
+            </link>
+            <description>
+                Sample 2 Description 3
+            </description>
+            <pubDate>Tue, 14 Jan 2025 18:32:57 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 2 Title 4
+            </title>
+            <link>
+                Sample 2 Link 4
+            </link>
+            <description>
+                Sample 2 Description 4
+            </description>
+            <pubDate>Wed, 08 Jan 2025 19:59:28 -0600</pubDate>
+        </item>
+        
+    </channel>
+</rss>

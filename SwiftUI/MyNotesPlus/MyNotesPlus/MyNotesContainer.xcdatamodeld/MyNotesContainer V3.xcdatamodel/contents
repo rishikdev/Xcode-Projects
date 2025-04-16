@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="MyNotesEntity" representedClassName="MyNotesEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="isNoteLocked" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isPinned" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="noteCardColour" optional="YES" attributeType="String" defaultValueString="NoteCardYellowColour"/>
+        <attribute name="noteDate" attributeType="Date" defaultDateTimeInterval="669872820" usesScalarValueType="NO"/>
+        <attribute name="noteID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="noteTag" optional="YES" attributeType="String"/>
+        <attribute name="noteText" attributeType="String" defaultValueString=""/>
+        <attribute name="noteTitle" optional="YES" attributeType="String"/>
+    </entity>
+</model>

@@ -1,0 +1,90 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Sample 3 RSS Articles</title>
+        <link>https://www.sample1.com/</link>
+        <description>
+            Sample3.com - Cell Phone Reviews, News, Specs and Info.
+        </description>
+        <language>en-us</language>
+        <copyright>
+            Copyright 2001-2025 Sample 3. All rights reserved.
+        </copyright>
+        <managingEditor>phonearena@phonearena.com (Phone Arena)</managingEditor>
+        <image>
+            <title>Sample 3 - Articles</title>
+            <url>
+                https://www.phonearena.com/images/logo/phonearena-logo-light-blue-small.png
+            </url>
+            <link>https://www.phonearena.com/</link>
+            <width>144</width>
+            <height>80</height>
+        </image>
+        <atom:link href="https://www.phonearena.com/feed/news" rel="self" type="application/rss+xml"/>
+        
+        <item>
+            <title>
+                Sample 3 Title 1
+            </title>
+            <link>
+                Sample 3 Link 1
+            </link>
+            <description>
+                Sample 3 Description 1
+            </description>
+            <pubDate>Sun, 02 Mar 2025 22:36:07 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 3 Title 2
+            </title>
+            <link>
+                Sample 3 Link 2
+            </link>
+            <description>
+                Sample 3 Description 2
+            </description>
+            <pubDate>Sun, 23 Feb 2025 22:30:48 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 3 Title 3
+            </title>
+            <link>
+                Sample 3 Link 3
+            </link>
+            <description>
+                Sample 3 Description 3
+            </description>
+            <pubDate>Sun, 16 Feb 2025 10:12:32 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 3 Title 4
+            </title>
+            <link>
+                Sample 3 Link 4
+            </link>
+            <description>
+                Sample 3 Description 4
+            </description>
+            <pubDate>Sun, 09 Feb 2025 15:19:22 -0600</pubDate>
+        </item>
+        
+        <item>
+            <title>
+                Sample 3 Title 5
+            </title>
+            <link>
+                Sample 3 Link 5
+            </link>
+            <description>
+                Sample 3 Description 5
+            </description>
+            <pubDate>Sun, 02 Feb 2025 09:10:11 -0600</pubDate>
+        </item>
+        
+    </channel>
+</rss>

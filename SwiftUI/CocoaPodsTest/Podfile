@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CocoaPodsTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CocoaPodsTest
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'AlamofireSwiftyJSON'
+  pod 'SDWebImage'
+  pod 'SDWebImageSwiftUI'
+  pod 'ProgressHUD'
+
+end

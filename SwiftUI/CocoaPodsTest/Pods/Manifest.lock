@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - AlamofireSwiftyJSON (1.0.2):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 4.0)
+  - ObjectMapper (3.5.3)
+  - ProgressHUD (13.6.2)
+  - SDWebImage (5.15.5):
+    - SDWebImage/Core (= 5.15.5)
+  - SDWebImage/Core (5.15.5)
+  - SDWebImageSwiftUI (2.2.2):
+    - SDWebImage (~> 5.10)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper (~> 5.2)
+  - AlamofireSwiftyJSON
+  - ProgressHUD
+  - SDWebImage
+  - SDWebImageSwiftUI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - AlamofireSwiftyJSON
+    - ObjectMapper
+    - ProgressHUD
+    - SDWebImage
+    - SDWebImageSwiftUI
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  AlamofireSwiftyJSON: 74ee3804bed06d07857daf1eeb1615c85dba3997
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
+  SDWebImageSwiftUI: 54ded4115b4ac6cd60b78f61415f86d070892d98
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 368fd0df02bf45fa394e7b3a4a72cee35c81ca1e
+
+COCOAPODS: 1.12.1

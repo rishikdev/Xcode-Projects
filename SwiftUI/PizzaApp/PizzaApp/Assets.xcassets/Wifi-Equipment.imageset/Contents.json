@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Wifi-Equipment.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
