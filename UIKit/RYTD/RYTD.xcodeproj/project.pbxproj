@@ -13,12 +13,8 @@
 		5C25E49E2A954B44000A174E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E49C2A954B44000A174E /* Main.storyboard */; };
 		5C25E4A72A954B44000A174E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C25E4A62A954B44000A174E /* AppDelegate.swift */; };
 		5C25E4AA2A954B44000A174E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4A82A954B44000A174E /* Main.storyboard */; };
-		5C25E4B12A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C25E4B02A954B44000A174E /* RYTD Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5C25E4BB2A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C25E4BA2A954B44000A174E /* RYTD Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C25E4C12A954B44000A174E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47C2A954B43000A174E /* Main.html */; };
 		5C25E4C22A954B44000A174E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47C2A954B43000A174E /* Main.html */; };
-		5C25E4C32A954B44000A174E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47E2A954B43000A174E /* Icon.png */; };
-		5C25E4C42A954B44000A174E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47E2A954B43000A174E /* Icon.png */; };
 		5C25E4C52A954B44000A174E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47F2A954B43000A174E /* Style.css */; };
 		5C25E4C62A954B44000A174E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E47F2A954B43000A174E /* Style.css */; };
 		5C25E4C72A954B44000A174E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E4802A954B43000A174E /* Script.js */; };
@@ -45,6 +41,10 @@
 		5C25E4DC2A954B44000A174E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48C2A954B44000A174E /* popup.css */; };
 		5C25E4DD2A954B44000A174E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48D2A954B44000A174E /* popup.js */; };
 		5C25E4DE2A954B44000A174E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5C25E48D2A954B44000A174E /* popup.js */; };
+		5CC2CFC12EABCDD9007F34D4 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */; };
+		5CC2CFC22EABCDD9007F34D4 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */; };
+		5CC2CFC32EABCDD9007F34D4 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */; };
+		5CC2CFC42EABCDD9007F34D4 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5C25E4B12A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +81,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5C25E4BB2A954B44000A174E /* RYTD Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +89,6 @@
 
 /* Begin PBXFileReference section */
 		5C25E47D2A954B43000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		5C25E47E2A954B43000A174E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		5C25E47F2A954B43000A174E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		5C25E4802A954B43000A174E /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
 		5C25E4812A954B43000A174E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,21 +102,22 @@
 		5C25E48B2A954B44000A174E /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		5C25E48C2A954B44000A174E /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		5C25E48D2A954B44000A174E /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
-		5C25E4922A954B44000A174E /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25E4952A954B44000A174E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C25E4972A954B44000A174E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C25E49A2A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C25E49D2A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C25E49F2A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C25E4A42A954B44000A174E /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25E4A62A954B44000A174E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C25E4A92A954B44000A174E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C25E4AB2A954B44000A174E /* RYTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RYTD.entitlements; sourceTree = "<group>"; };
-		5C25E4B02A954B44000A174E /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25E4B52A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C25E4BA2A954B44000A174E /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C25E4BF2A954B44000A174E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C25E4C02A954B44000A174E /* RYTD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RYTD.entitlements; sourceTree = "<group>"; };
+		5C3FA9682EABD2E3004235E0 /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3FA9692EABD2E3004235E0 /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		5CC2CFC52EABCFA2007F34D4 /* RYTD Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RYTD Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC2CFC62EABCFA6007F34D4 /* RYTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RYTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +161,11 @@
 				5C25E4A52A954B44000A174E /* macOS (App) */,
 				5C25E4B42A954B44000A174E /* iOS (Extension) */,
 				5C25E4BE2A954B44000A174E /* macOS (Extension) */,
-				5C25E4932A954B44000A174E /* Products */,
+				5CC2CFC02EABCDD9007F34D4 /* AppIcon.icon */,
+				5CC2CFC52EABCFA2007F34D4 /* RYTD Extension.appex */,
+				5CC2CFC62EABCFA6007F34D4 /* RYTD.app */,
+				5C3FA9682EABD2E3004235E0 /* RYTD.app */,
+				5C3FA9692EABD2E3004235E0 /* RYTD Extension.appex */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				5C25E47C2A954B43000A174E /* Main.html */,
-				5C25E47E2A954B43000A174E /* Icon.png */,
 				5C25E47F2A954B43000A174E /* Style.css */,
 				5C25E4802A954B43000A174E /* Script.js */,
 			);
@@ -210,17 +211,6 @@
 				5C25E48D2A954B44000A174E /* popup.js */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		5C25E4932A954B44000A174E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C25E4922A954B44000A174E /* RYTD.app */,
-				5C25E4A42A954B44000A174E /* RYTD.app */,
-				5C25E4B02A954B44000A174E /* RYTD Extension.appex */,
-				5C25E4BA2A954B44000A174E /* RYTD Extension.appex */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5C25E4942A954B44000A174E /* iOS (App) */ = {
@@ -281,7 +271,7 @@
 			);
 			name = "RYTD (iOS)";
 			productName = "RYTD (iOS)";
-			productReference = 5C25E4922A954B44000A174E /* RYTD.app */;
+			productReference = 5C3FA9682EABD2E3004235E0 /* RYTD.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5C25E4A32A954B44000A174E /* RYTD (macOS) */ = {
@@ -300,7 +290,7 @@
 			);
 			name = "RYTD (macOS)";
 			productName = "RYTD (macOS)";
-			productReference = 5C25E4A42A954B44000A174E /* RYTD.app */;
+			productReference = 5CC2CFC62EABCFA6007F34D4 /* RYTD.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5C25E4AF2A954B44000A174E /* RYTD Extension (iOS) */ = {
@@ -317,7 +307,7 @@
 			);
 			name = "RYTD Extension (iOS)";
 			productName = "RYTD Extension (iOS)";
-			productReference = 5C25E4B02A954B44000A174E /* RYTD Extension.appex */;
+			productReference = 5C3FA9692EABD2E3004235E0 /* RYTD Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		5C25E4B92A954B44000A174E /* RYTD Extension (macOS) */ = {
@@ -334,7 +324,7 @@
 			);
 			name = "RYTD Extension (macOS)";
 			productName = "RYTD Extension (macOS)";
-			productReference = 5C25E4BA2A954B44000A174E /* RYTD Extension.appex */;
+			productReference = 5CC2CFC52EABCFA2007F34D4 /* RYTD Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +335,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1610;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					5C25E4912A954B44000A174E = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -370,7 +360,7 @@
 				Base,
 			);
 			mainGroup = 5C25E4752A954B43000A174E;
-			productRefGroup = 5C25E4932A954B44000A174E /* Products */;
+			productRefGroup = 5C25E4752A954B43000A174E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -387,7 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C25E4C32A954B44000A174E /* Icon.png in Resources */,
+				5CC2CFC42EABCDD9007F34D4 /* AppIcon.icon in Resources */,
 				5C25E49B2A954B44000A174E /* LaunchScreen.storyboard in Resources */,
 				5C25E4C12A954B44000A174E /* Main.html in Resources */,
 				5C25E4C72A954B44000A174E /* Script.js in Resources */,
@@ -401,12 +391,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C25E4C42A954B44000A174E /* Icon.png in Resources */,
 				5C25E4C62A954B44000A174E /* Style.css in Resources */,
 				5C25E4AA2A954B44000A174E /* Main.storyboard in Resources */,
 				5C25E4C82A954B44000A174E /* Script.js in Resources */,
 				5C25E4CC2A954B44000A174E /* Assets.xcassets in Resources */,
 				5C25E4C22A954B44000A174E /* Main.html in Resources */,
+				5CC2CFC22EABCDD9007F34D4 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +408,7 @@
 				5C25E4DB2A954B44000A174E /* popup.css in Resources */,
 				5C25E4D92A954B44000A174E /* popup.html in Resources */,
 				5C25E4D12A954B44000A174E /* images in Resources */,
+				5CC2CFC12EABCDD9007F34D4 /* AppIcon.icon in Resources */,
 				5C25E4D32A954B44000A174E /* manifest.json in Resources */,
 				5C25E4CF2A954B44000A174E /* _locales in Resources */,
 				5C25E4D72A954B44000A174E /* content.js in Resources */,
@@ -433,6 +424,7 @@
 				5C25E4DC2A954B44000A174E /* popup.css in Resources */,
 				5C25E4DA2A954B44000A174E /* popup.html in Resources */,
 				5C25E4D22A954B44000A174E /* images in Resources */,
+				5CC2CFC32EABCDD9007F34D4 /* AppIcon.icon in Resources */,
 				5C25E4D42A954B44000A174E /* manifest.json in Resources */,
 				5C25E4D02A954B44000A174E /* _locales in Resources */,
 				5C25E4D82A954B44000A174E /* content.js in Resources */,
@@ -565,6 +557,7 @@
 				CURRENT_PROJECT_VERSION = "";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -586,6 +579,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -627,6 +621,7 @@
 				CURRENT_PROJECT_VERSION = "";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -641,6 +636,7 @@
 				MARKETING_VERSION = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -651,7 +647,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
@@ -662,7 +657,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -682,7 +677,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
@@ -693,7 +687,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -716,7 +710,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
@@ -731,7 +724,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -754,7 +747,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
@@ -769,7 +761,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -791,10 +783,11 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/RYTD.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
@@ -805,7 +798,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -824,10 +817,11 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/RYTD.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RYTD Extension";
@@ -838,7 +832,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -859,10 +853,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/RYTD.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -873,7 +869,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -895,10 +891,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/RYTD.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 4BKL74V4YU;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = RYTD;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -909,7 +907,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
