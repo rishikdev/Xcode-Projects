@@ -41,3 +41,6 @@ The following configuration, tokenizer, and weight files must be present:
 ### Placement in Xcode
 DocGen loads model weights directly from the main application bundle (Bundle.main.resourceURL):\
 Place the files inside DocGen/DocGen/Qwen2.5-Coder-7B.
+
+>[!IMPORTANT]
+>Ensure that all files in DocGen/DocGen/Qwen2.5-Coder-7B/ are added to the DocGen app target and listed under Build Phases > Copy Bundle Resources in Xcode.
